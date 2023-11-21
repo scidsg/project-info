@@ -1,6 +1,6 @@
 **👷 DRAFT**
 
-# Hush Line - Enhancing Tip Line Usability Through Simplicity
+# Hush Line - A User-Friendly Approach to Confidential Tip Lines
 
 By Glenn Sorrentino, Executive Director, [Science & Design, Inc.](https://scidsg.org)
 
