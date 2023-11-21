@@ -45,7 +45,19 @@ In schools, students have entirely different expectations of trust and safety. A
 - As a source, I need a way to access someone's Hush Line, even if the Tor Network and the original URL are blocked in my country, so I can share information even in the most oppressive environments.
 
 ## 3. System Requirements
-Hush Line is an open-source application designed for Debian-based Linux systems [^14]. The system must have a 64-bit processor to install the new cryptography packages. Other hardware requirements are minimal due to the simplicity of the app. Hush Line saves encrypted messages to a local text file for individuals who might want to avoid setting up email delivery. Ensuring the device storage is >16 GB for long-term usage will help safeguard against capacity issues. Having >265 MB of RAM will make system-wide performance, including updates, reboots, startup, and other processes run smoothly [^15].
+Hush Line is an open-source application tailored for Debian-based Linux systems [14]. Debian is chosen for its stability and secure environment, beneficial for applications focusing on security.
+
+### 3.1 Processor and Cryptography
+The application requires a 64-bit processor, primarily to support contemporary cryptographic packages. These packages are integral to the security of Hush Line, as they enable the application to use advanced encryption methods necessary for protecting user data. The use of a 64-bit architecture allows the application to utilize these cryptographic techniques effectively.
+
+### 3.2 Hardware Requirements
+Hush Line is designed to be resource-efficient, with minimal hardware requirements, making it accessible on various devices.
+
+- **Storage:** A minimum of 16 GB of storage is recommended. This specification is to accommodate the storage needs for encrypted messages, particularly for users who do not use email delivery. This storage capacity is intended to manage a significant amount of data and prevent issues related to storage space.
+- **RAM:** At least 256 MB of RAM is suggested for optimal performance. This recommendation is based on ensuring smooth operation of the application, including updates, reboots, and other system processes [^15]. The moderate RAM requirement helps in maintaining the application’s performance across different systems, including older models with limited hardware capabilities.
+
+### 3.3 Security and Privacy
+The system requirements for Hush Line are set with a focus on maintaining its security and privacy features. By aligning with Debian-based Linux systems and modern cryptographic standards, the application aims to provide a secure platform for managing confidential communications.
 
 ## 4. Hush Line: The People's Tip Line
 ### 4.1. Goals
