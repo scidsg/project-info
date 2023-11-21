@@ -49,9 +49,9 @@ Hush Line is an open-source application designed for Debian-based Linux systems 
 ### 4.1. Goals
 Hush Line aims to address key needs in the tip line ecosystem:
 
-- Access to non-technical users - Users have multiple configuration options, including a consumer device called the Personal Server for a no-terminal setup or a one-line command to begin a fully-guided install process [^16].
-- Reduced attack surface - Hush Line is a one-way, text-only messenger, removing the threat of receiving dirty data or malicious files.
-- Fewer requirements for usage - Since Hush Line delivers messages to a user's email address, owners do not have to log in to a new platform to check their messages. 
+- **Access to non-technical users** - Users have multiple configuration options, including a consumer device called the Personal Server for a no-terminal setup or a one-line command to begin a fully-guided install process [^16].
+- **Reduced attack surface** - Hush Line is a one-way, text-only messenger, removing the threat of receiving dirty data or malicious files.
+- **Fewer requirements for usage** - Since Hush Line delivers messages to a user's email address, owners do not have to log in to a new platform to check their messages. 
     
 By comparison, while fully featured, other tip lines require more complex setup processes and sometimes special infrastructure to operate correctly [^17]. A downstream effect of setups like this is that they require more people time to operate, leading to increased costs and higher risks to an organization's network.
 
