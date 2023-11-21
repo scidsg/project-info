@@ -183,7 +183,7 @@ SMTP, created by Jon Postel and Suzanne Sluizer in 1981, and despite many altern
 ### 4.4.3. Hush Line Service
 Whenever the system operating Hush Line reboots, the application will automatically start, ensuring high reliability. During the installation process, a systemd service is created, which starts the application automatically [^34]:
 
-```
+```bash
 # Create a systemd service
 cat >/etc/systemd/system/hushline.service <<EOL
 [Unit]
