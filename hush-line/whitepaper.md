@@ -1,6 +1,6 @@
-**👷 DRAFT** **👷 DRAFT** **👷 DRAFT**
+**👷 DRAFT**
 
-# Hush Line - Enhancing Tip Line Usability Through Simplicity
+# Hush Line: A User-Friendly Approach to Confidential Tip Lines
 
 By Glenn Sorrentino, Executive Director, [Science & Design, Inc.](https://scidsg.org)
 
@@ -8,7 +8,7 @@ By Glenn Sorrentino, Executive Director, [Science & Design, Inc.](https://scidsg
 Tipline, Tor, onion site, PGP, SMTP, HTTPS, Let's Encrypt, automation, open-source
 
 ## Abstract
-Many tip lines can be prohibitively complex, requiring expert consultant services, purchasing and managing special infrastructure, or a lengthy setup process. Technical requirements impact end users, who often need to download, learn, and manage a new platform. We built Hush Line to make it easy for organizations or individuals to deploy an anonymous tip line to a public domain or onion-only instance[^1]. The install process fully configures the tip line to automatically update its software, renew HTTPS certificates, and deliver encrypted messages to the owner's email address. Hush Line is a no-maintenance tip line that meets the user where they are without requiring you to manage yet another app. The app is free and open-source, licensed as AGPL 3.0 [^2] [^3].
+Many tip lines can be prohibitively complex, requiring expert consultant services, purchasing and managing special infrastructure, or a lengthy setup process. Technical requirements impact end users, who often need to download, learn, and manage a new platform. We built Hush Line to make it easy for organizations or individuals to deploy an anonymous tip line to a public domain or onion-only instance [^1]. The install process fully configures the tip line to automatically update its software, renew HTTPS certificates, and deliver encrypted messages to the owner's email address. Hush Line is a no-maintenance tip line that meets the user where they are without requiring you to manage yet another app. The app is free and open-source, licensed as AGPL 3.0 [^2][^3].
 
 ## 1. Introduction
 Tip lines provide the owner a safe way to receive confidential messages from their community - journalists and the public, educators and students, employers and employees. Tools that exist in this space include SecureDrop, GlobalLeaks, or adapted solutions like running Signal on a spare smartphone [^4][^5][^6]. "I always forget to check Signal on my old phone and feel bad when I remember because someone might actually send something," shared a journalist from Consumer Reports. Another journalist in the EU said, "My favorite thing about SecureDrop is that it's so complicated that people can't install it; I created a consulting business as a result!"
@@ -49,9 +49,9 @@ Hush Line is an open-source application designed for Debian-based Linux systems 
 ### 4.1. Goals
 Hush Line aims to address key needs in the tip line ecosystem:
 
-- Access to non-technical users - Users have multiple configuration options, including a consumer device called the Personal Server for a no-terminal setup or a one-line command to begin a fully-guided install process [^16].
-- Reduced attack surface - Hush Line is a one-way, text-only messenger, removing the threat of receiving dirty data or malicious files.
-- Fewer requirements for usage - Since Hush Line delivers messages to a user's email address, owners do not have to log in to a new platform to check their messages. 
+- **Access to non-technical users** - Users have multiple configuration options, including a consumer device called the Personal Server for a no-terminal setup or a one-line command to begin a fully-guided install process [^16].
+- **Reduced attack surface** - Hush Line is a one-way, text-only messenger, removing the threat of receiving dirty data or malicious files.
+- **Fewer requirements for usage** - Since Hush Line delivers messages to a user's email address, owners do not have to log in to a new platform to check their messages. 
     
 By comparison, while fully featured, other tip lines require more complex setup processes and sometimes special infrastructure to operate correctly [^17]. A downstream effect of setups like this is that they require more people time to operate, leading to increased costs and higher risks to an organization's network.
 
