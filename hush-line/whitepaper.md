@@ -1,4 +1,4 @@
-**👷 DRAFT** **👷 DRAFT** **👷 DRAFT**
+**👷 DRAFT**
 
 # Hush Line - Enhancing Tip Line Usability Through Simplicity
 
