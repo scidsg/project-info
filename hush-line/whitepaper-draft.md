@@ -520,6 +520,7 @@ The risks from centralizing any service includes becoming a target whose attack 
 - Stef Daehler, Subject Matter Expert, Education [^71]
 - Dr. Martin Shelton, Subject Matter Expert, Journalism [^72]
 - Ese Udom, Android Engineering [^73]
+- Alex Rojas, Industrial Design [^74]
 
 ## References
 [^1]: https://hushline.app 
@@ -595,3 +596,4 @@ The risks from centralizing any service includes becoming a target whose attack 
 [^71]: https://www.linkedin.com/in/stefaniedaehler/
 [^72]: https://freedom.press/people/martin-shelton/
 [^73]: https://www.linkedin.com/in/eseudom/
+[^74]: https://www.linkedin.com/in/axel-rojas/
