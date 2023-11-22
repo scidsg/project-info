@@ -1,8 +1,7 @@
 **👷 DRAFT**
 
 # Hush Line: A User-Friendly Approach to Confidential Tip Lines
-
-By Glenn Sorrentino, Executive Director, [Science & Design, Inc.](https://scidsg.org)
+Glenn Sorrentino, Executive Director, [Science & Design, Inc.](https://scidsg.org)
 
 ## Keywords
 Tipline, Tor, onion site, PGP, SMTP, HTTPS, Let's Encrypt, automation, open-source
