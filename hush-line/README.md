@@ -1,6 +1,6 @@
 # **🤫 Hush Line Project Info**
 
-[Read the (in-progress) whitepaper](https://github.com/scidsg/project-info/blob/main/hush-line/whitepaper.md)
+[Read the (in-progress) whitepaper](https://github.com/scidsg/project-info/blob/main/hush-line/whitepaper-draft.md)
 
 ## Info
 
