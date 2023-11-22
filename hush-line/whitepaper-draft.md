@@ -519,7 +519,7 @@ The risks from centralizing any service includes becoming a target whose attack 
 - Ura Creative, Visual Design [^52]
 - Stef Daehler, Subject Matter Expert, Education [^71]
 - Dr. Martin Shelton, Subject Matter Expert, Journalism [^72]
-- Ese Udom, Android Engineering
+- Ese Udom, Android Engineering [^73]
 
 ## References
 [^1]: https://hushline.app 
@@ -595,4 +595,3 @@ The risks from centralizing any service includes becoming a target whose attack 
 [^71]: https://www.linkedin.com/in/stefaniedaehler/
 [^72]: https://freedom.press/people/martin-shelton/
 [^73]: https://www.linkedin.com/in/eseudom/
-
