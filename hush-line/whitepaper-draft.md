@@ -107,7 +107,7 @@ In schools, students have entirely different expectations of trust and safety. A
 - As a source, I need a way to access someone's Hush Line, even if the Tor Network and the original URL are blocked in my country, so I can share information even in the most oppressive environments.
 
 ## 3. System Requirements
-Hush Line is an open-source application tailored for Debian-based Linux systems [14]. Debian is chosen for its stability and secure environment, beneficial for applications focusing on security.
+Hush Line is an open-source application tailored for Debian-based Linux systems [^14]. Debian is chosen for its stability and secure environment, beneficial for applications focusing on security.
 
 ### 3.1 Processor and Cryptography
 The application requires a 64-bit processor, primarily to support contemporary cryptographic packages. These packages are integral to the security of Hush Line, as they enable the application to use advanced encryption methods necessary for protecting user data. The use of a 64-bit architecture allows the application to utilize these cryptographic techniques effectively.
