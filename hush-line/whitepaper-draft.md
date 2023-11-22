@@ -13,6 +13,17 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
 <img src="https://raw.githubusercontent.com/scidsg/project-info/main/hush-line/2.%20Design/device-group.png" width="75%" style="margin:2rem 0;">
 
 ## Table of Contents
+# Hush Line: A User-Friendly Approach to Confidential Tip Lines
+
+By Glenn Sorrentino, Executive Director, [Science & Design, Inc.](https://scidsg.org)
+
+## Keywords
+Tipline, Tor, onion site, PGP, SMTP, HTTPS, Let's Encrypt, automation, open-source
+
+## Abstract
+Many tip lines can be prohibitively complex, requiring expert consultant services, purchasing and managing special infrastructure, or a lengthy setup process. Technical requirements impact end users, who often need to download, learn, and manage a new platform. We built Hush Line to make it easy for organizations or individuals to deploy an anonymous tip line to a public domain or onion-only instance [^1]. The install process fully configures the tip line to automatically update its software, renew HTTPS certificates, and deliver encrypted messages to the owner's email address. Hush Line is a no-maintenance tip line that meets the user where they are without requiring you to manage yet another app. The app is free and open-source, licensed as AGPL 3.0 [^2][^3].
+
+## Table of Contents
 - [Keywords](#keywords)
 - [Abstract](#abstract)
 1. [Introduction](#1-introduction)
@@ -42,23 +53,26 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
    - [Hardware](#52-hardware)
    - [Physical Security](#53-physical-security)
    - [Setup](#54-setup)
-6. [Auditing Hush Line](#6-auditing-hush-line)
-   - [Accessibility](#61-accessibility)
-   - [Security](#62-security-in-progress)
-7. [External Collaboration](#7-external-collaboration)
-    - [Content Design](#71-content-design)
-    - [Visual Design](#72-visual-design-in-progress)
-8. [Documentation](#8-documentation)
-9. [Support Model](#9-support-model)
-10. [Challenges](#10-challenges)
-    - [Financial Support](#101-financial-support)
-11. [Future Work](#11-future-work)
-    - [Personal Server](#111-personal-server)
-    - [Hosted Service](#112-hosted-service)
-      - [Risks](#1121-risks)
-12. [Hush Line Contributors](#12-hush-line-contributors)
+6. [Research](#6-research)
+   - [Interview Guides](#61-interview-guides)
+   - [Asynchronous Surveys](#62-asynchronous-surveys)
+   - [Direct Communication with Users and Organizations](#63-direct-communication-with-users-and-organizations)
+7. [Auditing Hush Line](#7-auditing-hush-line)
+   - [Accessibility](#71-accessibility)
+   - [Security](#72-security)
+8. [External Collaboration](#8-external-collaboration)
+   - [Content Design](#81-content-design)
+   - [Visual Design](#82-visual-design)
+9. [Documentation](#9-documentation)
+10. [Support Model](#10-support-model)
+11. [Challenges](#11-challenges)
+    - [Financial Support](#111-financial-support)
+12. [Future Work](#12-future-work)
+    - [Personal Server](#121-personal-server)
+    - [Hosted Service](#122-hosted-service)
+      - [Risks](#1221-risks)
+13. [Hush Line Contributors](#13-hush-line-contributors)
 - [References](#references)
-
 
 ## 1. Introduction
 Tip lines provide the owner a safe way to receive confidential messages from their community - journalists and the public, educators and students, employers and employees. Tools that exist in this space include SecureDrop, GlobalLeaks, or adapted solutions like running Signal on a spare smartphone [^4][^5][^6]. "I always forget to check Signal on my old phone and feel bad when I remember because someone might actually send something," shared a journalist from Consumer Reports. Another journalist in the EU said, "My favorite thing about SecureDrop is that it's so complicated that people can't install it; I created a consulting business as a result!"
@@ -447,10 +461,28 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)
 ```
 
-## 6. Auditing Hush Line
+## 6. Research
+Hush Line relies on our users to help inform us about their needs and ways in which we might be able to better support them. To this end, we've created interview guides, launched asynchronous surveys, and speak directly to the available individuals and organizations using Hush Line:
+
+### Interview Guides
+- **Purpose:** The interview guides are designed to obtain in-depth, qualitative data from users about their experiences with Hush Line. This approach is particularly useful for understanding nuanced user behavior and preferences that might not be apparent in quantitative data.
+- **Methodology:** These interviews could be conducted using various formats, such as face-to-face, telephonic, or video calls. They might include open-ended questions to encourage users to share their stories and experiences in a conversational manner.
+- **Impact:** The insights gained from these interviews can lead to a deeper understanding of user needs, allowing Hush Line to tailor its services more effectively. For instance, uncovering specific pain points could lead to targeted improvements in the app's interface or functionality.
+
+### Asynchronous Surveys
+- **Purpose:** Asynchronous surveys offer a scalable way to collect feedback from a broad user base, allowing for a more generalized understanding of user satisfaction and areas of improvement.
+- **Methodology:** These surveys might include a mix of multiple-choice questions, Likert scale questions (for measuring attitudes), and open-ended questions. They can be distributed through email campaigns, embedded within the Hush Line app, or shared on social media platforms.
+- **Impact:** The data collected can help in identifying trends, common issues, and areas where users are most satisfied. This can guide strategic decisions and prioritization in the development roadmap of Hush Line.
+
+### Direct Communication with Users and Organizations
+- **Purpose:** Engaging directly with users and organizations helps in building a community around Hush Line and provides a platform for detailed and personalized feedback.
+- **Methodology:** This might involve scheduled calls, feedback sessions, or interactive Q&A sessions with users. It could also include regular check-ins with organizations that use Hush Line for their operations.
+- **Impact:** Such interactions not only provide valuable insights but also foster a sense of community and loyalty among users. They can reveal specific use cases and success stories that can be used for marketing and further development of Hush Line.
+
+## 7. Auditing Hush Line
 Before recommending Hush Line be adopted for use cases from journalism, education, and business, we wanted to have independent audits of key areas of the application. All of the work below was sponsored by Open Tech Fund through their Secure Usability and Accessibility and Red Team labs [^43][^44][^45].
 
-### 6.1. Accessibility
+### 7.1. Accessibility
 In Q3-2023, A11y Lab conducted an accessibility audit of Hush Line's website and web application according to the international standard Web Content Accessibility Guidelines 2.1 (WCAG 2.1), which is divided into four principles (Perceivable, Operable, Understandable, and Robust), thirteen guidelines that contain requirements (success criteria) and three levels of conformance A, AA and AAA [^46][^47]. The findings included:
 
 - target size,
@@ -466,22 +498,22 @@ In Q3-2023, A11y Lab conducted an accessibility audit of Hush Line's website and
 
 Soon after receiving the report, all findings were addressed [^48].
 
-### 6.2. Security [IN-PROGRESS]
+### 7.2. Security [IN-PROGRESS]
 In Q4-2023, Subgraph conducted a security audit of Hush Line's core app and the Personal Server device [^49].
 
-## 7. External Collaboration
+## 8. External Collaboration
 Similar to the audits above, we worked with OTF's SUA Lab and engaged with Plaintext and Ura Creative to improve our homepage's visual design and content at hushline.app. 
 
-### 7.1. Content Design
+### 8.1. Content Design
 In Q2-2023, we worked with Plaintext Design to help us think through how we communicate using our homepage [^50][^51]. The key takeaways were to bring greater density to the interface and more concrete language in the heading of our intro section. 
 
-### 7.2. Visual Design [IN-PROGRESS]
+### 8.2. Visual Design [IN-PROGRESS]
 In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visual identity, including illustrations, iconography, identity, and marketing assets [^52]. 
 
-## 8. Documentation
+## 9. Documentation
 Hush Line aims to write simple, straightforward documentation for non-technical users [^53]. 
 
-## 9. Support Model
+## 10. Support Model
 While Hush Line is free and open-source software, we recognize the need for financial support for our contributors and professional support for the product. We've set up multiple ways for support, including:
 - GitHub Sponsors
 - Open Collective
@@ -489,21 +521,21 @@ While Hush Line is free and open-source software, we recognize the need for fina
 
 We aim for a scalable, repeatable framework for which all products can follow [^2][^54][^55].
 
-## 10. Challenges
-### 10.1. Financial Support
+## 11. Challenges
+### 11.1. Financial Support
 The most significant challenge Hush Line has experienced is funding. The product is entirely self-funded and volunteer-driven, and finding sustainable support will be a long-term goal for the team.
 
-## 11. Future Work
-### 11.1. Personal Server
+## 12. Future Work
+### 12.1. Personal Server
 In Q1 of 2024, the Personal Server will launch with a limited production run. The goal of the launch is to raise capital for future product development. 
 
-### 11.2 Hosted Service
+### 12.2 Hosted Service
 Hush Line is currently completely decentralized. Science & Design operates no infrastructure supporting the operation of current instances, so there isn't a single way to block them all. While the security properties of our initial approach will always be an option moving forward, we're considering other ways to make Hush Line available to more people who may need it. One approach could be a centralized service, similar to any SaaS product like Proton, Facebook, or Google, where a user clicks "New Account" or something similar to sign up and use the app [^56][^57][^58].
 
-#### 11.2.1 Risks
+#### 12.2.1 Risks
 The risks from centralizing any service includes becoming a target whose attack could disrupt a large set of individual users. Whether an SMTP or account-based service, we would need to carefully plan the most resilient architecture to protect our customers.
 
-## 12. Hush Line Contributors
+## 13. Hush Line Contributors
 - Glenn Sorrentino, Design, Engineering [^59]
 - Sam Schlinkert, Documentation, Engineering [^60]
 - Saptak Sengupta, Accessibility, Engineering [^61]
