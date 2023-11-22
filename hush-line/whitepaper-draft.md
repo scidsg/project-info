@@ -1,6 +1,6 @@
 **👷 DRAFT**
 
-# Hush Line: A User-Friendly Approach to<br>Confidential Tip Lines
+# Hush Line: A User-Friendly Approach to Confidential<br>Tip Lines
 Glenn Sorrentino, Executive Director, [Science & Design, Inc.](https://scidsg.org)
 
 ## Keywords
