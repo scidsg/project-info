@@ -518,8 +518,7 @@ The risks from centralizing any service includes becoming a target whose attack 
 - Scott Jenson, Content Design [^70]
 - Ura Creative, Visual Design [^52]
 - Stef Daehler, Subject Matter Expert, Education [^71]
-- Micahel (aeon), Subject Matter Expert, Security [^72]
-- Dr. Martin Shelton, Subject Matter Expert, Journalism [^73]
+- Dr. Martin Shelton, Subject Matter Expert, Journalism [^72]
 
 ## References
 [^1]: https://hushline.app 
@@ -593,6 +592,5 @@ The risks from centralizing any service includes becoming a target whose attack 
 [^69]: https://www.linkedin.com/in/chirayu-desai-044788131/
 [^70]: https://www.linkedin.com/in/scottjenson/
 [^71]: https://www.linkedin.com/in/stefaniedaehler/
-[^72]: https://tldr.nettime.org/@eaon
-[^73]: https://freedom.press/people/martin-shelton/
+[^72]: https://freedom.press/people/martin-shelton/
 
