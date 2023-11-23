@@ -85,8 +85,8 @@ Journalists and newsrooms depend on confidential communications. Geneva Overhold
 #### 2.1.2. Newsroom Budgets
 From 2008 to 2020, overall newsroom headcounts have reduced by 25% [^12]. While digital has more than doubled in growth, newspaper publishers have shrunk by >56%.
 
-**Newsroom employees by news industry, 2008 to 2020**<br>
-Number of U.S. newsroom employees in each news industry:
+> **Newsroom employees by news industry, 2008 to 2020**<br>
+> Number of U.S. newsroom employees in each news industry:
 
 | Year | Total     | Newspaper publishers | Broadcast television | Digital-native | Radio broadcasting | Cable television |
 |------|-----------|----------------------|----------------------|----------------|--------------------|------------------|
