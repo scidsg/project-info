@@ -28,9 +28,14 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
 - [Abstract](#abstract)
 1. [Introduction](#1-introduction)
 2. [Problems We're Solving](#2-problems-were-solving)
-   - [Users and Use Cases](#21-users-and-use-cases)
-     - [Users](#211-users)
-     - [Use Cases](#212-use-cases)
+   - [Journalism](#21-journalism)
+     - [Whistleblowers](#211-whistleblowers)
+     - [Newsroom Budgets](#212-newsroom-budgets)
+   - [Workplace](#22-workplace)
+   - [Education](#23-education)
+   - [Users and Use Cases](#24-users-and-use-cases)
+     - [Users](#241-users)
+     - [Use Cases](#242-use-cases)
 3. [System Requirements](#3-system-requirements)
    - [Processor and Cryptography](#31-processor-and-cryptography)
    - [Hardware Requirements](#32-hardware-requirements)
@@ -118,17 +123,17 @@ Hush Line meets this need by reducing the scope of the app to text-only, one-way
 In the workplace up to 70% of people will either witness or experience workplace harassment or discrimination. Of those people, only 15% will ever make a formal complaint, and fewer than 1 in 100 will find a resolution [^13]. The reason for the stark contrast in reporting is due to fear of retaliation.
 
 
-## 2.3. Education
+### 2.3. Education
 In schools, students have entirely different expectations of trust and safety. A 16-year study of one school showed that when they implemented measures in the name of security, including metal detectors, gates, and removing decorative elements from campus, the feeling of safety went down. Peer violence increased, calls to the police quadrupled, and teachers grew increasingly concerned [^14].
 
-### 2.1. Users and Use Cases
-#### 2.1.1. Users
+### 2.4. Users and Use Cases
+#### 2.4.1. Users
 
 - Journalists and newsrooms can use Hush Line to give the public a safe way to leave a confidential tip.
 - Employers and board rooms can use Hush Line to build trust by allowing colleagues to leave suggestions or report concerns anonymously.
 - Educators and school staff can use Hush Line to host a safe way for students to share information with someone they trust.
 
-#### 2.1.2. Use Cases
+#### 2.4.2. Use Cases
 
 - As a journalist, I need to provide sources with a trustworthy way to send information, so they have confidence that the methods will protect their privacy.
 - As an educator, I need to provide students with a safe way to share information with school staff they trust, so critical information can be received while protecting the student's identity.
