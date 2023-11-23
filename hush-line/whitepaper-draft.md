@@ -34,6 +34,7 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
      - [Encryption](#441-encryption)
        - [Client vs. Server-Side Encryption](#4411-client-vs-server-side-encryption)
        - [Pretty Good Privacy](#4412-pretty-good-privacy)
+       - [Hypertext Transfer Protocol Secure](#4413-hypertext-transfer-protocol-secure)
      - [Email Delivery](#442-email-delivery)
        - [Simple Mail Transfer Protocol](#4421-simple-mail-transfer-protocol)
      - [Hush Line Service](#443-hush-line-service)
