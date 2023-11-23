@@ -117,24 +117,21 @@ Number of U.S. newsroom employees in each news industry:
 | 2019 | 87,510    | 34,950               | 30,120               | 16,090         | 3,530              | 2,820            |
 | 2020 | 84,640    | 30,820               | 29,700               | 18,030         | 3,360              | 2,730            |
 
-Hush Line meets this need by reducing the scope of the app to text-only, one-way messages. By removing the ability to attach files, we remove the threat of receiving malicious files, which requires people time to mitigate. Instead, Hush Line is the first point, or the vetting step, for someone who wants to share information with you. 
+Hush Line meets this need by reducing the scope of the app to text-only, one-way messages. By removing the ability to attach files, we remove the threat of receiving malicious files, which requires people time to mitigate. Instead, Hush Line is the first point of contact, or the vetting step, for someone who wants to share information with you. 
 
 ### 2.2. Workplace
 In the workplace up to 70% of people will either witness or experience workplace harassment or discrimination. Of those people, only 15% will ever make a formal complaint, and fewer than 1 in 100 will find a resolution [^13]. The reason for the stark contrast in reporting is due to fear of retaliation.
-
 
 ### 2.3. Education
 In schools, students have entirely different expectations of trust and safety. A 16-year study of one school showed that when they implemented measures in the name of security, including metal detectors, gates, and removing decorative elements from campus, the feeling of safety went down. Peer violence increased, calls to the police quadrupled, and teachers grew increasingly concerned [^14].
 
 ### 2.4. Users and Use Cases
 #### 2.4.1. Users
-
 - Journalists and newsrooms can use Hush Line to give the public a safe way to leave a confidential tip.
 - Employers and board rooms can use Hush Line to build trust by allowing colleagues to leave suggestions or report concerns anonymously.
 - Educators and school staff can use Hush Line to host a safe way for students to share information with someone they trust.
 
 #### 2.4.2. Use Cases
-
 - As a journalist, I need to provide sources with a trustworthy way to send information, so they have confidence that the methods will protect their privacy.
 - As an educator, I need to provide students with a safe way to share information with school staff they trust, so critical information can be received while protecting the student's identity.
 - As an employee that has witnessed workplace abuse, I need a secure and private way to share information with company executives, so that my identity is kept secret to avoid provoking a hostile retaliatory response.
