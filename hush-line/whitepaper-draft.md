@@ -83,7 +83,7 @@ Whistleblowers risk their personal and professional reputations to expose wrongd
 Journalists and newsrooms depend on confidential communications. Geneva Overholder, a contributor to the New York Times, says, "to journalism, sources are the lifeblood of newsgathering [^11]." 
 
 #### 2.1.2. Newsroom Budgets
-From 2008 to 2020, overall newsroom headcounts have reduced by 25% [^12]. While digital has more than doubled in growth, newspaper publisers have shrunk by >56%.
+From 2008 to 2020, overall newsroom headcounts have reduced by 25% [^12]. While digital has more than doubled in growth, newspaper publishers have shrunk by >56%.
 
 **Newsroom employees by news industry, 2008 to 2020**<br>
 Number of U.S. newsroom employees in each news industry:
@@ -107,7 +107,7 @@ Number of U.S. newsroom employees in each news industry:
 Hush Line meets this need by reducing the scope of the app to text-only, one-way messages. By removing the ability to attach files, we remove the threat of receiving malicious files, which requires people time to mitigate. Instead, Hush Line is the first point of contact, or the vetting step, for someone who wants to share information with you. 
 
 ### 2.2. Workplace
-In the workplace up to 70% of people will either witness or experience workplace harassment or discrimination. Of those people, only 15% will ever make a formal complaint, and fewer than 1 in 100 will find a resolution [^13]. The reason for the stark contrast in reporting is due to fear of retaliation.
+In the workplace, up to 70% of people will either witness or experience workplace harassment or discrimination. Of those people, only 15% will ever make a formal complaint, and fewer than 1 in 100 will find a resolution [^13]. The reason for the stark contrast in reporting is due to fear of retaliation.
 
 ### 2.3. Education
 In schools, students have entirely different expectations of trust and safety. A 16-year study of one school showed that when they implemented measures in the name of security, including metal detectors, gates, and removing decorative elements from campus, the feeling of safety went down. Peer violence increased, calls to the police quadrupled, and teachers grew increasingly concerned [^14].
@@ -121,22 +121,22 @@ In schools, students have entirely different expectations of trust and safety. A
 #### 2.4.2. Use Cases
 - As a journalist, I need to provide sources with a trustworthy way to send information, so they have confidence that the methods will protect their privacy.
 - As an educator, I need to provide students with a safe way to share information with school staff they trust, so critical information can be received while protecting the student's identity.
-- As an employee that has witnessed workplace abuse, I need a secure and private way to share information with company executives, so that my identity is kept secret to avoid provoking a hostile retaliatory response.
-- As a student, I want a way to report sensitive information without sharing who I am, so I can help to make change without impacting my educational experience.
-- As a business leader, I want to make my team feel like they can share sensitive information without risking their career, so I can build trust in the team with which I work.
-- As a source, I need a way to access someone's Hush Line, even if the Tor Network and the original URL are blocked in my country, so I can share information even in the most oppressive environments.
+- As an employee who has witnessed workplace abuse, I need a secure and private way to share information with company executives so that my identity is kept secret to avoid provoking a hostile retaliatory response.
+- As a student, I want to report sensitive information without sharing who I am so I can help make change without impacting my educational experience.
+- As a business leader, I want to make my team feel like they can share sensitive information without risking their career so I can build trust in the team with which I work.
+- As a source, I need a way to access someone's Hush Line, even if the Tor Network and the original URL are blocked in my country so that I can share information even in the most oppressive environments.
 
 ## 3. System Requirements
-Hush Line is an open-source application tailored for Debian-based Linux systems [^15]. Debian is chosen for its stability and secure environment, beneficial for applications focusing on security.
+Hush Line is an open-source application tailored for Debian-based Linux systems [^15]. Debian is chosen for its stable and secure environment, which benefits applications focusing on security.
 
 ### 3.1 Processor and Cryptography
-The application requires a 64-bit processor, primarily to support contemporary cryptographic packages. These packages are integral to the security of Hush Line, as they enable the application to use advanced encryption methods necessary for protecting user data. The use of a 64-bit architecture allows the application to utilize these cryptographic techniques effectively.
+The application requires a 64-bit processor, primarily to support contemporary cryptographic packages. These packages are integral to the security of Hush Line, as they enable the application to use advanced encryption methods necessary for protecting user data. A 64-bit architecture allows the application to utilize these cryptographic techniques effectively.
 
 ### 3.2 Hardware Requirements
 Hush Line is designed to be resource-efficient, with minimal hardware requirements, making it accessible on various devices.
 
-- **Storage:** A minimum of 16 GB of storage is recommended. This specification is to accommodate the storage needs for encrypted messages, particularly for users who do not use email delivery. This storage capacity is intended to manage a significant amount of data and prevent issues related to storage space.
-- **RAM:** At least 256 MB of RAM is suggested for optimal performance. This recommendation is based on ensuring smooth operation of the application, including updates, reboots, and other system processes [^16]. The moderate RAM requirement helps in maintaining the application’s performance across different systems, including older models with limited hardware capabilities.
+- **Storage:** A minimum of 16 GB of storage is recommended. This specification accommodates the storage needs for encrypted messages, particularly for users who do not use email delivery. This storage capacity is intended to manage a significant amount of data and prevent issues related to storage space.
+- **RAM:** At least 256 MB of RAM is suggested for optimal performance. This recommendation is based on ensuring the smooth operation of the application, including updates, reboots, and other system processes [^16]. The moderate RAM requirement helps maintain the application’s performance across different systems, including older models with limited hardware capabilities.
 
 ### 3.3 Security and Privacy
 The system requirements for Hush Line are set with a focus on maintaining its security and privacy features. By aligning with Debian-based Linux systems and modern cryptographic standards, the application aims to provide a secure platform for managing confidential communications.
@@ -149,12 +149,12 @@ Hush Line aims to address key needs in the tip line ecosystem:
 - **Reduced attack surface** - Hush Line is a one-way, text-only messenger, removing the threat of receiving dirty data or malicious files.
 - **Fewer requirements for usage** - Since Hush Line delivers messages to a user's email address, owners do not have to log in to a new platform to check their messages. 
     
-By comparison, while fully featured, other tip lines require more complex setup processes and sometimes special infrastructure to operate correctly [^18]. A downstream effect of setups like this is that they require more people time to operate, leading to increased costs and higher risks to an organization's network.
+By comparison, while fully featured, other tip lines require more complex setup processes and sometimes special infrastructure to operate correctly [^18]. A downstream effect of setups like this is that they need more people's time to run, leading to increased costs and higher risks to an organization's network.
 
 ### 4.2. Threat Model and Scope
 Giving owners an option for the correct deployment for their specific use case and threat level is a crucial differentiator for Hush Line:
 
-- High Threat - Considered for journalists, activists, or other human rights defenders. These individuals must consider threats to physical and digital safety. Protecting their server and user's location is critical.
+- High Threat - Considered for journalists, activists, or other human rights defenders. These individuals must consider physical and digital safety threats. Protecting their server and user's location is critical.
 - Medium Threat - Considered for business or government use cases. These individuals often are laypeople who are driven by moral conviction. Having the option for an onion or public tip line is essential.
 - Low Threat - Considered for education settings and small businesses. Individuals need easy, uncomplicated access to the tip line. These users may not know about or could be intimated by an onion address.
 
@@ -273,7 +273,7 @@ PGP, invented by Phil Zimmermann in 1991, is an open standard used across use ca
 #### 4.4.1.3. Hypertext Transfer Protocol Secure
 HTTPS, or, HyperText Transfer Protocol Secure, prevents eavesdropping, tampering, and message forgery, ensuring that the data exchanged between the user's browser and the website remains private and unaltered [^28]. Introduced in 1994 by Netscape Communications, HTTPS has become a standard for secure communication over the internet, particularly vital for online transactions and the transfer of confidential information [^29].
 
-The push for universal HTTPS adoption gained significant momentum with the founding of Let's Encrypt in 2014 [^30]. Let's Encrypt is a free, automated, and open certificate authority that provides digital certificates needed to enable HTTPS, at no cost to the users. Hush Line uses Let's Encrypt when configuring automatically renewing HTTPS certificates [^31].
+The push for universal HTTPS adoption gained significant momentum with the founding of Let's Encrypt in 2014 [^30]. Let's Encrypt is a free, automated, and open certificate authority that provides digital certificates needed to enable HTTPS at no cost to the users. Hush Line uses Let's Encrypt when configuring automatically renewing HTTPS certificates [^31].
 
 ```bash
 SERVER_IP=$(curl -s ifconfig.me)
@@ -295,7 +295,7 @@ certbot --nginx -d $DOMAIN,$SAUTEED_ONION_ADDRESS.$DOMAIN --agree-tos --non-inte
 Hush Line delivers encrypted messages to an email address instead of requiring the tip line owner to log into an application to access communications.
 
 #### 4.4.2.1. Simple Mail Transfer Protocol
-SMTP, created by Jon Postel and Suzanne Sluizer in 1981, and despite many alternative technologies since, claims half the world's population at 4.26 billion users and 80% of all internet users [^32][^33][^34]. A goal for Hush Line is to limit the number of new applications someone needs to adopt in order to use our application, and indeed, all someone needs is Firefox or Chrome and an SMTP-compatible email provider like Gmail or Riseup.net [^35][^36][^37][^38].
+SMTP, created by Jon Postel and Suzanne Sluizer in 1981, and despite many alternative technologies since, claims half the world's population at 4.26 billion users and 80% of all internet users [^32][^33][^34]. A goal for Hush Line is to limit the number of new applications someone needs to adopt to use our application, and indeed, all someone needs is Firefox or Chrome and an SMTP-compatible email provider like Gmail or Riseup.net [^35][^36][^37][^38].
 
 ### 4.4.3. Hush Line Service
 Whenever the system operating Hush Line reboots, the application will automatically start, ensuring high reliability. During the installation process, a systemd service is created, which starts the application automatically [^39]:
@@ -503,28 +503,28 @@ if __name__ == '__main__':
 ```
 
 ## 6. Research
-Hush Line relies on our users to help inform us about their needs and ways in which we might be able to better support them. To this end, we've created interview guides, launched asynchronous surveys, and speak directly to the available individuals and organizations using Hush Line [^48][^49]:
+Hush Line relies on our users to inform us about their needs and how we can better support them. To this end, we've created interview guides, launched asynchronous surveys, and speak directly to the available individuals and organizations using Hush Line [^48][^49]:
 
 ### 6.1. Interview Guides
-- **Purpose:** The interview guides are designed to obtain in-depth, qualitative data from users about their experiences with Hush Line. This approach is particularly useful for understanding nuanced user behavior and preferences that might not be apparent in quantitative data.
-- **Methodology:** These interviews could be conducted using various formats, such as face-to-face, telephonic, or video calls. They might include open-ended questions to encourage users to share their stories and experiences in a conversational manner.
+- **Purpose:** The interview guides are designed to obtain in-depth, qualitative data from users about their experiences with Hush Line. This approach is beneficial for understanding nuanced user behavior and preferences that might not be apparent in quantitative data.
+- **Methodology:** These interviews could be conducted using various formats, such as face-to-face, telephonic, or video calls. They might include open-ended questions to encourage users to share their stories and experiences conversationally.
 - **Impact:** The insights gained from these interviews can lead to a deeper understanding of user needs, allowing Hush Line to tailor its services more effectively. For instance, uncovering specific pain points could lead to targeted improvements in the app's interface or functionality.
 
 ### 6.2. Asynchronous Surveys
 - **Purpose:** Asynchronous surveys offer a scalable way to collect feedback from a broad user base, allowing for a more generalized understanding of user satisfaction and areas of improvement.
-- **Methodology:** These surveys might include a mix of multiple-choice questions, Likert scale questions (for measuring attitudes), and open-ended questions. They can be distributed through email campaigns, embedded within the Hush Line app, or shared on social media platforms.
-- **Impact:** The data collected can help in identifying trends, common issues, and areas where users are most satisfied. This can guide strategic decisions and prioritization in the development roadmap of Hush Line.
+- **Methodology:** These surveys might include multiple-choice questions, Likert scale questions (for measuring attitudes), and open-ended questions. They can be distributed through email campaigns, embedded within the Hush Line app, or shared on social media platforms.
+- **Impact:** The data collected can help identify trends, common issues, and areas where users are most satisfied. This can guide strategic decisions and prioritization in the development roadmap of Hush Line.
 
 ### 6.3. Direct Communication with Users and Organizations
-- **Purpose:** Engaging directly with users and organizations helps in building a community around Hush Line and provides a platform for detailed and personalized feedback.
+- **Purpose:** Engaging directly with users and organizations helps build a community around Hush Line and provides a platform for detailed and personalized feedback.
 - **Methodology:** This might involve scheduled calls, feedback sessions, or interactive Q&A sessions with users. It could also include regular check-ins with organizations that use Hush Line for their operations.
-- **Impact:** Such interactions not only provide valuable insights but also foster a sense of community and loyalty among users. They can reveal specific use cases and success stories that can be used for marketing and further development of Hush Line.
+- **Impact:** Such interactions provide valuable insights and foster a sense of community and loyalty among users. They can reveal specific use cases and success stories that can be used for marketing and further development of Hush Line.
 
 ## 7. Auditing Hush Line
 Before recommending Hush Line be adopted for use cases from journalism, education, and business, we wanted to have independent audits of key areas of the application. All of the work below was sponsored by Open Tech Fund through their Secure Usability and Accessibility and Red Team labs [^50][^51][^52].
 
 ### 7.1. Accessibility
-In Q3-2023, A11y Lab conducted an accessibility audit of Hush Line's website and web application according to the international standard Web Content Accessibility Guidelines 2.1 (WCAG 2.1), which is divided into four principles (Perceivable, Operable, Understandable, and Robust), thirteen guidelines that contain requirements (success criteria) and three levels of conformance A, AA and AAA [^53][^54]. The findings included:
+In Q3-2023, A11y Lab conducted an accessibility audit of Hush Line's website and web application according to the international standard Web Content Accessibility Guidelines 2.1 (WCAG 2.1), which is divided into four principles (Perceivable, Operable, Understandable, and Robust), thirteen guidelines that contain requirements (success criteria) and three levels of conformance A, AA, and AAA [^53][^54]. The findings included:
 
 - target size,
 - bypass blocks,
@@ -543,7 +543,7 @@ Soon after receiving the report, all findings were addressed [^55].
 In Q4-2023, Subgraph conducted a security audit of Hush Line's core app and the Personal Server device [^56].
 
 ## 8. External Collaboration
-Similar to the audits above, we worked with OTF's SUA Lab and engaged with Plaintext and Ura Creative to improve our homepage's visual design and content at hushline.app. 
+Like the audits above, we worked with OTF's SUA Lab and engaged with Plaintext and Ura Creative to improve our homepage's visual design and content at hushline.app. 
 
 ### 8.1. Content Design
 In Q2-2023, we worked with Plaintext Design to help us think through how we communicate using our homepage [^57][^58]. The key takeaways were to bring greater density to the interface and more concrete language in the heading of our intro section. 
@@ -552,10 +552,10 @@ In Q2-2023, we worked with Plaintext Design to help us think through how we comm
 In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visual identity, including illustrations, iconography, identity, and marketing assets [^59]. 
 
 ## 9. Documentation
-Hush Line aims to write simple, straightforward documentation for non-technical users [^60]. 
+Hush Line aims to write straightforward documentation for non-technical users [^60]. 
 
 ## 10. Support Model
-While Hush Line is free and open-source software, we recognize the need for financial support for our contributors and professional support for the product. We've set up multiple ways for support, including:
+While Hush Line is free and open-source software, we recognize the need for financial support for our contributors and professional support for the product. We've set up multiple channels for support, including:
 - GitHub Sponsors
 - Open Collective
 - Community Contributor Guidelines
@@ -571,10 +571,10 @@ The most significant challenge Hush Line has experienced is funding. The product
 In Q1 of 2024, the Personal Server will launch with a limited production run. The goal of the launch is to raise capital for future product development. 
 
 ### 12.2 Hosted Service
-Hush Line is currently completely decentralized. Science & Design operates no infrastructure supporting the operation of current instances, so there isn't a single way to block them all. While the security properties of our initial approach will always be an option moving forward, we're considering other ways to make Hush Line available to more people who may need it. One approach could be a centralized service, similar to any SaaS product like Proton, Facebook, or Google, where a user clicks "New Account" or something similar to sign up and use the app [^63][^64][^65].
+Hush Line is currently wholly decentralized. Science & Design operates no infrastructure supporting the operation of current instances, so there isn't a single way to block them all. While the security properties of our initial approach will always be an option moving forward, we're considering other ways to make Hush Line available to more people who may need it. One approach could be a centralized service, similar to any SaaS product like Proton, Facebook, or Google, where a user clicks "New Account" or something similar to sign up and use the app [^63][^64][^65].
 
 #### 12.2.1 Risks
-The risks from centralizing any service includes becoming a target whose attack could disrupt a large set of individual users. Whether an SMTP or account-based service, we would need to carefully plan the most resilient architecture to protect our customers.
+The risks from centralizing any service include becoming a target whose attack could disrupt a large set of individual users. Whether an SMTP or account-based service, we must carefully plan the most resilient architecture to protect our customers.
 
 ## 13. Hush Line Contributors
 - Glenn Sorrentino, Design, Engineering [^66]
