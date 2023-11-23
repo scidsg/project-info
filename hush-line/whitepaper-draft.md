@@ -577,23 +577,23 @@ Hush Line is currently wholly decentralized. Science & Design operates no infras
 The risks from centralizing any service include becoming a target whose attack could disrupt a large set of individual users. Whether an SMTP or account-based service, we must carefully plan the most resilient architecture to protect our customers.
 
 ## 13. Hush Line Contributors
-- Glenn Sorrentino, Design, Engineering [^66]
-- Sam Schlinkert, Documentation, Engineering [^67]
-- Saptak Sengupta, Accessibility, Engineering [^68]
-- Abbey Ripstra, Research [^69]
-- Dr. Ashley Di Battista, Research [^70]
-- Micah Lee, Engineering [^71]
-- Grant Birkinbine, Engineering [^72]
-- Simon Wörpel, Engineering [^73] 
-- Em, Privacy Engineering [^74] 
-- Dr. Florian Idelberger, Engineering [^75]
-- Chirayu Desai, Privacy Engineering [^76]
-- Scott Jenson, Content Design [^77]
+- Abbey Ripstra, Research [^66]
+- Alex Rojas, Industrial Design [^67]
+- Dr. Ashley Di Battista, Research [^68]
+- Chirayu Desai, Privacy Engineering [^69]
+- Ese Udom, Android Engineering [^70]
+- Em, Privacy Engineering [^71]
+- Dr. Florian Idelberger, Engineering [^72]
+- Glenn Sorrentino, Design, Engineering [^73]
+- Grant Birkinbine, Engineering [^74]
+- Dr. Martin Shelton, Subject Matter Expert, Journalism [^75]
+- Micah Lee, Engineering [^76]
+- Sam Schlinkert, Documentation, Engineering [^77]
+- Saptak Sengupta, Accessibility, Engineering [^78]
+- Scott Jenson, Content Design [^79]
+- Simon Wörpel, Engineering [^80]
+- Stef Daehler, Subject Matter Expert, Education [^81]
 - Ura Creative, Visual Design [^59]
-- Stef Daehler, Subject Matter Expert, Education [^78]
-- Dr. Martin Shelton, Subject Matter Expert, Journalism [^79]
-- Ese Udom, Android Engineering [^80]
-- Alex Rojas, Industrial Design [^81]
 
 ## References
 [^1]: https://hushline.app 
@@ -662,19 +662,19 @@ the-journalist-and-the-whistle-blower.html
 [^63]: https://proton.me/
 [^64]: https://www.facebook.com/
 [^65]: https://www.google.com/
-[^66]: https://glennsorrentino.com/
-[^67]: https://github.com/sts10
-[^68]: https://saptaks.website/
-[^69]: https://www.linkedin.com/in/abigailripstra/
-[^70]: https://www.linkedin.com/in/ashley-di-battista-phd-1891a1253/
-[^71]: https://micahflee.com/
-[^72]: https://github.com/GrantBirki
-[^73]: https://simonwoerpel.github.io/
-[^74]: https://infosec.exchange/@Em0nM4stodon/
-[^75]: https://www.linkedin.com/in/florianidelberger/
-[^76]: https://www.linkedin.com/in/chirayu-desai-044788131/
-[^77]: https://www.linkedin.com/in/scottjenson/
-[^78]: https://www.linkedin.com/in/stefaniedaehler/
-[^79]: https://freedom.press/people/martin-shelton/
-[^80]: https://www.linkedin.com/in/eseudom/
-[^81]: https://www.linkedin.com/in/axel-rojas/
+[^66]: https://www.linkedin.com/in/abigailripstra/
+[^67]: https://www.linkedin.com/in/axel-rojas/
+[^68]: https://www.linkedin.com/in/ashley-di-battista-phd-1891a1253/
+[^69]: https://www.linkedin.com/in/chirayu-desai-044788131/
+[^70]: https://www.linkedin.com/in/eseudom/
+[^71]: https://infosec.exchange/@Em0nM4stodon/
+[^72]: https://www.linkedin.com/in/florianidelberger/
+[^73]: https://glennsorrentino.com/
+[^74]: https://github.com/GrantBirki
+[^75]: https://freedom.press/people/martin-shelton/
+[^76]: https://micahflee.com/
+[^77]: https://github.com/sts10
+[^78]: https://saptaks.website/
+[^79]: https://www.linkedin.com/in/scottjenson/
+[^80]: https://simonwoerpel.github.io/
+[^81]: https://www.linkedin.com/in/stefaniedaehler/
