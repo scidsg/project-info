@@ -167,7 +167,7 @@ In all cases, if an attacker were to gain access to the server, no sensitive inf
 ### 4.3. System Architecture
 Hush Line's strong security comes from its simplicity. Since a sender is restricted to text-only messages, managing files, which requires new and sometimes prohibitively complex workflows, is avoided.
 
-![arch](https://github.com/scidsg/project-info/assets/28545431/d13f0b91-c56e-45cd-abf6-366b835d927a)
+![arch](https://github.com/scidsg/project-info/assets/28545431/efe58a16-fe55-42f9-a505-e417f3ed2eb4)
 
 ### 4.4. Application
 
