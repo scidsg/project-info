@@ -7,7 +7,7 @@ Tipline, Tor, onion site, PGP, SMTP, HTTPS, Let's Encrypt, automation, open-sour
 ## Abstract
 Many tip lines can be prohibitively complex, requiring expert consultant services, purchasing and managing special infrastructure, or a lengthy setup process. Technical requirements impact end users, who often need to download, learn, and manage a new platform. We built Hush Line to make it easy for organizations or individuals to deploy an anonymous tip line to a public domain or onion-only instance [^1]. The install process fully configures the tip line to automatically update its software, renew HTTPS certificates, and deliver encrypted messages to the owner's email address. Hush Line is a no-maintenance tip line that meets the user where they are without requiring you to manage yet another app. The app is free and open-source, licensed as AGPL 3.0 [^2][^3].
 
-<img src="https://raw.githubusercontent.com/scidsg/project-info/main/hush-line/2.%20Design/device-group.png" width="75%" style="margin:2rem 0;">
+![cover](https://github.com/scidsg/project-info/assets/28545431/f1c8c849-3471-4a96-99bd-40311ae6adfc)
 
 ## Table of Contents
 - [Keywords](#keywords)
