@@ -48,7 +48,7 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
    - [Threat Model](#51-threat-model)
    - [Hardware](#52-hardware)
    - [Physical Security](#53-physical-security)
-   - [Setup](#54-setup)
+   - [Web Setup](#54-web-setup)
 6. [Research](#6-research)
    - [Interview Guides](#61-interview-guides)
    - [Asynchronous Surveys](#62-asynchronous-surveys)
@@ -420,7 +420,7 @@ Personal Server comes in a custom-designed, security-focused case made exclusive
 ### 5.3. Physical Security
 We designed a custom, security-centric case that only exposes the device's power and ethernet ports; the USB, mini HDMI, audio, and SD card ports are inaccessible, helping to reduce the risks of tampering. A uniquely numbered tamper-evident sticker connected to the lid and case indicates if the device internals were physically accessed. When the device is issued to an owner, they're notified of the sticker seal's number, allowing for easy verification upon receipt.
 
-### 5.4. Setup
+### 5.4. Web Setup
 While the core Hush Line app is identical to the software on the Personal Server, the physical device affords a more consumer-like setup process. Upon first boot, when an ethernet cable is connected, a QR code displays on the e-Paper screen, linking to a locally hosted web form to complete setup. The user will complete the installation by entering the information needed in a web form [^50]. 
 
 ```python
