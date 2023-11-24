@@ -595,6 +595,8 @@ The risks from centralizing any service include becoming a target whose attack c
 - Alex Rojas, Industrial Design [^70]
 - Dr. Ashley Di Battista, Research [^71]
 - Chirayu Desai, Privacy Engineering [^72]
+- David McKinney, Security Auditor [^73]
+- David Mirza Ahmad, Security Auditor [^74]
 - Elijah Waxwing, Subject Matter Expert, Security [^73]
 - Ese Udom, Android Engineering [^74]
 - Em, Privacy Engineering [^75]
@@ -683,16 +685,18 @@ The risks from centralizing any service include becoming a target whose attack c
 [^70]: https://www.linkedin.com/in/axel-rojas/
 [^71]: https://www.linkedin.com/in/ashley-di-battista-phd-1891a1253/
 [^72]: https://www.linkedin.com/in/chirayu-desai-044788131/
-[^73]: https://kolektiva.social/@elijah
-[^74]: https://www.linkedin.com/in/eseudom/
-[^75]: https://infosec.exchange/@Em0nM4stodon/
-[^76]: https://www.linkedin.com/in/florianidelberger/
-[^77]: https://glennsorrentino.com/
-[^78]: https://github.com/GrantBirki
-[^79]: https://freedom.press/people/martin-shelton/
-[^80]: https://micahflee.com/
-[^81]: https://github.com/sts10
-[^82]: https://saptaks.website/
-[^83]: https://www.linkedin.com/in/scottjenson/
-[^84]: https://simonwoerpel.github.io/
+[^73]: https://www.linkedin.com/in/damckinney/
+[^74]: https://www.linkedin.com/in/dmirza/
+[^75]: https://kolektiva.social/@elijah
+[^76]: https://www.linkedin.com/in/eseudom/
+[^77]: https://infosec.exchange/@Em0nM4stodon/
+[^78]: https://www.linkedin.com/in/florianidelberger/
+[^79]: https://glennsorrentino.com/
+[^80]: https://github.com/GrantBirki
+[^81]: https://freedom.press/people/martin-shelton/
+[^82]: https://micahflee.com/
+[^83]: https://github.com/sts10
+[^84]: https://saptaks.website/
+[^85]: https://www.linkedin.com/in/scottjenson/
+[^86]: https://simonwoerpel.github.io/
 [^85]: https://www.linkedin.com/in/stefaniedaehler/
