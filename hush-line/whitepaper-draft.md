@@ -516,8 +516,33 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)
 ```
 
+### 5.4.1. HTTPS 
+To keep the SMTP information you enter secure from potential evesdroppers on your local network, we use locally signed HTTPS certificates using `mkcert`[^51][^52].
+
+```
+# Install mkcert and its dependencies
+echo "Installing mkcert and its dependencies..."
+apt install -y libnss3-tools
+wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-linux-arm64
+sleep 10
+chmod +x mkcert-v1.4.4-linux-arm64
+mv mkcert-v1.4.4-linux-arm64 /usr/local/bin/mkcert
+export CAROOT="/home/hush/.local/share/mkcert"
+mkdir -p "$CAROOT"  # Ensure the directory exists
+mkcert -install
+
+# Create a certificate for hushline.local
+echo "Creating certificate for hushline.local..."
+mkcert hushline.local
+
+# Move and link the certificates to Nginx's directory (optional, modify as needed)
+mv hushline.local.pem /etc/nginx/
+mv hushline.local-key.pem /etc/nginx/
+echo "Certificate and key for hushline.local have been created and moved to /etc/nginx/."
+```
+
 ## 6. Research
-Hush Line relies on our users to inform us about their needs and how we can better support them. To this end, we've created interview guides, launched asynchronous surveys, and speak directly to the available individuals and organizations using Hush Line [^51][^52]:
+Hush Line relies on our users to inform us about their needs and how we can better support them. To this end, we've created interview guides, launched asynchronous surveys, and speak directly to the available individuals and organizations using Hush Line [^53][^54]:
 
 ### 6.1. Interview Guides
 - **Purpose:** The interview guides are designed to obtain in-depth, qualitative data from users about their experiences with Hush Line. This approach is beneficial for understanding nuanced user behavior and preferences that might not be apparent in quantitative data.
@@ -535,10 +560,10 @@ Hush Line relies on our users to inform us about their needs and how we can bett
 - **Impact:** Such interactions provide valuable insights and foster a sense of community and loyalty among users. They can reveal specific use cases and success stories that can be used for marketing and further development of Hush Line.
 
 ## 7. Auditing Hush Line
-Before recommending Hush Line be adopted for use cases from journalism, education, and business, we wanted to have independent audits of key areas of the application. All of the work below was sponsored by Open Tech Fund through their Secure Usability and Accessibility and Red Team labs [^53][^54][^55].
+Before recommending Hush Line be adopted for use cases from journalism, education, and business, we wanted to have independent audits of key areas of the application. All of the work below was sponsored by Open Tech Fund through their Secure Usability and Accessibility and Red Team labs [^55][^56][^57].
 
 ### 7.1. Accessibility
-In Q3-2023, A11y Lab conducted an accessibility audit of Hush Line's website and web application according to the international standard Web Content Accessibility Guidelines 2.1 (WCAG 2.1), which is divided into four principles (Perceivable, Operable, Understandable, and Robust), thirteen guidelines that contain requirements (success criteria) and three levels of conformance A, AA, and AAA [^56][^57]. The findings included:
+In Q3-2023, A11y Lab conducted an accessibility audit of Hush Line's website and web application according to the international standard Web Content Accessibility Guidelines 2.1 (WCAG 2.1), which is divided into four principles (Perceivable, Operable, Understandable, and Robust), thirteen guidelines that contain requirements (success criteria) and three levels of conformance A, AA, and AAA [^58][^59]. The findings included:
 
 - target size,
 - bypass blocks,
@@ -551,22 +576,22 @@ In Q3-2023, A11y Lab conducted an accessibility audit of Hush Line's website and
 - focus visibility, and
 - page titles.
 
-Soon after receiving the report, all findings were addressed [^58].
+Soon after receiving the report, all findings were addressed [^60].
 
 ### 7.2. Security [IN-PROGRESS]
-In Q4-2023, Subgraph conducted a security audit of Hush Line's core app and the Personal Server device [^59].
+In Q4-2023, Subgraph conducted a security audit of Hush Line's core app and the Personal Server device [^61].
 
 ## 8. External Collaboration
 Like the audits above, we worked with OTF's SUA Lab and engaged with Plaintext and Ura Creative to improve our homepage's visual design and content at hushline.app. 
 
 ### 8.1. Content Design
-In Q2-2023, we worked with Plaintext Design to help us think through how we communicate using our homepage [^60][^61]. The key takeaways were to bring greater density to the interface and more concrete language in the heading of our intro section. 
+In Q2-2023, we worked with Plaintext Design to help us think through how we communicate using our homepage [^62][^63]. The key takeaways were to bring greater density to the interface and more concrete language in the heading of our intro section. 
 
 ### 8.2. Visual Design [IN-PROGRESS]
-In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visual identity, including illustrations, iconography, identity, and marketing assets [^62]. 
+In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visual identity, including illustrations, iconography, identity, and marketing assets [^64]. 
 
 ## 9. Documentation
-Hush Line aims to write straightforward documentation for non-technical users [^63]. 
+Hush Line aims to write straightforward documentation for non-technical users [^65]. 
 
 ## 10. Support Model
 While Hush Line is free and open-source software, we recognize the need for financial support for our contributors and professional support for the product. We've set up multiple channels for support, including:
@@ -574,7 +599,7 @@ While Hush Line is free and open-source software, we recognize the need for fina
 - Open Collective
 - Community Contributor Guidelines
 
-We aim for a scalable, repeatable framework for which all products can follow [^2][^64][^65].
+We aim for a scalable, repeatable framework for which all products can follow [^2][^66][^67].
 
 ## 11. Challenges
 ### 11.1. Financial Support
@@ -585,32 +610,32 @@ The most significant challenge Hush Line has experienced is funding. The product
 In Q1 of 2024, the Personal Server will launch with a limited production run. The goal of the launch is to raise capital for future product development. 
 
 ### 12.2 Hosted Service
-Hush Line is currently wholly decentralized. Science & Design operates no infrastructure supporting the operation of current instances, so there isn't a single way to block them all. While the security properties of our initial approach will always be an option moving forward, we're considering other ways to make Hush Line available to more people who may need it. One approach could be a centralized service, similar to any SaaS product like Proton, Facebook, or Google, where a user clicks "New Account" or something similar to sign up and use the app [^66][^67][^68].
+Hush Line is currently wholly decentralized. Science & Design operates no infrastructure supporting the operation of current instances, so there isn't a single way to block them all. While the security properties of our initial approach will always be an option moving forward, we're considering other ways to make Hush Line available to more people who may need it. One approach could be a centralized service, similar to any SaaS product like Proton, Facebook, or Google, where a user clicks "New Account" or something similar to sign up and use the app [^68][^69][^70].
 
 #### 12.2.1 Risks
 The risks from centralizing any service include becoming a target whose attack could disrupt a large set of individual users. Whether an SMTP or account-based service, we must carefully plan the most resilient architecture to protect our customers.
 
 ## 13. Hush Line Contributors
-- Abbey Ripstra, Research [^69]
-- Alex Rojas, Industrial Design [^70]
-- Dr. Ashley Di Battista, Research [^71]
-- Chirayu Desai, Privacy Engineering [^72]
-- David McKinney, Security Auditor [^73]
-- David Mirza Ahmad, Security Auditor [^74]
-- Elijah Waxwing, Subject Matter Expert, Security [^73]
-- Ese Udom, Android Engineering [^74]
-- Em, Privacy Engineering [^75]
-- Dr. Florian Idelberger, Engineering [^76]
-- Glenn Sorrentino, Design, Engineering [^77]
-- Grant Birkinbine, Engineering [^78]
-- Dr. Martin Shelton, Subject Matter Expert, Journalism [^79]
-- Micah Lee, Engineering [^80]
-- Sam Schlinkert, Documentation, Engineering [^81]
-- Saptak Sengupta, Accessibility, Engineering [^82]
-- Scott Jenson, Content Design [^83]
-- Simon Wörpel, Engineering [^84]
-- Stef Daehler, Subject Matter Expert, Education [^85]
-- Ura Creative, Visual Design [^62]
+- Abbey Ripstra, Research [^71]
+- Alex Rojas, Industrial Design [^72]
+- Dr. Ashley Di Battista, Research [^73]
+- Chirayu Desai, Privacy Engineering [^74]
+- David McKinney, Security Auditor [^75]
+- David Mirza Ahmad, Security Auditor [^76]
+- Elijah Waxwing, Subject Matter Expert, Security [^77]
+- Ese Udom, Android Engineering [^78]
+- Em, Privacy Engineering [^79]
+- Dr. Florian Idelberger, Engineering [^80]
+- Glenn Sorrentino, Design, Engineering [^81]
+- Grant Birkinbine, Engineering [^82]
+- Dr. Martin Shelton, Subject Matter Expert, Journalism [^83]
+- Micah Lee, Engineering [^84]
+- Sam Schlinkert, Documentation, Engineering [^85]
+- Saptak Sengupta, Accessibility, Engineering [^86]
+- Scott Jenson, Content Design [^87]
+- Simon Wörpel, Engineering [^88]
+- Stef Daehler, Subject Matter Expert, Education [^89]
+- Ura Creative, Visual Design [^64]
 
 ## References
 [^1]: https://hushline.app 
@@ -663,40 +688,42 @@ The risks from centralizing any service include becoming a target whose attack c
 [^48]: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/
 [^49]: https://www.waveshare.com/2.7inch-e-paper-hat.htm
 [^50]: https://github.com/scidsg/hushline/blob/personal-server/assets/python/web_setup.py
-[^51]: https://cryptpad.fr/form/#/2/form/view/aznAzzpG6Fh3K1Dq0JjslCK-NmSugmfLTP7ej+SqRl0/
-[^52]: https://cryptpad.fr/form/#/2/form/view/UkUurwNmHbV1wM8n82djr9F8G3N0gEAXytMVxTWirfY/
-[^53]: https://www.opentech.fund/
-[^54]: https://www.opentech.fund/labs/red-team-lab/
-[^55]: https://www.opentech.fund/labs/sua-lab/
-[^56]: https://www.a11ylab.com/
-[^57]: https://github.com/scidsg/project-info/blob/main/hush-line/1.%20Accessibility/WCAG%202.1%20AAA_HushLine%20website.pdf
-[^58]: https://github.com/scidsg/hushline/issues?q=is%3Aissue+is%3Aclosed+A11y+Lab+
-[^59]: https://subgraph.com/
-[^60]: https://plaintext.design/
-[^61]: https://docs.google.com/presentation/d/1ugXg9xYopR_EhjDRbv14jp_Bef-vrmQgztD5aO5sDyg/edit?usp=sharing
-[^62]: https://ura.design/en/
-[^63]: https://scidsg.github.io/hushline-docs/book/intro.html
-[^64]: https://opencollective.com/scidsg
-[^65]: https://github.com/scidsg/hushline#contribution-guidelines
-[^66]: https://proton.me/
-[^67]: https://www.facebook.com/
-[^68]: https://www.google.com/
-[^69]: https://www.linkedin.com/in/abigailripstra/
-[^70]: https://www.linkedin.com/in/axel-rojas/
-[^71]: https://www.linkedin.com/in/ashley-di-battista-phd-1891a1253/
-[^72]: https://www.linkedin.com/in/chirayu-desai-044788131/
-[^73]: https://www.linkedin.com/in/damckinney/
-[^74]: https://www.linkedin.com/in/dmirza/
-[^75]: https://kolektiva.social/@elijah
-[^76]: https://www.linkedin.com/in/eseudom/
-[^77]: https://infosec.exchange/@Em0nM4stodon/
-[^78]: https://www.linkedin.com/in/florianidelberger/
-[^79]: https://glennsorrentino.com/
-[^80]: https://github.com/GrantBirki
-[^81]: https://freedom.press/people/martin-shelton/
-[^82]: https://micahflee.com/
-[^83]: https://github.com/sts10
-[^84]: https://saptaks.website/
-[^85]: https://www.linkedin.com/in/scottjenson/
-[^86]: https://simonwoerpel.github.io/
-[^85]: https://www.linkedin.com/in/stefaniedaehler/
+[^51]: https://github.com/FiloSottile/mkcert
+[^52]: https://github.com/scidsg/hushline/blob/personal-server/assets/scripts/install.sh
+[^53]: https://cryptpad.fr/form/#/2/form/view/aznAzzpG6Fh3K1Dq0JjslCK-NmSugmfLTP7ej+SqRl0/
+[^54]: https://cryptpad.fr/form/#/2/form/view/UkUurwNmHbV1wM8n82djr9F8G3N0gEAXytMVxTWirfY/
+[^55]: https://www.opentech.fund/
+[^56]: https://www.opentech.fund/labs/red-team-lab/
+[^57]: https://www.opentech.fund/labs/sua-lab/
+[^58]: https://www.a11ylab.com/
+[^59]: https://github.com/scidsg/project-info/blob/main/hush-line/1.%20Accessibility/WCAG%202.1%20AAA_HushLine%20website.pdf
+[^60]: https://github.com/scidsg/hushline/issues?q=is%3Aissue+is%3Aclosed+A11y+Lab+
+[^61]: https://subgraph.com/
+[^62]: https://plaintext.design/
+[^63]: https://docs.google.com/presentation/d/1ugXg9xYopR_EhjDRbv14jp_Bef-vrmQgztD5aO5sDyg/edit?usp=sharing
+[^64]: https://ura.design/en/
+[^65]: https://scidsg.github.io/hushline-docs/book/intro.html
+[^66]: https://opencollective.com/scidsg
+[^67]: https://github.com/scidsg/hushline#contribution-guidelines
+[^68]: https://proton.me/
+[^69]: https://www.facebook.com/
+[^70]: https://www.google.com/
+[^71]: https://www.linkedin.com/in/abigailripstra/
+[^72]: https://www.linkedin.com/in/axel-rojas/
+[^73]: https://www.linkedin.com/in/ashley-di-battista-phd-1891a1253/
+[^74]: https://www.linkedin.com/in/chirayu-desai-044788131/
+[^75]: https://www.linkedin.com/in/damckinney/
+[^76]: https://www.linkedin.com/in/dmirza/
+[^77]: https://kolektiva.social/@elijah
+[^78]: https://www.linkedin.com/in/eseudom/
+[^79]: https://infosec.exchange/@Em0nM4stodon/
+[^80]: https://www.linkedin.com/in/florianidelberger/
+[^81]: https://glennsorrentino.com/
+[^82]: https://github.com/GrantBirki
+[^83]: https://freedom.press/people/martin-shelton/
+[^84]: https://micahflee.com/
+[^85]: https://github.com/sts10
+[^86]: https://saptaks.website/
+[^87]: https://www.linkedin.com/in/scottjenson/
+[^88]: https://simonwoerpel.github.io/
+[^89]: https://www.linkedin.com/in/stefaniedaehler/
