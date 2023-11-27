@@ -411,39 +411,39 @@ The easiest way to deploy Hush Line is on a VPS, or, virtual private server [^44
 ### 4.6. Software
 Packages Installed via apt/apt-get:
 
-- `sudo`: Provides the ability to execute commands with root privileges.
-- `wget`: A utility for non-interactive downloading of files from the web.
+- `certbot`: Automatically uses Let's Encrypt to add SSL/TLS certificates to a server.
 - `curl`: A tool for transferring data with URL syntax, supporting various protocols.
+- `fail2ban`: Scans log files and bans IPs that show malicious signs.
 - `git`: A distributed version control system.
-- `python3`: The Python programming language, version 3.
-- `python3-venv`: Provides support for creating lightweight "virtual environments" with their own site directories.
-- `python3-pip`: A tool for installing and managing Python packages.
-- `nginx`: A high-performance HTTP and reverse proxy server.
-- `tor`: Free software for enabling anonymous communication.
-- `whiptail`: Displays user-friendly dialog boxes from shell scripts.
-- `unattended-upgrades`: Allows automatic installation of security and regular updates.
+- `gnupg`: GNU Privacy Guard, a free implementation of the OpenPGP standard.
 - `gunicorn`: A Python WSGI HTTP server for UNIX.
+- `jq`: A lightweight and flexible command-line JSON processor.
+- `libnss3-tools`: Tools for Network Security Services libraries, used in creating and managing security certificates.
 - `libssl-dev`: Development files for the SSL and TLS cryptographic protocols.
 - `net-tools`: A collection of tools for networking.
-- `jq`: A lightweight and flexible command-line JSON processor.
-- `fail2ban`: Scans log files and bans IPs that show malicious signs.
-- `ufw`: Uncomplicated Firewall, a user-friendly way to create and manage firewall rules.
-- `libnss3-tools`: Tools for Network Security Services libraries, used in creating and managing security certificates.
-- `certbot`: Automatically uses Let's Encrypt to add SSL/TLS certificates to a server.
+- `nginx`: A high-performance HTTP and reverse proxy server.
+- `python3`: The Python programming language, version 3.
 - `python3-certbot-nginx`: Nginx plugin for Certbot.
-- `gnupg`: GNU Privacy Guard, a free implementation of the OpenPGP standard.
+- `python3-pip`: A tool for installing and managing Python packages.
+- `python3-venv`: Provides support for creating lightweight "virtual environments" with their own site directories.
+- `sudo`: Provides the ability to execute commands with root privileges.
+- `tor`: Free software for enabling anonymous communication.
+- `ufw`: Uncomplicated Firewall, a user-friendly way to create and manage firewall rules.
+- `unattended-upgrades`: Allows automatic installation of security and regular updates.
+- `wget`: A utility for non-interactive downloading of files from the web.
+- `whiptail`: Displays user-friendly dialog boxes from shell scripts.
 
 Python Packages Installed via pip:
 
-- `Flask`: A micro web framework for Python.
-- `setuptools-rust`: A plugin for setuptools to build Rust extensions for Python.
-- `pgpy`: A pure-Python implementation of OpenPGP.
 - `cryptography`: A package for cryptographic recipes and primitives.
-- `segno`: Generates QR codes and Micro QR codes.
-- `requests`: A Python library for making HTTP requests.
-- `qrcode[pil]`: A QR code generator for Python with PIL support.
+- `Flask`: A micro web framework for Python.
+- `pgpy`: A pure-Python implementation of OpenPGP.
 - `python-gnupg`: A Python wrapper for GnuPG.
+- `qrcode[pil]`: A QR code generator for Python with PIL support.
+- `requests`: A Python library for making HTTP requests.
 - `RPi.GPIO`: A library to control Raspberry Pi GPIO channels.
+- `segno`: Generates QR codes and Micro QR codes.
+- `setuptools-rust`: A plugin for setuptools to build Rust extensions for Python.
 - `spidev`: A Python module to access SPI devices.
 
 ## 5. Personal Server
