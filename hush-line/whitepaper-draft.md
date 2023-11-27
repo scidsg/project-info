@@ -51,25 +51,27 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
    - [Web Setup](#54-web-setup)
      - [HTTPS](#541-https)
 6. [Software](#6-software)
-7. [Research](#7-research)
+   -[Packages Installed via apt/apt-get](#61-packages-installed-via-apt/apt-get)
+   -[Packages Installed via pip](#62-packages-installed-via-pip)
+8. [Research](#7-research)
    - [Interview Guides](#71-interview-guides)
    - [Asynchronous Surveys](#72-asynchronous-surveys)
    - [Direct Communication with Users and Organizations](#73-direct-communication-with-users-and-organizations)
-8. [Auditing Hush Line](#8-auditing-hush-line)
+9. [Auditing Hush Line](#8-auditing-hush-line)
    - [Accessibility](#81-accessibility)
    - [Security](#82-security)
-9. [External Collaboration](#9-external-collaboration)
+10. [External Collaboration](#9-external-collaboration)
    - [Content Design](#91-content-design)
    - [Visual Design](#92-visual-design)
-10. [Documentation](#10-documentation)
-11. [Support Model](#11-support-model)
-12. [Challenges](#12-challenges)
+11. [Documentation](#10-documentation)
+12. [Support Model](#11-support-model)
+13. [Challenges](#12-challenges)
     - [Financial Support](#121-financial-support)
-13. [Future Work](#13-future-work)
+14. [Future Work](#13-future-work)
     - [Personal Server](#131-personal-server)
     - [Hosted Service](#132-hosted-service)
       - [Risks](#1321-risks)
-14. [Hush Line Contributors](#14-hush-line-contributors)
+15. [Hush Line Contributors](#14-hush-line-contributors)
 - [References](#references)
   
 ## 1. Introduction
@@ -546,7 +548,7 @@ echo "Certificate and key for hushline.local have been created and moved to /etc
 ## 6. Software
 Hush Line uses several software packages to make sure everything runs smoothly and securely. These packages help with different tasks like managing the web server, keeping communications safe, and handling emails. They are key components that make Hush Line a reliable and secure choice for setting up anonymous tip lines.
 
-Packages Installed via apt/apt-get:
+### 6.1. Packages Installed via apt/apt-get
 
 - `certbot`: Automatically uses Let's Encrypt to add SSL/TLS certificates to a server [^53].
 - `curl`: A tool for transferring data with URL syntax, supporting various protocols [^54].
@@ -571,7 +573,7 @@ Packages Installed via apt/apt-get:
 - `wget`: A utility for non-interactive downloading of files from the web [^73].
 - `whiptail`: Displays user-friendly dialog boxes from shell scripts [^74].
 
-Python Packages Installed via pip:
+### 6.2. Python Packages Installed via pip
 
 - `cryptography`: A package for cryptographic recipes and primitives [^75].
 - `Flask`: A micro web framework for Python [^76].
