@@ -135,7 +135,7 @@ In schools, students have entirely different expectations of trust and safety. A
 Hush Line is an open-source application tailored for Debian-based Linux systems [^15]. Debian is chosen for its stable and secure environment, which benefits applications focusing on security.
 
 ### 3.1 Processor and Cryptography
-The application requires a 64-bit processor, primarily to support contemporary cryptographic packages. These packages are integral to the security of Hush Line, as they enable the application to use advanced encryption methods necessary for protecting user data. A 64-bit architecture allows the application to utilize these cryptographic techniques effectively.
+The application requires a 64-bit processor, primarily to support contemporary cryptographic packages. These packages are integral to the security of Hush Line, as they enable the application to use advanced encryption methods necessary for protecting user data.
 
 ### 3.2 Hardware Requirements
 Hush Line is designed to be resource-efficient, with minimal hardware requirements, making it accessible on various devices.
