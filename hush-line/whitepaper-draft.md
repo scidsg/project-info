@@ -44,6 +44,7 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
      - [Needs Analysis](#451-needs-analysis)
      - [Co-located Physical Hardware](#452-co-located-physical-hardware)
      - [Virtual Private Server](#453-virtual-private-server)
+   - [Software](#46-software) 
 5. [Personal Server](#5-personal-server)
    - [Threat Model](#51-threat-model)
    - [Hardware](#52-hardware)
@@ -406,6 +407,44 @@ Choosing to deploy to local hardware such as a Raspberry Pi comes with tradeoffs
 
 #### 4.5.3. Virtual Private Server
 The easiest way to deploy Hush Line is on a VPS, or, virtual private server [^44]. If Hush Line needs to be available on a public website, this is often the best option. Using a provider such as Njalla or Digital Ocean, a user can create new virtual machines by clicking a button[^45][^46]. It removes users from worrying about the power going out at their house or the dog treating your Pi like a chew toy.
+
+### 4.6. Software
+Packages Installed via apt/apt-get:
+
+- `sudo`: Provides the ability to execute commands with root privileges.
+- `wget`: A utility for non-interactive downloading of files from the web.
+- `curl`: A tool for transferring data with URL syntax, supporting various protocols.
+- `git`: A distributed version control system.
+- `python3`: The Python programming language, version 3.
+- `python3-venv`: Provides support for creating lightweight "virtual environments" with their own site directories.
+- `python3-pip`: A tool for installing and managing Python packages.
+- `nginx`: A high-performance HTTP and reverse proxy server.
+- `tor`: Free software for enabling anonymous communication.
+- `whiptail`: Displays user-friendly dialog boxes from shell scripts.
+- `unattended-upgrades`: Allows automatic installation of security and regular updates.
+- `gunicorn`: A Python WSGI HTTP server for UNIX.
+- `libssl-dev`: Development files for the SSL and TLS cryptographic protocols.
+- `net-tools`: A collection of tools for networking.
+- `jq`: A lightweight and flexible command-line JSON processor.
+- `fail2ban`: Scans log files and bans IPs that show malicious signs.
+- `ufw`: Uncomplicated Firewall, a user-friendly way to create and manage firewall rules.
+- `libnss3-tools`: Tools for Network Security Services libraries, used in creating and managing security certificates.
+- `certbot`: Automatically uses Let's Encrypt to add SSL/TLS certificates to a server.
+- `python3-certbot-nginx`: Nginx plugin for Certbot.
+- `gnupg`: GNU Privacy Guard, a free implementation of the OpenPGP standard.
+
+Python Packages Installed via pip:
+
+- `Flask`: A micro web framework for Python.
+- `setuptools-rust`: A plugin for setuptools to build Rust extensions for Python.
+- `pgpy`: A pure-Python implementation of OpenPGP.
+- `cryptography`: A package for cryptographic recipes and primitives.
+- `segno`: Generates QR codes and Micro QR codes.
+- `requests`: A Python library for making HTTP requests.
+- `qrcode[pil]`: A QR code generator for Python with PIL support.
+- `python-gnupg`: A Python wrapper for GnuPG.
+- `RPi.GPIO`: A library to control Raspberry Pi GPIO channels.
+- `spidev`: A Python module to access SPI devices.
 
 ## 5. Personal Server
 The Hush Line Personal Server is a physical Tor-only tip line device. Setup is completed outside the terminal, requiring no code, manually editing files, or logging in to a server [^47].
