@@ -9,9 +9,7 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
 
 <img width="2120" alt="cover" src="https://github.com/scidsg/project-info/assets/28545431/5961bf09-665b-4b9e-81cb-ee9ce1298066">
 
-## Table of Contents
-<div style="font-size:10px;">
-   
+## Table of Contents   
 - [Keywords](#keywords)
 - [Abstract](#abstract)
 1. [Introduction](#1-introduction)
@@ -71,9 +69,7 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
       - [Risks](#1221-risks)
 13. [Hush Line Contributors](#13-hush-line-contributors)
 - [References](#references)
-
-</div>
-
+  
 ## 1. Introduction
 Tip lines provide the owner a safe way to receive confidential messages from their community - journalists and the public, educators and students, employers and employees. Tools that exist in this space include SecureDrop, GlobalLeaks, or adapted solutions like running Signal on a spare smartphone [^4][^5][^6]. "I always forget to check Signal on my old phone and feel bad when I remember because someone might actually send something," shared a journalist from Consumer Reports. Another journalist in the EU said, "My favorite thing about SecureDrop is that it's so complicated that people can't install it; I created a consulting business as a result!"
 
