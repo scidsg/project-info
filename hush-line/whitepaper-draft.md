@@ -520,7 +520,7 @@ if __name__ == '__main__':
 ### 5.4.1. HTTPS 
 To keep the SMTP information you enter secure from potential evesdroppers on your local network, we use locally signed HTTPS certificates using `mkcert`[^51][^52].
 
-```
+```bash
 # Install mkcert and its dependencies
 echo "Installing mkcert and its dependencies..."
 apt install -y libnss3-tools
