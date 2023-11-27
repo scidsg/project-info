@@ -52,7 +52,7 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
      - [HTTPS](#541-https)
 6. [Software](#6-software)
    - [Packages Installed via apt](#61-packages-installed-via-apt)
-   - [Packages Installed via pip](#62-packages-installed-via-pip)
+   - [Python Packages Installed via pip](#62-python-packages-installed-via-pip)
 7. [Research](#7-research)
    - [Interview Guides](#71-interview-guides)
    - [Asynchronous Surveys](#72-asynchronous-surveys)
