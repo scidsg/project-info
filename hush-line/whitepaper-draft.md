@@ -548,7 +548,7 @@ echo "Certificate and key for hushline.local have been created and moved to /etc
 ## 6. Software
 Hush Line uses several software packages to make sure everything runs smoothly and securely. These packages help with different tasks like managing the web server, keeping communications safe, and handling emails. They are key components that make Hush Line a reliable and secure choice for setting up anonymous tip lines.
 
-### 6.1. Packages Installed via apt/apt-get
+### 6.1. Packages Installed via apt
 
 - `certbot`: Automatically uses Let's Encrypt to add SSL/TLS certificates to a server [^53].
 - `curl`: A tool for transferring data with URL syntax, supporting various protocols [^54].
