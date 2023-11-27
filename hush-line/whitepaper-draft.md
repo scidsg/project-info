@@ -44,32 +44,32 @@ Many tip lines can be prohibitively complex, requiring expert consultant service
      - [Needs Analysis](#451-needs-analysis)
      - [Co-located Physical Hardware](#452-co-located-physical-hardware)
      - [Virtual Private Server](#453-virtual-private-server)
-   - [Software](#46-software) 
 5. [Personal Server](#5-personal-server)
    - [Threat Model](#51-threat-model)
    - [Hardware](#52-hardware)
    - [Physical Security](#53-physical-security)
    - [Web Setup](#54-web-setup)
-     - [HTTPS](#541-https) 
-6. [Research](#6-research)
-   - [Interview Guides](#61-interview-guides)
-   - [Asynchronous Surveys](#62-asynchronous-surveys)
-   - [Direct Communication with Users and Organizations](#63-direct-communication-with-users-and-organizations)
-7. [Auditing Hush Line](#7-auditing-hush-line)
-   - [Accessibility](#71-accessibility)
-   - [Security](#72-security)
-8. [External Collaboration](#8-external-collaboration)
-   - [Content Design](#81-content-design)
-   - [Visual Design](#82-visual-design)
-9. [Documentation](#9-documentation)
-10. [Support Model](#10-support-model)
-11. [Challenges](#11-challenges)
-    - [Financial Support](#111-financial-support)
-12. [Future Work](#12-future-work)
-    - [Personal Server](#121-personal-server)
-    - [Hosted Service](#122-hosted-service)
-      - [Risks](#1221-risks)
-13. [Hush Line Contributors](#13-hush-line-contributors)
+     - [HTTPS](#541-https)
+6. [Software](#6-software)
+7. [Research](#7-research)
+   - [Interview Guides](#71-interview-guides)
+   - [Asynchronous Surveys](#72-asynchronous-surveys)
+   - [Direct Communication with Users and Organizations](#73-direct-communication-with-users-and-organizations)
+8. [Auditing Hush Line](#8-auditing-hush-line)
+   - [Accessibility](#81-accessibility)
+   - [Security](#82-security)
+9. [External Collaboration](#9-external-collaboration)
+   - [Content Design](#91-content-design)
+   - [Visual Design](#92-visual-design)
+10. [Documentation](#10-documentation)
+11. [Support Model](#11-support-model)
+12. [Challenges](#12-challenges)
+    - [Financial Support](#121-financial-support)
+13. [Future Work](#13-future-work)
+    - [Personal Server](#131-personal-server)
+    - [Hosted Service](#132-hosted-service)
+      - [Risks](#1321-risks)
+14. [Hush Line Contributors](#14-hush-line-contributors)
 - [References](#references)
   
 ## 1. Introduction
@@ -408,45 +408,6 @@ Choosing to deploy to local hardware such as a Raspberry Pi comes with tradeoffs
 #### 4.5.3. Virtual Private Server
 The easiest way to deploy Hush Line is on a VPS, or, virtual private server [^44]. If Hush Line needs to be available on a public website, this is often the best option. Using a provider such as Njalla or Digital Ocean, a user can create new virtual machines by clicking a button[^45][^46]. It removes users from worrying about the power going out at their house or the dog treating your Pi like a chew toy.
 
-### 4.6. Software
-Packages Installed via apt/apt-get:
-
-- `certbot`: Automatically uses Let's Encrypt to add SSL/TLS certificates to a server.
-- `curl`: A tool for transferring data with URL syntax, supporting various protocols.
-- `fail2ban`: Scans log files and bans IPs that show malicious signs.
-- `git`: A distributed version control system.
-- `gnupg`: GNU Privacy Guard, a free implementation of the OpenPGP standard.
-- `gunicorn`: A Python WSGI HTTP server for UNIX.
-- `jq`: A lightweight and flexible command-line JSON processor.
-- `libnss3-tools`: Tools for Network Security Services libraries, used in creating and managing security certificates.
-- `libssl-dev`: Development files for the SSL and TLS cryptographic protocols.
-- `mkcert`: A simple tool for making locally-trusted development certificates.
-- `net-tools`: A collection of tools for networking.
-- `nginx`: A high-performance HTTP and reverse proxy server.
-- `python3`: The Python programming language, version 3.
-- `python3-certbot-nginx`: Nginx plugin for Certbot.
-- `python3-pip`: A tool for installing and managing Python packages.
-- `python3-venv`: Provides support for creating lightweight "virtual environments" with their own site directories.
-- `sudo`: Provides the ability to execute commands with root privileges.
-- `tor`: Free software for enabling anonymous communication.
-- `ufw`: Uncomplicated Firewall, a user-friendly way to create and manage firewall rules.
-- `unattended-upgrades`: Allows automatic installation of security and regular updates.
-- `wget`: A utility for non-interactive downloading of files from the web.
-- `whiptail`: Displays user-friendly dialog boxes from shell scripts.
-
-Python Packages Installed via pip:
-
-- `cryptography`: A package for cryptographic recipes and primitives.
-- `Flask`: A micro web framework for Python.
-- `pgpy`: A pure-Python implementation of OpenPGP.
-- `python-gnupg`: A Python wrapper for GnuPG.
-- `qrcode[pil]`: A QR code generator for Python with PIL support.
-- `requests`: A Python library for making HTTP requests.
-- `RPi.GPIO`: A library to control Raspberry Pi GPIO channels.
-- `segno`: Generates QR codes and Micro QR codes.
-- `setuptools-rust`: A plugin for setuptools to build Rust extensions for Python.
-- `spidev`: A Python module to access SPI devices.
-
 ## 5. Personal Server
 The Hush Line Personal Server is a physical Tor-only tip line device. Setup is completed outside the terminal, requiring no code, manually editing files, or logging in to a server [^47].
 
@@ -582,28 +543,67 @@ mv hushline.local-key.pem /etc/nginx/
 echo "Certificate and key for hushline.local have been created and moved to /etc/nginx/."
 ```
 
-## 6. Research
+## 6. Software
+Packages Installed via apt/apt-get:
+
+- `certbot`: Automatically uses Let's Encrypt to add SSL/TLS certificates to a server.
+- `curl`: A tool for transferring data with URL syntax, supporting various protocols.
+- `fail2ban`: Scans log files and bans IPs that show malicious signs.
+- `git`: A distributed version control system.
+- `gnupg`: GNU Privacy Guard, a free implementation of the OpenPGP standard.
+- `gunicorn`: A Python WSGI HTTP server for UNIX.
+- `jq`: A lightweight and flexible command-line JSON processor.
+- `libnss3-tools`: Tools for Network Security Services libraries, used in creating and managing security certificates.
+- `libssl-dev`: Development files for the SSL and TLS cryptographic protocols.
+- `mkcert`: A simple tool for making locally-trusted development certificates.
+- `net-tools`: A collection of tools for networking.
+- `nginx`: A high-performance HTTP and reverse proxy server.
+- `python3`: The Python programming language, version 3.
+- `python3-certbot-nginx`: Nginx plugin for Certbot.
+- `python3-pip`: A tool for installing and managing Python packages.
+- `python3-venv`: Provides support for creating lightweight "virtual environments" with their own site directories.
+- `sudo`: Provides the ability to execute commands with root privileges.
+- `tor`: Free software for enabling anonymous communication.
+- `ufw`: Uncomplicated Firewall, a user-friendly way to create and manage firewall rules.
+- `unattended-upgrades`: Allows automatic installation of security and regular updates.
+- `wget`: A utility for non-interactive downloading of files from the web.
+- `whiptail`: Displays user-friendly dialog boxes from shell scripts.
+
+Python Packages Installed via pip:
+
+- `cryptography`: A package for cryptographic recipes and primitives.
+- `Flask`: A micro web framework for Python.
+- `pgpy`: A pure-Python implementation of OpenPGP.
+- `python-gnupg`: A Python wrapper for GnuPG.
+- `qrcode[pil]`: A QR code generator for Python with PIL support.
+- `requests`: A Python library for making HTTP requests.
+- `RPi.GPIO`: A library to control Raspberry Pi GPIO channels.
+- `segno`: Generates QR codes and Micro QR codes.
+- `setuptools-rust`: A plugin for setuptools to build Rust extensions for Python.
+- `spidev`: A Python module to access SPI devices.
+
+## 7. Research
 Hush Line relies on our users to inform us about their needs and how we can better support them. To this end, we've created interview guides, launched asynchronous surveys, and speak directly to the available individuals and organizations using Hush Line [^53][^54]:
 
-### 6.1. Interview Guides
+### 7.1. Interview Guides
 - **Purpose:** The interview guides are designed to obtain in-depth, qualitative data from users about their experiences with Hush Line. This approach is beneficial for understanding nuanced user behavior and preferences that might not be apparent in quantitative data.
 - **Methodology:** These interviews could be conducted using various formats, such as face-to-face, telephonic, or video calls. They might include open-ended questions to encourage users to share their stories and experiences conversationally.
 - **Impact:** The insights gained from these interviews can lead to a deeper understanding of user needs, allowing Hush Line to tailor its services more effectively. For instance, uncovering specific pain points could lead to targeted improvements in the app's interface or functionality.
 
-### 6.2. Asynchronous Surveys
+### 7.2. Asynchronous Surveys
 - **Purpose:** Asynchronous surveys offer a scalable way to collect feedback from a broad user base, allowing for a more generalized understanding of user satisfaction and areas of improvement.
 - **Methodology:** These surveys might include multiple-choice questions, Likert scale questions (for measuring attitudes), and open-ended questions. They can be distributed through email campaigns, embedded within the Hush Line app, or shared on social media platforms.
 - **Impact:** The data collected can help identify trends, common issues, and areas where users are most satisfied. This can guide strategic decisions and prioritization in the development roadmap of Hush Line.
 
-### 6.3. Direct Communication with Users and Organizations
+### 7.3. Direct Communication with Users and Organizations
 - **Purpose:** Engaging directly with users and organizations helps build a community around Hush Line and provides a platform for detailed and personalized feedback.
 - **Methodology:** This might involve scheduled calls, feedback sessions, or interactive Q&A sessions with users. It could also include regular check-ins with organizations that use Hush Line for their operations.
 - **Impact:** Such interactions provide valuable insights and foster a sense of community and loyalty among users. They can reveal specific use cases and success stories that can be used for marketing and further development of Hush Line.
 
-## 7. Auditing Hush Line
+## 8. Auditing Hush Line
 Before recommending Hush Line be adopted for use cases from journalism, education, and business, we wanted to have independent audits of key areas of the application. All of the work below was sponsored by Open Tech Fund through their Secure Usability and Accessibility and Red Team labs [^55][^56][^57].
 
-### 7.1. Accessibility
+### 8.1. Accessibility
 In Q3-2023, A11y Lab conducted an accessibility audit of Hush Line's website and web application according to the international standard Web Content Accessibility Guidelines 2.1 (WCAG 2.1), which is divided into four principles (Perceivable, Operable, Understandable, and Robust), thirteen guidelines that contain requirements (success criteria) and three levels of conformance A, AA, and AAA [^58][^59]. The findings included:
 
 - target size,
@@ -619,22 +619,22 @@ In Q3-2023, A11y Lab conducted an accessibility audit of Hush Line's website and
 
 Soon after receiving the report, all findings were addressed [^60].
 
-### 7.2. Security [IN-PROGRESS]
+### 8.2. Security [IN-PROGRESS]
 In Q4-2023, Subgraph conducted a security audit of Hush Line's core app and the Personal Server device [^61].
 
-## 8. External Collaboration
+## 9. External Collaboration
 Like the audits above, we worked with OTF's SUA Lab and engaged with Plaintext and Ura Creative to improve our homepage's visual design and content at hushline.app. 
 
-### 8.1. Content Design
+### 9.1. Content Design
 In Q2-2023, we worked with Plaintext Design to help us think through how we communicate using our homepage [^62][^63]. The key takeaways were to bring greater density to the interface and more concrete language in the heading of our intro section. 
 
-### 8.2. Visual Design [IN-PROGRESS]
+### 9.2. Visual Design [IN-PROGRESS]
 In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visual identity, including illustrations, iconography, identity, and marketing assets [^64]. 
 
-## 9. Documentation
+## 10. Documentation
 Hush Line aims to write straightforward documentation for non-technical users [^65]. 
 
-## 10. Support Model
+## 11. Support Model
 While Hush Line is free and open-source software, we recognize the need for financial support for our contributors and professional support for the product. We've set up multiple channels for support, including:
 - GitHub Sponsors
 - Open Collective
@@ -642,21 +642,21 @@ While Hush Line is free and open-source software, we recognize the need for fina
 
 We aim for a scalable, repeatable framework for which all products can follow [^2][^66][^67].
 
-## 11. Challenges
-### 11.1. Financial Support
+## 12. Challenges
+### 12.1. Financial Support
 The most significant challenge Hush Line has experienced is funding. The product is entirely self-funded and volunteer-driven, and finding sustainable support will be a long-term goal for the team.
 
-## 12. Future Work
-### 12.1. Personal Server
+## 13. Future Work
+### 13.1. Personal Server
 In Q1 of 2024, the Personal Server will launch with a limited production run. The goal of the launch is to raise capital for future product development. 
 
-### 12.2 Hosted Service
+### 13.2 Hosted Service
 Hush Line is currently wholly decentralized. Science & Design operates no infrastructure supporting the operation of current instances, so there isn't a single way to block them all. While the security properties of our initial approach will always be an option moving forward, we're considering other ways to make Hush Line available to more people who may need it. One approach could be a centralized service, similar to any SaaS product like Proton, Facebook, or Google, where a user clicks "New Account" or something similar to sign up and use the app [^68][^69][^70].
 
-#### 12.2.1 Risks
+#### 13.2.1 Risks
 The risks from centralizing any service include becoming a target whose attack could disrupt a large set of individual users. Whether an SMTP or account-based service, we must carefully plan the most resilient architecture to protect our customers.
 
-## 13. Hush Line Contributors
+## 14. Hush Line Contributors
 - Abbey Ripstra, Research [^71]
 - Alex Rojas, Industrial Design [^72]
 - Dr. Ashley Di Battista, Research [^73]
