@@ -549,7 +549,7 @@ Hush Line uses several software packages to make sure everything runs smoothly a
 Packages Installed via apt/apt-get:
 
 - `certbot`: Automatically uses Let's Encrypt to add SSL/TLS certificates to a server [^53].
-- `curl`: A tool for transferring data with URL syntax, supporting various protocols[ ^54].
+- `curl`: A tool for transferring data with URL syntax, supporting various protocols[^54].
 - `fail2ban`: Scans log files and bans IPs that show malicious signs [^55].
 - `git`: A distributed version control system [^56].
 - `gnupg`: GNU Privacy Guard, a free implementation of the OpenPGP standard [^57].
