@@ -557,7 +557,7 @@ Packages Installed via apt/apt-get:
 - `jq`: A lightweight and flexible command-line JSON processor [^59].
 - `libnss3-tools`: Tools for Network Security Services libraries, used in creating and managing security certificates [^60].
 - `libssl-dev`: Development files for the SSL and TLS cryptographic protocols [^61].
-- `mkcert`: A simple tool for making locally-trusted development certificates [^63].
+- `mkcert`: A simple tool for making locally-trusted development certificates [^62].
 - `net-tools`: A collection of tools for networking [^63].
 - `nginx`: A high-performance HTTP and reverse proxy server [^64].
 - `python3`: The Python programming language, version 3 [^65].
