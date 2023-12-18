@@ -303,7 +303,7 @@ certbot --nginx -d $DOMAIN,$SAUTEED_ONION_ADDRESS.$DOMAIN --agree-tos --non-inte
 Hush Line delivers encrypted messages to an email address instead of requiring the tip line owner to log into an application to access communications.
 
 #### 4.4.2.1. Simple Mail Transfer Protocol
-SMTP, created by Jon Postel and Suzanne Sluizer in 1981, and despite many alternative technologies since, claims half the world's population at 4.26 billion users and 80% of all internet users [^32][^33][^34]. A goal for Hush Line is to limit the number of new applications someone needs to adopt to use our application, and indeed, all someone needs is Firefox or Chrome and an SMTP-compatible email provider like Gmail or Riseup.net [^35][^36][^37][^38].
+SMTP, created by Jon Postel and Suzanne Sluizer in 1981, and despite many alternative technologies since, claims half the world's population at 4.26 billion users and 80% of all internet users [^32][^33][^34]. A goal for Hush Line is to limit the number of new applications someone needs to adopt in order to use our application, and indeed, all someone needs is Firefox or Chrome and an SMTP-compatible email provider like Outlook, Yahoo, Gmail, Mail.ru, Zoho Mail, Riseup.net, Mailbox.org, Freenet, Roundcube, or any other compatible email provider [^35][^36][^37][^38].
 
 #### 4.4.3. Hush Line Service
 Whenever the system operating Hush Line reboots, the application will automatically start, ensuring high reliability. During the installation process, a systemd service is created, which starts the application automatically [^39]:
