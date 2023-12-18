@@ -629,14 +629,32 @@ In Q4-2023, Subgraph conducted a security audit of Hush Line's core app and the 
 ## 9. External Collaboration
 Like the audits above, we worked with OTF's SUA Lab and engaged with Plaintext and Ura Creative to improve our homepage's visual design and content at hushline.app. 
 
-### 9.1. Content Design
-In Q2-2023, we worked with Plaintext Design to help us think through how we communicate using our homepage [^94][^95]. The key takeaways were to bring greater density to the interface and more concrete language in the heading of our intro section. 
+### 9.1. Content and Visual Design Improvements
+
+In Q2-2023, Hush Line collaborated with Plaintext Design to enhance its user experience and interface. Key insights and implementations from this collaboration, led by Scott Jenson, include:
+
+- **Enhanced User Focus:** The message field has been emphasized as the primary focus, ensuring users clearly understand their primary action: typing a message.
+- **Improved Visibility:** Key elements like the 'TO' field have been made more prominent for better user comfort and assurance.
+- **Streamlined Layout:** The web layout has been tightened for compactness and clarity, making essential information more accessible.
+- **Refined Visual Elements:** Visuals have been reevaluated and resized to highlight key points effectively.
+- **Segmented Audience Focus:** Clear, concise sections for different user groups such as Journalists, Educators, and Workplaces have been created, each with specific, relevant information.
+- **Simplified Setup and Security Features:** The ease of setting up Hush Line and its security features, like 'Privacy by Default' and 'Encrypted Email Notifications', are prominently displayed.
+
+These improvements significantly enhance Hush Line's usability and visual appeal, making it more intuitive and reassuring for users.
 
 ### 9.2. Visual Design [IN-PROGRESS]
-In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visual identity, including illustrations, iconography, identity, and marketing assets [^96]. 
+In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visual identity, including illustrations, iconography, identity, and marketing assets [^96].  
 
 ## 10. Documentation
-Hush Line aims to write straightforward documentation for non-technical users [^97]. 
+
+The Hush Line Field Manual offers comprehensive guidance for users, encompassing installation, usage, and best practices. The manual is designed to be accessible for users with varying levels of technical expertise, ensuring a wide range of individuals and organizations can leverage Hush Line effectively [^97]. .
+
+- **Installation Options:** Detailed instructions for setting up Hush Line on personal servers, Raspberry Pi devices, and virtual private servers (VPS) are provided.
+- **Usage Guidelines:** Clear steps for sending and receiving messages securely, ensuring confidentiality and trustworthiness in communications.
+- **Handling Files:** Procedures for secure file management, addressing concerns about data privacy and integrity.
+- **Versatility for Various Users:** Tailored advice for different user groups, including journalists, educators, and employers, to utilize Hush Line in their specific contexts.
+
+For a detailed walkthrough and additional resources, refer to the [Hush Line Field Manual](https://scidsg.github.io/hushline-docs/book/intro.html).
 
 ## 11. Support Model
 While Hush Line is free and open-source software, we recognize the need for financial support for our contributors and professional support for the product. We've set up multiple channels for support, including:
