@@ -401,14 +401,17 @@ Below is a snippet of the logs from our demo application `try.hushline.app` afte
 When deploying to a public website, Hush Line uses a new onion binding technique called sauteed onions to help increase its resistance to censorship [^43]. The method, created by Paul Syverson, Rasmus Dahlberg, Linus Nordberg, and Matthew Finkel, binds an onion address to a public domain name using TLS certificates. Using a domain's DNS settings, creating a CNAME record for `onion.acme.com` allows an HTTPS certificate to be issued, making the onion address discoverable in CT logs.
 
 ### 4.5. Deployment
+
 #### 4.5.1. Needs Analysis
-Before choosing the deployment option, first consider your use case. Will Hush Line be used in the workplace or a school? Is it a major institution or a grassroots business? Or are you an independent journalist or human rights activist in a hostile country? 
+When choosing a deployment strategy for Hush Line, it's crucial to consider your specific environment and requirements. For high-risk settings like journalism or activism, prioritize features like enhanced encryption and anonymity. In contrast, educational and corporate environments might focus on usability and straightforward maintenance. This analysis will guide your decision on whether to opt for physical hardware or a cloud-based solution, ensuring the right balance between security and practicality.
 
 #### 4.5.2. Co-located Physical Hardware
-Choosing to deploy to local hardware such as a Raspberry Pi comes with tradeoffs. If one desires full control of their infrastructure, and if possessing such a device doesn't place the user at risk, they may consider this option.
+Opting for a physical hardware deployment, such as a Raspberry Pi, offers the highest level of control over your data and system. This option is particularly suitable for sensitive operations where data confidentiality is paramount. Detailed considerations include secure installation practices, regular system updates, and strategies for physical hardware security. This deployment method provides a robust solution for users who prioritize complete data control and security.
 
 #### 4.5.3. Virtual Private Server
-The easiest way to deploy Hush Line is on a VPS, or, virtual private server [^44]. If Hush Line needs to be available on a public website, this is often the best option. Using a provider such as Njalla or Digital Ocean, a user can create new virtual machines by clicking a button[^45][^46]. It removes users from worrying about the power going out at their house or the dog treating your Pi like a chew toy.
+Deploying Hush Line on a Virtual Private Server (VPS) offers flexibility and ease of management, ideal for users who need a reliable, easily accessible platform without the complexities of physical hardware [^44]. Key benefits include scalability, remote accessibility, and minimal maintenance. Important factors in selecting a VPS provider include server security, data privacy policies, backup procedures, and the level of technical support available. This option, from providers including Njalla and Digital Ocean, is well-suited for those who require a stable, scalable, and secure cloud-based solution [^45][^46].
+
+Each of these deployment strategies offers different advantages and should be chosen based on a thorough analysis of your specific requirements and constraints.
 
 ## 5. Personal Server
 The Hush Line Personal Server is a physical Tor-only tip line device. Setup is completed outside the terminal, requiring no code, manually editing files, or logging in to a server [^47].
