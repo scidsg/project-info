@@ -647,14 +647,15 @@ In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visu
 
 ## 10. Documentation
 
-The Hush Line Field Manual offers comprehensive guidance for users, encompassing installation, usage, and best practices. The manual is designed to be accessible for users with varying levels of technical expertise, ensuring a wide range of individuals and organizations can leverage Hush Line effectively [^97]. .
+Hush Line's comprehensive documentation aims to guide users through every aspect of setting up and using the platform [^97]. The [Hush Line Field Manual](https://scidsg.github.io/hushline-docs/book/intro.html) provides detailed instructions and best practices, ensuring that users from various backgrounds can effectively utilize Hush Line. Key elements of the documentation include:
 
-- **Installation Options:** Detailed instructions for setting up Hush Line on personal servers, Raspberry Pi devices, and virtual private servers (VPS) are provided.
-- **Usage Guidelines:** Clear steps for sending and receiving messages securely, ensuring confidentiality and trustworthiness in communications.
-- **Handling Files:** Procedures for secure file management, addressing concerns about data privacy and integrity.
-- **Versatility for Various Users:** Tailored advice for different user groups, including journalists, educators, and employers, to utilize Hush Line in their specific contexts.
+- **Installation Guides:** Detailed instructions for different installation options, including setups on personal servers, Raspberry Pi, and Virtual Private Servers (VPS).
+- **User Guides:** Step-by-step guides on sending and receiving messages through Hush Line, emphasizing user privacy and security.
+- **Feature Overview:** An in-depth look at Hush Line's features, highlighting its versatility for different user groups such as journalists, educators, and workplace administrators.
+- **Security and Privacy Practices:** Best practices and recommendations for maintaining security and privacy while using Hush Line, including tips on managing encryption keys and secure file handling.
+- **Troubleshooting and FAQs:** A resource for resolving common issues and answering frequently asked questions, helping users navigate any challenges they may encounter.
 
-For a detailed walkthrough and additional resources, refer to the [Hush Line Field Manual](https://scidsg.github.io/hushline-docs/book/intro.html).
+This documentation serves as a valuable resource for new and existing users, ensuring that Hush Line remains accessible and user-friendly for diverse applications.
 
 ## 11. Support Model
 While Hush Line is free and open-source software, we recognize the need for financial support for our contributors and professional support for the product. We've set up multiple channels for support, including:
