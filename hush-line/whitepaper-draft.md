@@ -631,7 +631,7 @@ Like the audits above, we worked with OTF's SUA Lab and engaged with Plaintext a
 
 ### 9.1. Content and Visual Design Improvements
 
-In Q2-2023, Hush Line collaborated with Plaintext Design to enhance its user experience and interface. Key insights and implementations from this collaboration, led by Scott Jenson, include:
+In Q2-2023, Hush Line collaborated with Plaintext Design to enhance its user experience and interface [^94][^95]. Key insights and implementations from this collaboration, led by Scott Jenson, include:
 
 - **Enhanced User Focus:** The message field has been emphasized as the primary focus, ensuring users clearly understand their primary action: typing a message.
 - **Improved Visibility:** Key elements like the 'TO' field have been made more prominent for better user comfort and assurance.
