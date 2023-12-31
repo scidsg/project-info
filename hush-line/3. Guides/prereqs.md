@@ -30,7 +30,31 @@ We'll use Gmail for its high reliability. If you don't already have an account, 
 
 ### 4. Mailvelope
 
-To decrypt Hush Line messages, we'll use Mailvelope, which integrates with Gmail, adding PGP functionality. You can add the extension to your browser here: https://addons.mozilla.org/en-US/firefox/addon/mailvelope/
+To decrypt Hush Line messages, we'll use Mailvelope, which integrates with Gmail and other compatible email providers, adding PGP functionality.
+
+#### 4.1. Securing Your Browser for Mailvelope
+
+To decrypt messages, Mailvelope uses a private key that is stored locally on your device _and_ the Mailvelope password you will create. 
+
+Before installing the Mailvelope extension on your browser, you should first make sure your browser is up-to-date and secured for this usage:
+
+Mailvelope will store your private key within the browser application you use. To minimize any risk of exposure, it is important to prevent your browser from automatically sending usage statistics and crash reports. Make sure to repeat this procedure whenever you use a new browser. Note that you will need to export your private key first if you change browser or device.
+
+**How to stop your browser from automatically sending usage statistics:**
+
+On Firefox, go to "Preferences" -> "Privacy & Security", then scroll down to find "Firefox Data Collection and Use". Disallow all options in this section (unselected).
+
+On Chrome, go to the upper-right 3-dots menu and select "Settings". In the middle menu, select "Sync and Google services". Find the option "Help improve Chrome's features and performance" and make sure to disable (switch to left) the option "Automatically sends usage statistics and crash reports to Google".
+
+More information about this from Mailvelope: 
+
+"How are private keys protected? Can anyone who has access to my computer also access my private key?"
+[https://mailvelope.com/en/faq#keys](https://mailvelope.com/en/faq#keys)
+
+#### 4.2. Installing Mailvelope
+
+Once your browser is secured, you can add the Mailvelope extension here (Firefox): [https://addons.mozilla.org/en-US/firefox/addon/mailvelope/
+](https://addons.mozilla.org/en-US/firefox/addon/mailvelope/) 
 
 ![4-mailvelope](https://github.com/scidsg/project-info/assets/28545431/eabf6c60-50ca-40ce-b217-30fe0451cda1)
 
