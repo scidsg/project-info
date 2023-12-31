@@ -303,7 +303,7 @@ certbot --nginx -d $DOMAIN,$SAUTEED_ONION_ADDRESS.$DOMAIN --agree-tos --non-inte
 Hush Line delivers encrypted messages to an email address instead of requiring the tip line owner to log into an application to access communications.
 
 #### 4.4.2.1. Simple Mail Transfer Protocol
-SMTP, created by Jon Postel and Suzanne Sluizer in 1981, and despite many alternative technologies since, claims half the world's population at 4.26 billion users and 80% of all internet users [^32][^33][^34]. A goal for Hush Line is to limit the number of new applications someone needs to adopt to use our application, and indeed, all someone needs is Firefox or Chrome and an SMTP-compatible email provider like Gmail or Riseup.net [^35][^36][^37][^38].
+SMTP, created by Jon Postel and Suzanne Sluizer in 1981, and despite many alternative technologies since, claims half the world's population at 4.26 billion users and 80% of all internet users [^32][^33][^34]. A goal for Hush Line is to limit the number of new applications someone needs to adopt in order to use our application, and indeed, all someone needs is Firefox or Chrome and an SMTP-compatible email provider like Outlook, Yahoo, Gmail, Mail.ru, Zoho Mail, Riseup.net, Mailbox.org, Freenet, Roundcube, or any other compatible email provider [^35][^36][^37][^38].
 
 #### 4.4.3. Hush Line Service
 Whenever the system operating Hush Line reboots, the application will automatically start, ensuring high reliability. During the installation process, a systemd service is created, which starts the application automatically [^39]:
@@ -401,14 +401,17 @@ Below is a snippet of the logs from our demo application `try.hushline.app` afte
 When deploying to a public website, Hush Line uses a new onion binding technique called sauteed onions to help increase its resistance to censorship [^43]. The method, created by Paul Syverson, Rasmus Dahlberg, Linus Nordberg, and Matthew Finkel, binds an onion address to a public domain name using TLS certificates. Using a domain's DNS settings, creating a CNAME record for `onion.acme.com` allows an HTTPS certificate to be issued, making the onion address discoverable in CT logs.
 
 ### 4.5. Deployment
+
 #### 4.5.1. Needs Analysis
-Before choosing the deployment option, first consider your use case. Will Hush Line be used in the workplace or a school? Is it a major institution or a grassroots business? Or are you an independent journalist or human rights activist in a hostile country? 
+When choosing a deployment strategy for Hush Line, it's crucial to consider your specific environment and requirements. For high-risk settings like journalism or activism, prioritize features like enhanced encryption and anonymity. In contrast, educational and corporate environments might focus on usability and straightforward maintenance. This analysis will guide your decision on whether to opt for physical hardware or a cloud-based solution, ensuring the right balance between security and practicality.
 
 #### 4.5.2. Co-located Physical Hardware
-Choosing to deploy to local hardware such as a Raspberry Pi comes with tradeoffs. If one desires full control of their infrastructure, and if possessing such a device doesn't place the user at risk, they may consider this option.
+Opting for a physical hardware deployment, such as a Raspberry Pi, offers the highest level of control over your data and system. This option is particularly suitable for sensitive operations where data confidentiality is paramount. Detailed considerations include secure installation practices, regular system updates, and strategies for physical hardware security. This deployment method provides a robust solution for users who prioritize complete data control and security.
 
 #### 4.5.3. Virtual Private Server
-The easiest way to deploy Hush Line is on a VPS, or, virtual private server [^44]. If Hush Line needs to be available on a public website, this is often the best option. Using a provider such as Njalla or Digital Ocean, a user can create new virtual machines by clicking a button[^45][^46]. It removes users from worrying about the power going out at their house or the dog treating your Pi like a chew toy.
+Deploying Hush Line on a Virtual Private Server (VPS) offers flexibility and ease of management, ideal for users who need a reliable, easily accessible platform without the complexities of physical hardware [^44]. Key benefits include scalability, remote accessibility, and minimal maintenance. Important factors in selecting a VPS provider include server security, data privacy policies, backup procedures, and the level of technical support available. This option, from providers including Njalla and Digital Ocean, is well-suited for those who require a stable, scalable, and secure cloud-based solution [^45][^46].
+
+Each of these deployment strategies offers different advantages and should be chosen based on a thorough analysis of your specific requirements and constraints.
 
 ## 5. Personal Server
 The Hush Line Personal Server is a physical Tor-only tip line device. Setup is completed outside the terminal, requiring no code, manually editing files, or logging in to a server [^47].
@@ -630,13 +633,32 @@ In Q4-2023, Subgraph conducted a security audit of Hush Line's core app and the 
 Like the audits above, we worked with OTF's SUA Lab and engaged with Plaintext and Ura Creative to improve our homepage's visual design and content at hushline.app. 
 
 ### 9.1. Content Design
-In Q2-2023, we worked with Plaintext Design to help us think through how we communicate using our homepage [^94][^95]. The key takeaways were to bring greater density to the interface and more concrete language in the heading of our intro section. 
+
+In Q2-2023, Hush Line collaborated with Plaintext Design to enhance its user experience and interface [^94][^95]. Key insights and implementations from this collaboration, led by Scott Jenson, include:
+
+- **Enhanced User Focus:** The message field has been emphasized as the primary focus, ensuring users clearly understand their primary action: typing a message.
+- **Improved Visibility:** Key elements like the 'TO' field have been made more prominent for better user comfort and assurance.
+- **Streamlined Layout:** The web layout has been tightened for compactness and clarity, making essential information more accessible.
+- **Refined Visual Elements:** Visuals have been reevaluated and resized to highlight key points effectively.
+- **Segmented Audience Focus:** Clear, concise sections for different user groups such as Journalists, Educators, and Workplaces have been created, each with specific, relevant information.
+- **Simplified Setup and Security Features:** The ease of setting up Hush Line and its security features, like 'Privacy by Default' and 'Encrypted Email Notifications', are prominently displayed.
+
+These improvements significantly enhance Hush Line's usability and visual appeal, making it more intuitive and reassuring for users.
 
 ### 9.2. Visual Design [IN-PROGRESS]
-In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visual identity, including illustrations, iconography, identity, and marketing assets [^96]. 
+In Q4-2023, we worked with Ura Creative to assist in developing Hush Line's visual identity, including illustrations, iconography, identity, and marketing assets [^96].  
 
 ## 10. Documentation
-Hush Line aims to write straightforward documentation for non-technical users [^97]. 
+
+Hush Line's comprehensive documentation aims to guide users through every aspect of setting up and using the platform [^97]. The [Hush Line Field Manual](https://scidsg.github.io/hushline-docs/book/intro.html) provides detailed instructions and best practices, ensuring that users from various backgrounds can effectively utilize Hush Line. Key elements of the documentation include:
+
+- **Installation Guides:** Detailed instructions for different installation options, including setups on personal servers, Raspberry Pi, and Virtual Private Servers (VPS).
+- **User Guides:** Step-by-step guides on sending and receiving messages through Hush Line, emphasizing user privacy and security.
+- **Feature Overview:** An in-depth look at Hush Line's features, highlighting its versatility for different user groups such as journalists, educators, and workplace administrators.
+- **Security and Privacy Practices:** Best practices and recommendations for maintaining security and privacy while using Hush Line, including tips on managing encryption keys and secure file handling.
+- **Troubleshooting and FAQs:** A resource for resolving common issues and answering frequently asked questions, helping users navigate any challenges they may encounter.
+
+This documentation serves as a valuable resource for new and existing users, ensuring that Hush Line remains accessible and user-friendly for diverse applications.
 
 ## 11. Support Model
 While Hush Line is free and open-source software, we recognize the need for financial support for our contributors and professional support for the product. We've set up multiple channels for support, including:
