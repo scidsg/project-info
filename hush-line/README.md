@@ -75,10 +75,29 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 - Global
 - Areas where censorship is prevalent, including Iran, China, Russia, and Belarus
 
-## Grant History
+--------------------
 
-| **Organization** | **Support Type** | **Vendor** | **Services** | **Status** | **Dates** |
-| --- | --- | --- | --- | --- | --- |
-| StartSmall, LLC | Financial | Project-Specific | 
-| OTF | Services | Red Team Lab | Security Audit | ✅ Awarded | July 2023 |
-| OTF | Services | A11y Lab | Accessibility Audit | ✅ Awarded | July 2023 |
+## Similar Products
+
+### Off-The-Shelf
+
+- [SecureDrop](https://securedrop.org/)
+  - Open-Source
+  - Free
+- [FaceUp](https://www.faceup.com/en)
+  - Closed-Source
+  - Paid-Only 
+- [CaseIQ](https://www.caseiq.com/)
+  - Closed-Source
+  - Paid-Only
+ 
+### Adjacent Projects
+
+- [Callisto](https://www.projectcallisto.org/)
+  - Closed-Source
+  - Restricted to .edu  
+
+### Adjacent Research
+
+- [CryptDB](https://people.csail.mit.edu/nickolai/papers/raluca-cryptdb.pdf)
+- [DEFY](https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_5_1.pdf)
