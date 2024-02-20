@@ -97,6 +97,14 @@ How much better, safer, and more informed could our schools, workplaces, and soc
   - Closed-Source
   - Restricted to .edu  
 
+## Research
+
+- Roth, V., Güldenring, B., Rieffel, E., Dietrich, S., & Ries, L. (2013). [A secure submission system for online whistleblowing platforms](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20A%20Secure%20Submission%20System%20for%20Online%20Whistleblowing%20Platforms.pdf). Freie Universität Berlin, FX Palo Alto Laboratory, Stevens Institute of Technology.
+- Agrikola, T., Couteau, G., & Maier, S. (n.d.). [Anonymous whistleblowing over authenticated channels](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20Anonymous%20Whistleblowing%20over%20Authenticated%20Channels.pdf). CNRS, IRIF, Université de Paris; Karlsruhe Institute of Technology.
+- Uddholm, J. (2016). [Anonymous Javascript cryptography and cover traffic in whistleblowing applications](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20Anonymous%20Javascript%20Cryptography%20and%20Cover%20Traffic%20in%20Whistleblowing%20Applications.pdf). KTH Royal Institute of Technology, School of Computer Science and Communication.
+- Jayakrishnan, H., & Murali, R. [A simple and robust end-to-end encryption architecture for anonymous and secure whistleblowing](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20A%20Simple%20and%20Robust%20End-to-End%20Encryption%20Architecture%20for%20Anonymous%20and%20Secure%20Whistleblowing.pdf). Department of Computer Science and Engineering, Amrita School of Engineering, Coimbatore, Amrita Vishwa Vidyapeetham, India.
+
+
 ### Adjacent Research
 
 - [CryptDB](https://people.csail.mit.edu/nickolai/papers/raluca-cryptdb.pdf)
