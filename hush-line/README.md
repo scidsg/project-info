@@ -8,7 +8,7 @@ Hush Line is a free and open-source, self-hosted anonymous tip line that makes i
 
 ## Ecosystem
 
-<img src="https://github.com/scidsg/project-info/assets/28545431/22069bbe-8bd0-4d1d-bd92-03b840e1d934" width="80%">
+<img src="https://raw.githubusercontent.com/scidsg/project-info/main/hush-line/2.%20Design/model.png" width="80%">
 
 ### Links
 
