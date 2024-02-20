@@ -84,12 +84,24 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 - [SecureDrop](https://securedrop.org/)
   - Open-Source
   - Free
+  - On Prem
 - [FaceUp](https://www.faceup.com/en)
   - Closed-Source
-  - Paid-Only 
+  - Paid-Only
+  - Managed
 - [CaseIQ](https://www.caseiq.com/)
   - Closed-Source
   - Paid-Only
+  - Managed
+- [Callisto](https://www.projectcallisto.org/)
+  - Closed-Source
+  - Restricted to .edu
+  - Managed
+- [Say Something](https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/)
+  - Closed-Source
+  - Restricted to Education, Government, and Law Enforcement
+  - On-Prem
+  - By Sandy Hook Promise
  
 ### Adjacent Projects
 
