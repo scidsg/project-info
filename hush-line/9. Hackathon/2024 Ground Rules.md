@@ -3,7 +3,7 @@
 Join us for the first-ever Hush Line Hackathon, a hands-on event where we challenge you to test the security of our application, `hack.ourdemo.app`. This is a unique opportunity to engage with the security aspects of real-world applications in a controlled environment.
 
 ## Date
-5 May 2024, All Day (Tentative)
+Weekend of 05 May 2024, All Day (Tentative)
 
 ## Rules of Engagement
 
