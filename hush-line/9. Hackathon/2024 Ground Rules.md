@@ -27,3 +27,26 @@ Join us for the first-ever Hush Line Hackathon, a hands-on event where we challe
 ## How to Participate
 
 This hackathon aims not only to foster a deeper understanding of cybersecurity among participants but also to reinforce the security of our application, ensuring it remains safe for all users. We look forward to a collaborative and constructive event.
+
+Send your findings to this address: https://tips.hushline.app/submit_message/2024-Hackathon
+
+### Hackathon Findings Report Template
+
+```
+Name/Team: [Name or Team Name]
+
+1. Executive Summary
+Brief overview of the testing process, tools used, and key findings.
+
+2. Detailed Findings
+For each vulnerability found, include the following details:
+
+- Title: A short, descriptive title for the issue.
+- Category: The type of vulnerability (e.g., SQL Injection, Privilege Escalation).
+- Severity Level: Rating the severity (Critical, High, Medium, Low) based on impact and exploitability.
+- Description: A detailed explanation of the vulnerability, including how it affects the application.
+- Proof of Concept: Step-by-step instructions to reproduce the vulnerability, including any scripts, URLs, or commands used. Screenshots can be helpful here.
+- Impact: Explain the potential impact on the application or users if exploited.
+- Recommendations: Suggestions for how to remediate or mitigate the vulnerability.
+- References: Any relevant references or links to additional information about the type of vulnerability.
+```
