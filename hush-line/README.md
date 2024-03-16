@@ -24,16 +24,18 @@ Hush Line is a free and open-source, self-hosted anonymous tip line that makes i
 
 Are we missing any roles? Edit this document!
 
-| Role          | Person        | Keybase Contact    |
-|---------------|---------------|--------------------|
-| Lead          | Glenn         | @glennsorrentino   |
-| Lead Engineer | _Glenn_       | _@glennsorrentino_   |
-| Engineering   | Sam           | @schlink           |
-| Research      | Abbey         | @bodicea           |
-| Design        | Glenn         | @glennsorrentino   |
-| Social        | _Glenn_       | _@glennsorrentino_   |
-| Localization  |               |                    |
-| Documentation | _Glenn_<br>Sam  | _@glennsorrentino_<br>@schlink               |
+| Person   | Role           | Keybase Contact    |
+|----------|----------------|--------------------|
+| Abbey    | Research Lead  | @bodicea           |
+| Brassy   | Lead Engineer  | @brassy-endomorph  |
+| Glenn    | Product/Design | @glennsorrentino   |
+| _Glenn_  | Social         | _@glennsorrentino_ |
+| Ritik    | Engineering    | @maxseckb          |
+| Sam      | Engineering    | @schlink           |
+| Sam      | Documentation  | @schlink           |
+| Scott    | Design         | @scottjenson       |
+| Sooraj   | Engineering    | @ianonymous3000    |
+|          | Localization   |                    |
 
 _Italics indicate a temporarily filled role._
 
