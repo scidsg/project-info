@@ -4,9 +4,9 @@ Join us for the first-ever Hush Line Hackathon, a hands-on event where we challe
 
 ## Goals
 
-- **Hack**: Break it, break-in, exfiltrate, disrupt, take over.
-- **Fix**: Breaking is fun, but fixing is better. See a hole? Patch it.
-- **Build**: Want to help build the app? Help close our open Issues!
+- **💣 Hack**: Break it, break-in, exfiltrate, disrupt, take over.
+- **🩹 Fix**: Breaking is fun, but fixing is better. See a hole? Patch it.
+- **🔨 Build**: Want to help build the app? Help close our open Issues!
 
 ## Date
 Weekend of 05 May 2024, All Day (Tentative)
