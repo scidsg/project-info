@@ -9,7 +9,7 @@
 - **🔨 Build**: Want to help build the app? Help close our open Issues!
 
 ## Date
-Weekend of 05 May 2024, All Day (Tentative)
+TBD 2024
 
 ## Rules of Engagement
 
