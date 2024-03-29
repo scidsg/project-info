@@ -1,6 +1,6 @@
 # 😈 Hush Line Hackathon
 
-Join us for the first-ever Hush Line Hackathon, a hands-on event where we challenge you to test the security of our application, `hack.ourdemo.app`. This is a unique opportunity to engage with the security aspects of real-world applications in a controlled environment. 
+[Fuckyeah.Software](https://fuckyeah.software) and [CryptoHarlem](https://www.cryptoharlem.com/) present the Hush Line Hackathon, a hands-on event where we challenge you to test the security of our application, `hack.ourdemo.app`. This is a unique opportunity to engage with the security aspects of real-world applications in a controlled environment. 
 
 ## Goals
 
