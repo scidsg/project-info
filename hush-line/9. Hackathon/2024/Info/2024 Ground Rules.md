@@ -1,6 +1,12 @@
 # 😈 Hush Line Hackathon
 
-Join us for the first-ever Hush Line Hackathon, a hands-on event where we challenge you to test the security of our application, `hack.ourdemo.app`. This is a unique opportunity to engage with the security aspects of real-world applications in a controlled environment.
+Join us for the first-ever Hush Line Hackathon, a hands-on event where we challenge you to test the security of our application, `hack.ourdemo.app`. This is a unique opportunity to engage with the security aspects of real-world applications in a controlled environment. 
+
+## Goals
+
+- **Hack**: Break it, break-in, exfiltrate, disrupt, take over.
+- **Fix**: Breaking is fun, but fixing is better. See a hole? Patch it.
+- **Build**: Want to help build the app? Help close our open Issues!
 
 ## Date
 Weekend of 05 May 2024, All Day (Tentative)
