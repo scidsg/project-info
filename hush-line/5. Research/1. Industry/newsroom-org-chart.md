@@ -1,8 +1,9 @@
+```
                                                          Editor-In-Chief
                                                                 │
                  ┌──────────────────────────────────────────────┴──────────────────────────────────────────┐
                  │                                              │                                          │
-          Managing Editor                            Digital Content Manager                      Technology Director <-Buyer?
+          Managing Editor                            Digital Content Manager                      Technology Director < Buyer?
                  │                                              │                                          │
      ┌───────────┴───────────┐                       ┌──────────┴──────────┐                    ┌──────────┴──────────┐
      │                       │                       │                     │                    │                     │
@@ -15,3 +16,4 @@ Copy Editor           Features Editor          Web Editor      Social Media Edit
             Staff Writer           Freelancer                                                               Help Desk Technician
                  │                                                                                         
               Intern                                                                            
+```
