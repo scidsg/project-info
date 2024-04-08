@@ -13,7 +13,7 @@
 Copy Editor            Section Editor          Web Editor        Social Media Editor                   Database Admin
                              │                       │                     │                                  │ 
                          Columnist            Video Producer       Content Moderator                  Technical Support
-                             │                                                                                 │
+                             │                                                                                │
                          Freelancer                                                                  Help Desk Technician
                              |                                                                            
                         Staff Writer                                                                          
