@@ -17,6 +17,4 @@ Copy Editor            Section Editor          Web Editor        Social Media Ed
                          Freelancer                                                                  Help Desk Technician
                              |                                                                            
                         Staff Writer                                                                          
-                             │                                                                                         
-                          Intern                                                                            
 ```
