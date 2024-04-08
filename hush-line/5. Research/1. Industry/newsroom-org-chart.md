@@ -2,9 +2,9 @@
                                                                             CEO/President
                                                                                   │
                                           ┌───────────────────────────────────────┴──────────────────────────────────────┐
-                                  Editor-In-Chief                                                                  CTO < Approver
+                                  Editor-In-Chief                                                                       CTO < Approver
                                           │                                                                              │
-                 ┌────────────────────────┴─────────────────────┐                                          Technology Director < Buyer
+                 ┌────────────────────────┴─────────────────────┐                                             Technology Director < Buyer
                  │                                              │                                                        │
           Managing Editor                            Digital Content Manager                                  ┌──────────┴──────────┐
                  │                                              │                                             │                     │
