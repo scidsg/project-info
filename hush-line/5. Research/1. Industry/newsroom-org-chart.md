@@ -10,7 +10,7 @@
                                             ┌───────────────────────────────────────┴────────────────────────────────────────┐
                                     Editor-In-Chief < Approver                                                              CTO < Approver
                                             │                                                                                │
-                 ┌──────────────────────────┴────────────────────────────┐                                             Technology Director < Buyer
+                 ┌──────────────────────────┴────────────────────────────┐                                         Technology Director < Buyer
                  │                                                       │                                                   │
           Managing Editor < Buyer                             Digital Content Manager                             ┌──────────┴──────────┐
                  │                                                       │                                        │                     │
@@ -18,7 +18,7 @@
      │                       │                                │                     │                             │
 Copy Editor             Section Editor < Advocate         Web Editor        Social Media Editor             Database Admin
                              │                                │                     │                             │ 
-                         Columnist                    Video Producer       Content Moderator              Technical Support
+                         Columnist                     Video Producer        Content Moderator            Technical Support
                              │                                                                                    │
                          Freelancer                                                                      Help Desk Technician
                              |                                                                            
