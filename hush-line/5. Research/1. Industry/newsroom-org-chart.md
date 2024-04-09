@@ -26,13 +26,14 @@ Copy Editor             Section Editor < Advocate         Web Editor        Soci
 ```
 
 ## Budgets
-
 - Editorial and Tech have separate budgets.
   - Money might still flow from the tech side.
 - Hush Line could come from either.
-- Budgets are tight, and maintaining systems is time-consuming.
 
 ## Current Tip Line Tech
-
 - Single phone running Signal
 - SecureDrop
+
+## Pain Points
+- Budgets are tight. 
+- Maintaining systems is time-consuming. 
