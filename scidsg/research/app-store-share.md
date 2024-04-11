@@ -1,4 +1,4 @@
-# App Store Share
+# Android App Store Share
 
 | App Store          | Market Share | Notes                                |
 |--------------------|--------------|--------------------------------------|
