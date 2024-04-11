@@ -1,4 +1,5 @@
 # Android App Store Share
+As of July 2021
 
 | App Store          | Market Share | Approximate Number of Phones Installed |
 |--------------------|--------------|----------------------------------------|
