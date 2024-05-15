@@ -6,6 +6,10 @@
 
 Hush Line is a free and open-source, self-hosted anonymous tip line that makes it easy for organizations or individuals to install and use. It's intended for journalists and newsrooms to offer a public tip line; by educators and school administrators to provide students with a safe way to report potentially sensitive information, or employers, Board rooms, and C-suites for anonymous employee reporting. 
 
+### Hush Line In The News
+
+- [What is the Dark Web? - Tech Republic](https://www.techrepublic.com/resource-library/downloads/what-is-the-dark-web/)
+
 ## Service Model
 
 <img src="https://raw.githubusercontent.com/scidsg/project-info/main/hush-line/2.%20Design/model.png" width="80%">
@@ -119,21 +123,21 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 - Jayakrishnan, H., & Murali, R. [A simple and robust end-to-end encryption architecture for anonymous and secure whistleblowing](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20A%20Simple%20and%20Robust%20End-to-End%20Encryption%20Architecture%20for%20Anonymous%20and%20Secure%20Whistleblowing.pdf). Department of Computer Science and Engineering, Amrita School of Engineering, Coimbatore, Amrita Vishwa Vidyapeetham, India.
 - Ahmed-Rengers, M., Vasile, D. A., Hugenroth, D., Beresford, A. R., & Anderson, R. [CoverDrop: Blowing the whistle through a news app](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20CoverDrop%20-%20Blowing%20the%20Whistle%20Through%20A%20News%20App.pdf). Department of Computer Science and Technology, University of Cambridge.
 
-## News
+### Whistleblower News
 
-### 2024
+#### 2024
 - [ Whistleblower Josh Dean of Boeing supplier Spirit AeroSystems has died ](https://www.seattletimes.com/business/whistleblower-josh-dean-of-boeing-supplier-spirit-aerosystems-has-died/)
 - [ Boeing Whistleblower Who Raised Quality Concerns Is Found Dead](https://www.nytimes.com/2024/03/12/business/john-barnett-boeing-whistleblower-dead.html)
 
-### 2019
+#### 2019
 
 - [From protégée to whistleblower: A former Theranos scientist says Elizabeth Holmes should ‘come forward and apologize’](https://www.statnews.com/2019/05/01/from-protegee-to-whistleblower-a-former-theranos-scientist-says-elizabeth-holmes-should-come-forward-and-apologize/)
 
-### 2013
+#### 2013
 
 - [Defiant Russia Grants Snowden Year’s Asylum](https://www.nytimes.com/2013/08/02/world/europe/edward-snowden-russia.html)
 
-### Adjacent Research
+#### Adjacent Research
 
 - [CryptDB](https://people.csail.mit.edu/nickolai/papers/raluca-cryptdb.pdf)
 - [DEFY](https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_5_1.pdf)
