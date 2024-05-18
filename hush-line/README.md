@@ -1,7 +1,5 @@
 # **🤫 Hush Line Project Info**
 
-[Read the (in-progress) whitepaper](https://github.com/scidsg/project-info/blob/main/hush-line/whitepaper-draft.md)
-
 ## Info
 
 Hush Line is a free and open-source, self-hosted anonymous tip line that makes it easy for organizations or individuals to install and use. It's intended for journalists and newsrooms to offer a public tip line; by educators and school administrators to provide students with a safe way to report potentially sensitive information, or employers, Board rooms, and C-suites for anonymous employee reporting. 
@@ -11,19 +9,18 @@ Hush Line is a free and open-source, self-hosted anonymous tip line that makes i
 - [What is the Dark Web? - Tech Republic](https://www.techrepublic.com/resource-library/downloads/what-is-the-dark-web/)
 - [Whistleblowing - The Hidden Wiki](http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php/Main_Page)
 
-## Service Model
-
-<img src="https://raw.githubusercontent.com/scidsg/project-info/main/hush-line/2.%20Design/model.png" width="80%">
-
 ### Links
 
-- [Overview Deck](https://docs.google.com/presentation/d/1XLdqN527118WWlS2Idof2wI3ZuxqDg7Vd2CDmxSFKk4/edit?usp=sharing)
-- [Website](https://hushline.app/)
-- [Demo App](https://try.hushline.app/)
-- [Documentation](https://scidsg.github.io/hushline-docs/book/intro.html)
-- [Git Repo](https://github.com/scidsg/hush-line)
-- [Donations](https://opencollective.com/scidsg/contribute/hush-line-support-55786)
-- [Figma](https://www.figma.com/file/0IlWj8IwEgRg8vP1XEdjO2/Hush-Line?type=design&node-id=502%3A673&mode=design&t=Ni2HtEiQcrECy8CC-1)
+| Item | Link |
+|-|-|
+| Beta App | https://beta.hushline.app/ |
+| Documentation | https://scidsg.github.io/hushline-docs/book/intro.html |
+| Donations | https://opencollective.com/scidsg/contribute/hush-line-support-55786 |
+| Figma | https://www.figma.com/file/0IlWj8IwEgRg8vP1XEdjO2/Hush-Line?type=design&node-id=502%3A673&mode=design&t=Ni2HtEiQcrECy8CC-1 |
+| Git Repo | https://github.com/scidsg/hush-line |
+| Overview Deck | https://docs.google.com/presentation/d/1XLdqN527118WWlS2Idof2wI3ZuxqDg7Vd2CDmxSFKk4/edit?usp=sharing |
+| Website | https://hushline.app/ |
+
 
 ## Team
 
