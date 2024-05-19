@@ -10,8 +10,9 @@ Hush Line is a free and open-source, self-hosted anonymous tip line that makes i
 |-|-|-|-|
 | Hush Line | AlternativeTo | https://alternativeto.net/software/hush-line/about/ | Current |
 | Whistleblowing Section | The Hidden Wiki | http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php/Main_Page | Current |
-|  Hacker & guest: Science & DESIGN + Security4Good Check in | CryptoHarlem | https://www.youtube.com/watch?v=NV5gA0AgLuY | March 30, 2024 |
 | What is the Dark Web? | Tech Republic | https://www.techrepublic.com/resource-library/downloads/what-is-the-dark-web/ | May 13, 2024 |
+| Hacker & guest: Science & DESIGN + Security4Good Check in | CryptoHarlem | https://www.youtube.com/watch?v=NV5gA0AgLuY | March 30, 2024 |
+| Hush Line, an open-source tip line for journalists, activists and businesses | Hacker News | https://news.ycombinator.com/item?id=39601338 | March, 2024 |
 
 ### Links
 
