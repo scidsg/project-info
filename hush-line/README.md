@@ -85,17 +85,17 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 
 ℹ️ Information listed here may be inaccurate. Please open an issue or create a PR to request a correction.
 
-| Product | Type | Open-Source | E2EE | Onion Service | HTTPS | Verification System | Free | Non-Profit | Security Audit |
-|-|-|-|-|-|-|-|-|-|-|
-| [AfricLeaks](http://f3mryj3e2uw2zrv3zv6up6maqosgzn27frz7xodvpl7pkestoyigtkad.onion/#/) | Self-Hosted (Globaleaks Instance) | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ |
-| [CaseIQ](https://www.caseiq.com/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
-| [Castillo](https://www.projectcallisto.org/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
-| [Confide](https://getconfide.com/) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
+| Product | Type | Open-Source | E2EE | Onion Service | HTTPS | Verification System | Free | Non-Profit | Security Audit | User Directory |
+|-|-|-|-|-|-|-|-|-|-|-|
+| [AfricLeaks](http://f3mryj3e2uw2zrv3zv6up6maqosgzn27frz7xodvpl7pkestoyigtkad.onion/#/) | Self-Hosted (Globaleaks Instance) | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ |
+| [CaseIQ](https://www.caseiq.com/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
+| [Castillo](https://www.projectcallisto.org/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
+| [Confide](https://getconfide.com/) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [FaceUp](https://www.faceup.com/en) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ✅ |
-| [GlobaLeaks](https://www.globaleaks.org/) | Self-Hosted | ✅ | ✅ | ✅ | Optional | ⛔️ | ✅ | ⛔️ | ✅ |
-| [Hush Line](http://hushline.app) | Managed, Self-Hosted, Hardware | ✅ | Optional | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [Say Something](https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ? | ⛔️ | ✅ |
-| [SecureDrop](https://securedrop.org/) | Self-Hosted | ✅ | ⛔️ | ✅ | Tor-Only | ⛔️ | ✅ | ✅ | ✅ |
+| [GlobaLeaks](https://www.globaleaks.org/) | Self-Hosted | ✅ | ✅ | ✅ | Optional | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ |
+| [Hush Line](http://hushline.app) | Managed, Self-Hosted, Hardware | ✅ | Optional | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [Say Something](https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ? | ⛔️ | ✅ | ⛔️ |
+| [SecureDrop](https://securedrop.org/) | Self-Hosted | ✅ | ⛔️ | ✅ | Tor-Only | ⛔️ | ✅ | ✅ | ✅ | ✅ |
 
 ## Research
 
