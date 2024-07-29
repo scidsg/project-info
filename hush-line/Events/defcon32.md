@@ -1,4 +1,4 @@
-# Personal Server DEF CON 32 Giveaway
+# Hush Line Personal Server DEF CON 32 Giveaway
 
 We’re giving away a Personal Server at DEF CON 32 this year! The device is valued at $500, and hosts a Tor-only copy of the Hush Line whistleblowing platform on-device. The Personal Server hardware comes in a custom designed, milled A606 case, with an epaper display. SSH and USB are disabled, and every device is sealed with two uniquely numbered tamper evident tags, guarding against physical access. 
 
