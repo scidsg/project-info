@@ -3,10 +3,10 @@ title: "Hush Line: A Flexible and Monetizable Whistleblowing Platform For All Th
 subtitle: "A Free and Open-Source Tip Line Product Suite That Meets Users Where They Are"
 author:
   - Glenn Sorrentino
-date: "2024-07-12"
+date: "2024-08-01"
 abstract: |
-  A whistleblower is an insider to an organization who exposes evidence of wrongdoing to authorities or the press with the intention of reforming it [1]. Not just an activity for exposing National Security secrets, whistleblowing can help make schools safer, businesses more compliant and ethical, and journalists more informed.
-  
+  A whistleblower is an insider to an organization who exposes evidence of wrongdoing to authorities or the press with the intention of reforming it [1]. Not just an activity for exposing National Security secrets, whistleblowing can help make schools safer, businesses more compliant and ethical, and journalists more informed. 
+
   Disclosing secrets is vitally important and simultaneously one of the most dangerous things an individual can do, especially in the context of government and national security secrets. People who leak information often go into it without a plan, leading to exile, imprisonment, and even death. To protect against the discovery of someone leaking documents, many tools available today offer Tor-only solutions – meaning the tools they use to upload documents are only accessible through special software providing anonymizing connections to the internet. While an essential piece of the puzzle, requiring someone to download software that could make them look suspicious as the only way to share information is a non-starter, especially for people in countries where internet freedoms are restricted.
 
   But what about the students who need to have a safe way to report information to educators about school safety, teacher misconduct, or struggles at home? Or the businesses that need methods for employees to report information that could lead to legal liabilities, including SEC violations or other lawsuits, without risking their careers and livelihoods? Or journalists who need an easy and safe way to receive information without requiring the public to learn a new esoteric technology?
@@ -67,8 +67,53 @@ Up to 90% of women in the restaurant industry experience sexual assault or haras
 
 Conversely, businesses can incur substantial penalties for SEC violations or other offenses that could have been caught sooner. In 2023, global tech company AAB Ltd. agreed to pay a $75 million civil penalty for charges relating to bribery. Goldman Sachs paid a $6 million civil penalty for a decade of fraudulent behavior where they made more than 22,000 deficient financial transactions [9].
 
+### 2.2 The Price of Whistleblowing
 
-### 2.2 Security Goals and Principles
+Whistleblowing is risky endeavor. The examples below are included to illustrate that tools alone are never enough. We'll see stories highlighting different avenues individuals have taken and their outcomes.
+
+#### 2.2.1 Edward Snowden
+
+##### Who They Are & What They Did
+
+One of the most influential whistleblowers of the last decades is Edward Snowden. He leaked a cache of documents he collected about NSA mass surveillance to journalists. His whistleblowing led to legislative reform in the USA, increased public awareness about whistleblowing and mass surveillance operations in America, and inspired the creation of new products designed to allow safer sharing of information for whistleblowers, including Signal, OnionShare, and even Hush Line.
+
+##### What Went Wrong
+
+Snowden, easily one of the more technical whistleblowers of recent memory, was familiar with Tor and used Tails [10], an operating system that deletes all data when it shuts down, and whose traffic is completely tunneled through the Tor Network. Yet when he needed to securely contact journalists, he found the journalists lacked the technical ability to correctly setting up encrypted communications. Snowden couldn't find journalist Glenn Greenwald's public PGP key, and even when Greenwald did get it configured with the help of Micah Lee [11], Snowden forgot to attach his own key in a message so Greenwald could privately respond. Snowden understood how the system worked and which technologies were resistant to surveillance, yet despite all of his knowledge, he is now exiled in Russia [12].
+
+#### 2.2.2 Chelsea Manning
+
+##### Who They Are & What They Did
+
+Chelsea Manning is a former Army private who, working with Julian Assange of WikiLeaks, leaked information that included evidence of war crimes committed by the US [13]. 
+
+##### What Went Wrong
+
+While Chelsea had technical skills, she was living in the chaos of war, and was eventually caught because she shared information in an online chat with Adrian Lamo, a former hacker turned government informant, who reported the information to the FBI, which included evidence of Manning’s crimes. Chelsea Manning spent seven years in prison before President Obama pardoned her in 2017 [14].
+
+#### 2.2.3 Andrew Aude
+
+##### Who They Are & What They Did
+
+Andrew Aude [15] is a former Apple software engineer who shared confidential information to a journalist over the course of years using Signal on his work-issued device. Messages included trade secrets, financial information, and details about product roadmaps and launch dates. 
+
+##### What Went Wrong
+
+Despite his technical proficiency - passing the impressive standard of Apple employment - and using Signal, he was caught. Though the encryption was strong, and even if he were using an anonymizing VPN or Tor, his error was using a device issued by his employer.
+
+Mobile device management (MDM) software allows your employer to provision and manage hardware devices like mobile phones, tablets, or computers. Especially for a company like Apple, which employs ~164,000 people, MDM software enables your employer, for example, to make sure proprietary apps for employee resources like HR or Legal are available to everyone immediately or apply consistent and timely security updates or make sure everyone's VPN credentials are correctly configured without hoping that hundreds of thousands of employees to get it right on their own. MDM software can also take screenshots or live-monitor any device in its network. So despite doing a lot of things right, if your adversary can take a screenshot of your conversation, it doesn't matter what app or tech you use to protect your data.
+
+#### 2.2.4 John Barnett
+
+##### Who They Are & What They Did
+
+John Barnett was a Boeing whistleblower and former quality manager who disclosed safety concerns using official governmental channels with the 787s being made in his factory [16]. He filed an official complaint with the US Labor Department under an official whistleblower protection program [16]. He'd eventually bring a lawsuit against the company for the retaliation he experienced after sharing information with the Labor Department.
+
+##### What Went Wrong
+
+John Barnett was at no time anonymous in his reporting and disclosing safety concerns about the Boeing 787. He ultimately experienced retaliation from Boeing because of this information sharing, and filed a lawsuit against them. It was during this period of engaging in a public lawsuit with Boeing, with no anonymity, that he was found dead from a self-inflicted gunshot [16].
+
+### 2.3 Security Goals and Principles
 Through speaking to former whistleblowers, journalists, and lawyers, and by reading academic papers published worldwide, we arrived at a set of guiding goals and principles:
 
 **P1: Usability.** No matter how technically advanced your software is, adoption will fail if a whistleblower can't use it.
@@ -83,7 +128,7 @@ Through speaking to former whistleblowers, journalists, and lawyers, and by read
 
 **P6: Confidentiality.** Messages must remain secret. Communication between whistleblowers and other parties is protected and not the business of the software makers.
 
-### 2.3 Current Tools
+### 2.4 Current Tools
 
 To better understand why a tool like Hush Line is necessary, we should consider two things: 1. the needs of the whistleblower, and 2. the tools currently available (Table 1). In this paper, we'll focus on three leading tools that provide examples of managed services, self-hosted options, and on-prem solutions : Signal, GlobaLeaks, and Secure Drop.
 
@@ -91,80 +136,64 @@ _**Legend:** M: Managed Service, S: Self-Hosted, H: Hardware, P: On-Prem Only_
 
 | Product | Type | Open-Source | E2EE | Onion Service | Verification System | Free | Non-Profit | User Directory |
 |-|-|-|-|-|-|-|-|-|
-| **Afri-LEAKS** [10] | S (Globa-Leaks Instance) | Y | Y | Y | N | Y | N | Y |
-| **CaseIQ** [11] | M | N | N | N | N | N | N | N |
-| **Castillo** [12] | M| N | N | N | N | N | N | N |
-| **Confide** [13] | M| N | Y | N | N | N | N | N |
-| **FaceUp** [14] | M| N | Y | Y | N | N | Y |
-| **Globa-Leaks** [15] | S | Y | Y | Y | N | Y | N | N |
-| **Hush Line** [16] | M, S, H, P | Y | Y | Y| Y | Y | Y | Y |
-| **Say Something** [17] | M | N | N | N | N | ? | N | N |
-| **Secure-Drop** [18] | P | Y | N | Y | N | Y | Y | Y |
-| **Signal** [19] | M | Y | Y | N | N | Y | Y | N |
+| **Afri-LEAKS** [17] | S (Globa-Leaks Instance) | Y | Y | Y | N | Y | N | Y |
+| **CaseIQ** [18] | M | N | N | N | N | N | N | N |
+| **Castillo** [19] | M| N | Y | N | N | N | N | N |
+| **Confide** [20] | M| N | Y | N | N | N | N | N |
+| **FaceUp** [21] | M| N | Y | Y | N | N | Y |
+| **Globa-Leaks** [22] | S | Y | Y | Y | N | Y | N | N |
+| **Hush Line** [23] | M, S, H, P | Y | Y | Y| Y | Y | Y | Y |
+| **Say Something** [24] | M | N | N | N | N | ? | N | N |
+| **Secure-Drop** [25] | P | Y | N | Y | N | Y | Y | Y |
+| **Signal** [26] | M | Y | Y | N | N | Y | Y | N |
 
 **Table 1.** A view of different whistleblowing platforms on the market today.
 
-#### 2.3.1 Secure Drop
+#### 2.4.1 Secure Drop
 
-**What It Does**
+##### What It Does
 
-SecureDrop [18] is a tool maintained by the Freedom of the Press Foundation [20], a 501(c)(3) focusing on defending journalism around the world. Created originally by Aaron Swartz and then inherited by FPF, it is a self-hosted system consisting of different servers for receiving, viewing, and handling files on dedicated network connections and air-gapped devices. Customers are responsible for finding and purchasing compatible hardware.
+SecureDrop [25] is a tool maintained by the Freedom of the Press Foundation [27], a 501(c)(3) focusing on defending journalism around the world. Created originally by Aaron Swartz and then inherited by FPF, it is a self-hosted system consisting of different servers for receiving, viewing, and handling files on dedicated network connections and air-gapped devices. Customers are responsible for finding and purchasing compatible hardware.
 
-To help simplify their approach, a new product called the Secure Drop Workstation is being developed and built on top of Qubes OS, a new security-focused desktop operating system [21]. The software provides functionality that, in effect, compartmentalizes all of that physical infrastructure on a single computer. The Workstation swaps servers with virtual machines serving similar purposes. While more streamlined, Qubes OS is only compatible with limited hardware, which customers must also find and purchase.
+To help simplify their approach, a new product called the Secure Drop Workstation is being developed and built on top of Qubes OS, a new security-focused desktop operating system [28]. The software provides functionality that, in effect, compartmentalizes all of that physical infrastructure on a single computer. The Workstation swaps servers with virtual machines serving similar purposes. While more streamlined, Qubes OS is only compatible with limited hardware, which customers must also find and purchase.
 
-**Limitations**
+##### Limitations
 
-A whistleblower who uses Secure Drop faces a few obstacles. First, it is a Tor-only solution, which presents significant risks to anyone in countries where the internet is surveilled and free speech is limited. Recently, activists have even been arrested for having Tor on their mobile devices, as with Ola Bini in Ecuador. 
+A whistleblower who uses Secure Drop faces a few obstacles. First, it is a Tor-only solution, which presents significant risks to anyone in countries where the internet is surveilled and free speech is limited. Recently, activists have even been arrested for having Tor on their mobile devices, as with Ola Bini in Ecuador.
 
-#### 2.3.2 Signal
+#### 2.4.2 Signal
 
-**What It Does**
+##### What It Does
 
-Signal [19] is considered a gold standard for secure communication. We use it internally at Science & Design for team collaboration and trust it to keep confidential messages safe. Signal is a messaging app available primarily as a native mobile application for iOS and Android, just like WhatsApp. Desktop apps exist, but they require pairing with a registered phone. Signal is one of the few open-source apps, aside from Firefox and Tor, that have penetrated the public consciousness. They even worked with WhatsApp to integrate their encryption protocol, instantly providing strong encryption for billions of people globally. Signal is a tool many on the Hush Line team have contributed to.
+Signal [26] is considered a gold standard for secure communication. We use it internally at Science & Design for team collaboration and trust it to keep confidential messages safe. Signal is a messaging app available primarily as a native mobile application for iOS and Android, just like WhatsApp. Desktop apps exist, but they require pairing with a registered phone. Signal is one of the few open-source apps, aside from Firefox and Tor, that have penetrated the public consciousness. Signal collaborated with WhatsApp to integrate Signal’s encryption protocol into WhatsApp, instantly providing strong encryption for billions of WhatsApp users globally. Signal is a tool many on the Hush Line team have contributed to.
 
-**Limitations**
+##### Limitations
 
 However, the problem arises with the lack of anonymity because in order to use the Signal app, one must download it from an app store like Apple's App Store or Google's Play Store. To do this, users must create an account using PII, leaking their identities to at least one party in the exchange. It's commonplace for these companies to comply with requests from law enforcement, both foreign and domestic. Then, to register an account, a user needs a cell phone number. Acquiring a cell phone requires more PII, this time with your ID likely scanned for know your customer (KYC) regulatory requirements, another scenario where the company must comply with law enforcement requests for customer information. Now, at least two parties know who you are. While advanced workarounds exist to approximate anonymity, they are not doable for non-technical users or individuals without extensive programming skills, ultimately rendering anonymity impossible for the broader general public.
 
-#### 2.3.3 GlobaLeaks
+#### 2.4.3 GlobaLeaks
 
-**What It Does**
+##### What It Does
 
-GlobaLeaks [15] is a project out of Italy and is a self-hosted platform that's easy to install and use. It allows a developer to set it up on standard hardware and provides a rich and customizable platform for creating forms that meet your needs. GlobaLeaks, because of its relative ease of installation, is one of the most ubiquitous tip lines used by organizations worldwide today. There are forks, or, copies and modifications of the code, like AfriLeaks that host more instances of GlobaLeaks for other news organizations.
+GlobaLeaks [22] is a project out of Italy and is a self-hosted platform that's easy to install and use. It allows a developer to set it up on standard hardware and provides a rich and customizable platform for creating forms that meet your needs. GlobaLeaks, because of its relative ease of installation, is one of the most ubiquitous tip lines used by organizations worldwide today. There are forks, or, copies and modifications of the code, like AfriLeaks that host more instances of GlobaLeaks for other news organizations.
 
-**Limitations**
+##### Limitations
 
 While easier than Secure Drop, GlobaLeaks still requires a developer and hosting your own infrastructure, making it less likely to be understood or used by the general public or individuals who do not have developer specialty knowledge. While the platform installs relatively simply, HTTPS is not available by default, and additional work must be done to deploy it to your domain name. Some users have reported issues about the platform's usability, while others suffer downtime from misconfigurations.
 
-#### 2.3.4 Other Tools
+#### 2.4.4 Other Tools
 
-Other tools in Table 1 include both closed-source and for-profit options. We believe that a tool catering to higher-risk use cases must be open-source and verifiable so that the public can trust the software to protect them to the best of its ability. One noteworthy closed-source option is Say Something [16], a tip line from the survivors of the Sandy Hook massacre focused on school safety and gun violence.
-
-### 2.4 Former Whistleblowers
-
-#### 2.4.1 Edward Snowden
-
-One of the most influential whistleblowers of the last decades is Edward Snowden. He leaked a cache of documents he collected about NSA mass surveillance to journalists. His whistleblowing led to legislative reform in the USA, increased public awareness about whistleblowing and mass surveillance operations in America, and inspired the creation of new products designed to allow safer sharing of information for whistleblowers, including Signal, OnionShare, and even Hush Line.
-
-Snowden, easily one of the more technical whistleblowers of recent memory, was familiar with Tor and used Tails [22], an operating system that deletes all data when it shuts down, and whose traffic is completely tunneled through the Tor Network. Yet when he needed to securely contact journalists, he found the journalists lacked the technical ability to correctly setting up encrypted communications. Snowden couldn't find journalist Glenn Greenwald's public PGP key, and even when Greenwald did get it configured with the help of Micah Lee [23], Snowden forgot to attach his own key in a message so Greenwald could privately respond. Snowden understood how the system worked and which technologies were resistant to surveillance, yet despite all of his knowledge, he is now exiled in Russia [24].
-
-#### 2.4.2 Chelsea Manning
-
-Chelsea Manning is a former Army private who, working with Julian Assange of WikiLeaks, leaked information that included evidence of war crimes committed by the US [25]. While Chelsea had technical skills, she was living in the chaos of war, and was eventually caught because she shared information in an online chat with Adrian Lamo, a former hacker turned government informant, who reported the information, which included evidence of Manning’s crimes. Chelsea Manning spent seven years in prison before President Obama pardoned her in 2017 [26].
-
-#### 2.4.3 Andrew Aude
-
-Andrew Aude [27] is a former Apple software engineer who shared confidential information to a journalist over the course of years using Signal on his work-issued device. Messages included trade secrets, financial information, and details about product roadmaps and launch dates. Despite his techincal proficiency - passing the impressive standard of Apple employment - and using Signal, he was caught. Though the encryption was strong, and even if he were using an anonymizing VPN or Tor, his error was using a device issued by his employer. 
-
-Mobile device management (MDM) software allows your employer to provision and manage hardware devices like mobile phones, tablets, or computers. Especially for a company like Apple, which employs ~164,000 people, MDM software enables your employer, for example, to make sure proprietary apps for employee resources like HR or Legal are available to everyone immediately or apply consistent and timely security updates or make sure everyone's VPN credentials are correctly configured without hoping that hundreds of thousands of employees to get it right on their own. MDM software can also take screenshots or live-monitor any device in its network. So despite doing a lot of things right, if your adversary can take a screenshot of your conversation, it doesn't matter what app or tech you use to protect your data.
-
-#### 2.4.4 John Barnett
-
-John Barnett was a Boeing whistleblower and former quality manager who disclosed safety concerns with the 787s being made in his factory. He filed an official complaint with the US Labor Department under an official whistleblower protection program. He'd eventually bring a lawsuit against the company for the retaliation he experienced after sharing information. It was during this period that he was found dead from a self-inflicted gunshot [28].
+Other tools in Table 1 include both closed-source and for-profit options. We believe that a tool catering to higher-risk use cases must be open-source and verifiable so that the public can trust the software to protect them to the best of its ability. One noteworthy closed-source option is Say Something [24], a tip line from the survivors of the Sandy Hook massacre focused on school safety and gun violence.
 
 ## 3. Threat Model
 
-Hush Line is unique in tip line products as the only managed service that is free and open-source. Where other models distribute the risk to the individual customer, we are a centralized service, offering some liberties and other constraints. We can allow anyone to create an account, but we're also open to attacks online. There are ~70 Secure Drop instances worldwide, but only one instance of Hush Line, managed by Science & Design. It allows us to have more users - at the end of the beta period, we had >10x more than all active instances of Secure Drop - but it also means we have to worry about traffic, bad actors, and paying for and maintaining the app infrastructure.
+### 3.1 What’s Different About Hushline
+
+Hush Line is unique in whistleblower products, as the only managed service that is free and open-source. Where other models distribute the risk to the individual customer, we are a centralized service, offering some liberties and other constraints: we can allow anyone to create an account, but consistent with other tip line / whistleblower platforms,  we're also open to attacks online like denial of service or hacking attempts.
+
+### 3.2 Challenges With Scale and Centralization
+
+Because of SecureDrop’s decentralized nature - meaning there isn’t one central server running all of the instances - an attack on one server is not an attack on all. Though that means that when there is an attack on three to thirty servers, there are three to thirty servers to defend, maintain, and fix. More directly, there are ~70 Secure Drop instances worldwide, but only one instance of Hush Line, managed by Science & Design. Among other benefits of centralizing our services, it allows us to have more users; at the end of the beta period we had >10x more than all active instances of Secure Drop. Other things Hush Line needs to consider are traffic, bad actors, and paying for and maintaining the app’s infrastructure.
 
 ### 3.1 Users
 
@@ -232,42 +261,27 @@ The following assumptions are accepted in the threat model of the Hush Line prod
 - The level of press freedom may vary in both geography and time.
 - The number of daily Tor users in a country can greatly vary.
 
-### 3.4 Threats and Mitigations
+### 3.4 Threats, Failure Points, Impacts and Mitigations
 
-#### 3.4.1 Server Compromise
+#### 3.4.1 Threat: Server Compromise
 
 - **Impacts:** If an attacker obtains the database encryption key, its contents may be decrypted. Still, we do not require PII. If you have SMTP delivery configured, your forwarding address will be visible. If you haven't added your own public PGP key to your account, message content will be visible.
-- **Mitigation:** Hush Line does not require PII, including an email address, to use the service. To protect message content, users are encouraged to add their own PGP key. We store data encrypted in our database, remove IP addresses and country codes from access logs, and do not store timestamps or associate member data in any way. The database key is never hardcoded and is stored in environment variables, removing the chance of exposure to the source code.
+- **Mitigation:** Hush Line does not require PII, including an email address, to use the service. To protect message content, users are encouraged to add their own PGP key. We store data encrypted in our database, and do not store timestamps or associate member data in any way. The database key is never hardcoded, is isolated from both app and database environments, and is stored in Terraform platform environment variables, removing the chance of exposure to the source code.
 
-#### 3.4.2 Network Observers
+#### 3.4.2 Threat: Network Observers
 
 - **Impacts:** Adversaries who monitor network connections to our server can see your IP address and the domain you're visiting.
 - **Mitigation:** All data in transit is encrypted using TLS, and users are encouraged to access Hush Line via Tor for additional anonymity. This prevents network observers from deciphering the content or metadata of communications.
 
-#### 3.4.3 Account Compromise
+#### 3.4.3 Threat: Account Compromise
 
 - **Impacts:** Disruption of Hush Line usage, impersonation which could lead to reputational harm or other damages.
 - **Mitigation:** Strong password policies, optional 2FA, and secure password reset mechanisms are in place to protect user accounts. Users are educated on best practices for maintaining account security.
 
-#### 3.4.4 Legal and Coercive Pressure
+#### 3.4.4 Threat: Legal and Coercive Pressure
 
 - **Impacts:** Science & Design, Inc. and Hush Line must comply with legitimate legal requests, which could result in the forfeiture of data that includes your username, SMTP information, public PGP key, or other information you provide to Hush Line. No PII is required to use the Hush Line service, but if you've donated to our Open Collective or purchased anything from our Shopify store, potentially identifying information, including your shipping and billing address, name, email address, and IP address, could be tied back to you with sufficient analysis.
 - **Mitigation:** Hush Line is designed to hold minimal information that could be of interest in legal contexts.
-
-#### 3.4.5 Verification System
-
-Hush Line employs a verification system to ensure that users can trust the source of communication. This system is particularly important for users who are public figures or have a wide audience. The verification system includes:
-
-- **Display of Verification Status:** Hush Line indicates verified accounts with a distinctive **Verified** badge. This visual indicator helps users distinguish authentic accounts from potential impersonators, reducing the risk of phishing attacks.
-- **Data Retention:** The information used to verify you is never saved, even temporarily.
-
-#### 3.4.6 User Education
-
-- **Encryption Indicators:** The platform informs users whether their messages will be encrypted. For accounts with a public PGP key, messages are encrypted, ensuring that only the intended recipient can decrypt and read them. This feature is highlighted through messages on the submission form, emphasizing the importance of encryption for sensitive information.
-
-#### 3.4.7 User Guidance
-
-- **Informative Messages for Senders and Receivers:** Hush Line educates its users about the significance of encryption and the steps required to ensure message confidentiality. This includes prompts for receivers to add a public PGP key if they haven't already, and notifications for senders about the encryption status of their message.
 
 ### 3.5 Failure Points
 
@@ -284,6 +298,23 @@ Since your email client will try to load the image from the attacker-controlled 
 
 #### 3.5.3 Compromised Infrastructure
 Hush Line uses cloud providers to manage our application and database. Our distributed approach increases security by isolating our database from the application environment and limiting access. But with this convenience comes the risk of our providers receiving a gag order and being forced to install monitoring software, lest they want to face prison or time-consuming legal proceedings.
+
+### 3.6 Hush Line's Additional Protections
+
+#### 3.6.1 Verification System
+
+Hush Line employs a verification system to ensure that users can trust the source of communication. This system is particularly important for users who are public figures or have a wide audience. The verification system includes:
+
+- **Display of Verification Status:** Hush Line indicates verified accounts with a distinctive **Verified** badge. This visual indicator helps users distinguish authentic accounts from potential impersonators, reducing the risk of phishing attacks.
+- **Data Retention:** The information used to verify you is never saved, even temporarily.
+
+#### 3.6.2 User Education
+
+- **Encryption Indicators:** The platform informs users whether their messages will be encrypted. For accounts with a public PGP key, messages are encrypted, ensuring that only the intended recipient can decrypt and read them. This feature is highlighted through messages on the submission form, emphasizing the importance of encryption for sensitive information.
+
+#### 3.6.3 User Guidance
+
+- **Informative Messages for Senders and Receivers:** Hush Line educates its users about the significance of encryption and the steps required to ensure message confidentiality. This includes prompts for receivers to add a public PGP key if they haven't already, and notifications for senders about the encryption status of their message.
 
 ## 4. Hush Line Overview
 
@@ -303,7 +334,7 @@ Hush Line uses cloud providers to manage our application and database. Our distr
 
 We built Hush Line as a managed service designed for high availability, usability, and security. While Hush Line is intended for users to create an account on `hushline.app`, we encourage people and organizations to self-host if they prefer. For consistent implementation, we provide full documentation on getting it started for your organization.
 
-![Hush Line System Architecture](https://gist.github.com/user-attachments/assets/cd24225b-bce5-4ec5-bc7b-39c5cd7ad61f)
+![Architecture](https://github.com/user-attachments/assets/2e174303-b5fe-4d62-9f88-2582c08c81de)
 **Diagram 1.** Hush Line System Architecture
 
 We use a combination of Digital Ocean, Terraform, GitHub to automate our build and release pipeline as well as disposable development environments.
@@ -327,8 +358,8 @@ Using managed services always comes with tradeoffs. On one hand, they add a laye
 
 Whistleblowing is a scarey, unfamiliar process, and the software you use should be disarming while doing all it can to keep you safe. We're a text-only service and encourage users to begin with a plan rather than grabbing and dumping loads of information. We think that through guidance and education, users can keep themselves safe while engaging in responsible disclosure.
 
-![family](https://gist.github.com/user-attachments/assets/7d09dcda-0d68-4af2-9dc6-ce4802863bcc)
-**Image 1:** The Hush Line Web Suite
+![family](https://github.com/user-attachments/assets/1a568bf2-36da-45f0-a760-6f5c0c2bfa22)
+**Image 1:** The Hush Line Product Suite
 
 #### 4.8.1 Interface Design
 
@@ -388,7 +419,8 @@ Humans will make errors. The developers of Hush Line, despite their expertise, a
 
 As we've seen, the convenience of centralized web applications provides opportunities for high availability, scalability, and usability, we know that sometimes a user's threat models include not trusting any third parties. In this situation, we offer the Hush Line Personal Server. It hosts the entire Hush Line platform on a self-hosted device. We designed a custom case milled from solid aircraft-grade aluminum that physically closes access to all ports except power and ethernet, making it resistant to Evil Maid attacks. Additionally, we disable SSH, USB, and Wifi on the device. A user boots it up, and an e-paper display will show a QR code with the address to their Hush Line Onion Service instance.
 
-![personal-server](https://gist.github.com/user-attachments/assets/ddef0bc5-113b-4ff8-bcc7-d093f60cbd5c)
+![personal-server](https://github.com/user-attachments/assets/2fc88bf0-9927-43cb-9422-f0e4dd7e5a98)
+
 **Image 2:** The Hush Line Personal Server Top and Side Views
 
 ### 7.1 System Requirements
@@ -419,7 +451,7 @@ We designed custom cases that are milled from solid A606 alloy. All ports, expec
 
 Everything is plug-and-play, and the owner needs no specialized training to set up and operate the Personal Server. Our custom cases are not for sale individually, and we are the exclusive distributors.
 
-![Personal Server Architecture](https://gist.github.com/user-attachments/assets/f64910d8-41cd-4681-ace2-abb4f089d085)
+![Personal Server Architecture](https://github.com/user-attachments/assets/1da44f41-528f-43c4-aa2d-eb935451b950)
 **Diagram 2.** Personal Server System Architecture 
 
 ## 8. Ethical Monetization
@@ -460,6 +492,34 @@ Hush Line is proudly supported by the Data Empowerment Fund, but Science & Desig
 
 This paper highlights critical areas where Hush Line is differentiated from its peers. We believe that a trustworthy, easy-to-use, cross-industry tool can help journalists get better leads, educators increase school safety, and business avoid compliance penalties.
 
+## Thanks and Acknowledgements
+
+- Abbey Ripstra, Research
+- Alex Rojas, Industrial Design
+- Dr. Ashley Di Battista, Research, Paper Editor
+- Brassy, Engineering
+- Chirayu Desai, Privacy Consulting
+- David McKinney, Security Auditor
+- David Mirza Ahmad, Security Auditor
+- Elijah Waxwing, Subject Matter Expert, Security
+- Ese Udom, Mobile Engineering
+- Em, Privacy Consulting
+- Glenn Sorrentino, Design, Engineering, Architecture
+- Grant Birkinbine, Engineering
+- Jeremy Moore, Engineering, Infrastructure
+- Dr. Martin Shelton, Subject Matter Expert, Journalism
+- Micah Lee, Engineering, Infrastructure, Architecture
+- Ricchi Machado, Engineering, Cryptography
+- Ritik Shah, DevSecOps Intern
+- Sam Schlinkert, Documentation, Engineering
+- Saptak Sengupta, Eng Consulting
+- Scott Jenson, Usability Consulting
+- Simon Wörpel, Engineering
+- [Subgraph](https://subgraph.com/index.en.html), 2024 Security Audit
+- Sooraj Sathyanarayanan, DevSecOps Intern
+- Stefanie Daehler, Subject Matter Expert, Education
+- Ura Creative, Production Design, Packaging
+
 ## References
 
 1. Stanger, A. (2019). Whistleblowers: Honesty in America from Washington to Trump. Yale University Press. Page 9.
@@ -471,24 +531,24 @@ This paper highlights critical areas where Hush Line is differentiated from its 
 7. https://hbr.org/2018/01/sexual-harassment-is-pervasive-in-the-restaurant-industry-heres-what-needs-to-change
 8. https://hbr.org/2020/10/do-your-employees-feel-safe-reporting-abuse-and-discrimination
 9. https://web.archive.org/web/20240711021747/https://www.sec.gov/newsroom/press-releases/2023-234
-10. http://f3mryj3e2uw2zrv3zv6up6maqosgzn27frz7xodvpl7pkestoyigtkad.onion/#/
-11. https://www.caseiq.com/
-12. https://www.projectcallisto.org/
-13. https://getconfide.com
-14. https://www.faceup.com/en
-15. https://www.globaleaks.org
-16. http://hushline.app
-17. https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/
-18. https://securedrop.org/
-19. https://signal.org/
-20. https://freedom.press
-21. https://www.qubes-os.org
-22. https://tails.net/
-23. https://harpers.org/archive/2017/05/snowdens-box/
-24. https://www.nytimes.com/2013/08/02/world/europe/edward-snowden-russia.html
-25. https://www.nytimes.com/2010/04/06/world/middleeast/06baghdad.html
-26. https://www.aclu.org/news/free-speech/president-obamas-commutation-chelsea-mannings
-27. https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/2.%20Legal/apple-v-andrew-aude.pdf
-28. https://www.nytimes.com/2024/03/12/business/john-barnett-boeing-whistleblower-dead.html
+10. https://tails.net/
+11. https://harpers.org/archive/2017/05/snowdens-box/
+12. https://www.nytimes.com/2013/08/02/world/europe/edward-snowden-russia.html
+13. https://www.nytimes.com/2010/04/06/world/middleeast/06baghdad.html
+14. https://www.aclu.org/news/free-speech/president-obamas-commutation-chelsea-mannings
+15. https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/2.%20Legal/apple-v-andrew-aude.pdf
+16. https://www.nytimes.com/2024/03/12/business/john-barnett-boeing-whistleblower-dead.html
+17. http://f3mryj3e2uw2zrv3zv6up6maqosgzn27frz7xodvpl7pkestoyigtkad.onion/#/
+18. https://www.caseiq.com/
+19. https://www.projectcallisto.org/
+20. https://getconfide.com
+21. https://www.faceup.com/en
+22. https://www.globaleaks.org
+23. http://hushline.app
+24. https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/
+25. https://securedrop.org/
+26. https://signal.org/
+27. https://freedom.press
+28. https://www.qubes-os.org
 29. https://www.darkreading.com/endpoint-security/90-malicious-apps-55-million-downloads-google-play
 30. https://thehackernews.com/2018/05/efail-pgp-email-encryption.html
