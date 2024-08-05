@@ -21,6 +21,7 @@ fontsize: 12pt
 geometry: margin=1.5in
 link-citations: true
 header-includes: |
+  \usepackage{graphicx}
   \usepackage{multicol}
   \setlength{\columnsep}{1cm}
   \usepackage{hyperref}
@@ -31,6 +32,13 @@ header-includes: |
     urlcolor=cyan,
     pdftitle={Hush Line},
     pdfpagemode=FullScreen,
+  }
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancypagestyle{plain}{%
+    \fancyhf{} % clear all header and footer fields
+    \renewcommand{\headrulewidth}{0pt} % eliminate the rule under the header
+    \chead{\includegraphics[width=\textwidth]{qr-code.png}} %
   }
 documentclass: article
 ---
