@@ -1,6 +1,6 @@
 ---
-title: "Hush Line: A Flexible and Monetizable Whistleblowing Platform For All Threat Models"
-subtitle: "A Free and Open-Source Tip Line Product Suite That Meets Users Where They Are"
+title: "[DRAFT] –– Hush Line: A Cross-Industry, Open-Source Whistleblowing Platform For Organizations and Individuals"
+subtitle: "A Flexible Product Suite That Meets Users Where They Are"
 author:
   - Glenn Sorrentino
 date: "2024-08-01"
@@ -16,7 +16,6 @@ keywords: [whistleblowing, security, privacy, threat models, Hush Line]
 lang: en
 toc: true
 toc-depth: 3
-classoption: twoside
 fontsize: 12pt
 geometry: margin=1.5in
 link-citations: true
@@ -34,11 +33,11 @@ header-includes: |
     pdfpagemode=FullScreen,
   }
   \usepackage{fancyhdr}
-  \pagestyle{fancy}
+  \pagestyle{headings}
   \fancypagestyle{plain}{%
     \fancyhf{} % clear all header and footer fields
     \renewcommand{\headrulewidth}{0pt} % eliminate the rule under the header
-    \chead{\includegraphics[width=\textwidth]{qr-code.png}} %
+    \chead{\includegraphics[width=0.15\textwidth,keepaspectratio]{qr-code.png}} %
   }
 documentclass: article
 ---
