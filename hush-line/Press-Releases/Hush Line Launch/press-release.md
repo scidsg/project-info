@@ -2,14 +2,14 @@
 
 **Contact Information**
 
-Glenn Sorrentino
-Executive Director, Science & Design, Inc.
+Glenn Sorrentino<br>
+Executive Director, Science & Design, Inc.<br>
 glenn@scidsg.org
 
 ------------
 
 # Hush Line: A new whistleblowing platform for organizations and individuals
-## _Science & Design, Inc. launches the first platform for responsible disclosure that is open-source and non-profit managed._
+## Science & Design, Inc. launches the first platform for responsible disclosure that is open-source and non-profit managed.
 
 **Las Vegas, NV, Aug 8, 2024** – Today, Science & Design, Inc., a 501(c)(3) organization based in California, US, is excited to announce the launch of Hush Line, the first open-source managed whistleblowing platform designed for journalists, business leaders, and educators! Hush Line provides an easy-to-use, secure, and private way for anyone to receive confidential information from their communities.
 
