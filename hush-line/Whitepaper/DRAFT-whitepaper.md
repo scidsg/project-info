@@ -341,8 +341,13 @@ Hush Line employs a verification system to ensure that users can trust the sourc
 
 We built Hush Line as a managed service designed for high availability, usability, and security. While Hush Line is intended for users to create an account on `hushline.app`, we encourage people and organizations to self-host if they prefer. For consistent implementation, we provide full documentation on getting it started for your organization.
 
-![Architecture](https://github.com/user-attachments/assets/2e174303-b5fe-4d62-9f88-2582c08c81de)
-**Diagram 1.** Hush Line System Architecture
+#### 4.2.1 Architecture
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{images/architecture.png}
+    \caption{Personal Server Architecture}
+\end{figure}
 
 We use a combination of Digital Ocean, Terraform, GitHub to automate our build and release pipeline as well as disposable development environments.
 
@@ -365,8 +370,7 @@ Using managed services always comes with tradeoffs. On one hand, they add a laye
 
 Whistleblowing is a scarey, unfamiliar process, and the software you use should be disarming while doing all it can to keep you safe. We're a text-only service and encourage users to begin with a plan rather than grabbing and dumping loads of information. We think that through guidance and education, users can keep themselves safe while engaging in responsible disclosure.
 
-![family](https://github.com/user-attachments/assets/1a568bf2-36da-45f0-a760-6f5c0c2bfa22)
-**Image 1:** The Hush Line Product Suite
+![The Hush Line Product Suite](https://github.com/user-attachments/assets/1a568bf2-36da-45f0-a760-6f5c0c2bfa22)
 
 #### 4.8.1 Interface Design
 
@@ -390,9 +394,7 @@ Throughout the beta period users received spam messages, and since messages can 
 
 An analysis of an hCaptcha integration showed multiple external site connections, increasing IP leakage just to send a message. There are also security trade-offs since "it loads `https://newassets.hcaptcha.com//captcha/v1/988e468/hcaptcha.js` along with multiple other javascript source files, and it executes them in the browser."[31]
 
-![image](https://github.com/user-attachments/assets/a900e7cd-a0b5-413a-b8fe-ed1b25d8b909)
-
-**Image 4:** Network calls when using hCaptcha
+![Network calls when using hCaptcha](https://github.com/user-attachments/assets/a900e7cd-a0b5-413a-b8fe-ed1b25d8b909)
 
 **Local Captcha**
 
@@ -491,13 +493,13 @@ Humans will make errors. The developers of Hush Line, despite their expertise, a
 
 As we've seen, the convenience of centralized web applications provides opportunities for high availability, scalability, and usability, we know that sometimes a user's threat models include not trusting any third parties. In this situation, we offer the Hush Line Personal Server. It hosts the entire Hush Line platform on a self-hosted device. We designed a custom case milled from solid aircraft-grade aluminum that physically closes access to all ports except power and ethernet, making it resistant to Evil Maid attacks. Additionally, we disable SSH, USB, and Wifi on the device. A user boots it up, and an e-paper display will show a QR code with the address to their Hush Line Onion Service instance.
 
-![personal-server](https://github.com/user-attachments/assets/2fc88bf0-9927-43cb-9422-f0e4dd7e5a98)
-
-**Image 2:** The Hush Line Personal Server Top and Side Views
+![The Hush Line Personal Server Top and Side Views](https://github.com/user-attachments/assets/2fc88bf0-9927-43cb-9422-f0e4dd7e5a98)
 
 ### 7.1 System Requirements
 
 The Personal Server is designed to be deployable to hardware with limited resources, specifically the Raspberry Pi. Using a pre-built image using docker for containerization of the app, onion service, and database. The Personal Server is a consumer device that packages a Raspberry Pi 4 with 1 GB RAM with an e-paper display and custom, security-focused case. 
+
+#### 7.1.1 Costs
 
 | Item | Specs | Cost |
 |-|-|-|
@@ -511,6 +513,16 @@ The Personal Server is designed to be deployable to hardware with limited resour
 
 **Table 6.** One-time and recurring costs associated with running a DIY Personal Server.
 
+#### 7.1.2 Architecture
+
+Everything runs locally on the Personal Server. Using Ansible to deploy and Docker to run the application makes it easy to replicate builds and ensure consistency (Figure 5). In place of a managed database, we use `sqlite3` locally, and instead of using RiseUp for email forwarding, SMTP relies on custom configurations set by users.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/personal_server_arch.png}
+    \caption{Personal Server Architecture}
+\end{figure}
+
 ### 7.2 Defending Against Physical Access 
 
 #### 7.2.1 Unique Identification
@@ -522,9 +534,6 @@ The only access to the device is by removing the lid, and to help defend against
 We designed custom cases that are milled from solid A606 alloy. All ports, expect for power and ethernet, are sealed from physical access. The lid is a 5mm piece of smoked acrylic, giving a clear view to the epaper display which shows a QR code embedded with the device's onion address. 
 
 Everything is plug-and-play, and the owner needs no specialized training to set up and operate the Personal Server. Our custom cases are not for sale individually, and we are the exclusive distributors.
-
-![Personal Server Architecture](https://github.com/user-attachments/assets/1da44f41-528f-43c4-aa2d-eb935451b950)
-**Diagram 2.** Personal Server System Architecture 
 
 ## 8. Ethical Monetization
 
