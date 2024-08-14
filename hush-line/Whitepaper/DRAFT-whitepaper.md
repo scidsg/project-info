@@ -378,6 +378,71 @@ Perhaps what differentiates Hush Line the most is that we're a centralized servi
 
 Like any modern web service, including Instagram, Google, or Signal, a user may go to the Hush Line app and create an account to use the platform. In a Settings panel, individuals can add their own PGP key, set up email forwarding, add a display name, or enable two-factor authentication.
 
+#### 4.8.3 Accessibility
+
+Hush Line received a service grant from Open Tech Fund in the form of an accessibility audit. The goals of the audit were to make the screen-reader experience usable, descriptive, and intentional.
+
+#### 4.8.3 To CAPTCHA?
+
+Throughout the beta period users received spam messages, and since messages can be end-to-end encrypted, combined with using custom SMTP settings, client-side filtering is an imperfect solution. 
+
+**hCaptcha**
+
+An analysis of an hCaptcha integration showed multiple external site connections, increasing IP leakage just to send a message. There are also security trade-offs since "it loads `https://newassets.hcaptcha.com//captcha/v1/988e468/hcaptcha.js` along with multiple other javascript source files, and it executes them in the browser."[31]
+
+![image](https://github.com/user-attachments/assets/a900e7cd-a0b5-413a-b8fe-ed1b25d8b909)
+
+**Image 4:** Network calls when using hCaptcha
+
+**Local Captcha**
+
+We explored CAPTCHA options including creating an image with letters and numbers obstructed by randomly drawn lines and presenting a basic math problem. Using an image was a blocker due to accessibility limitations: a bling user won't be able to read the image, even with assistive technology, and therefore wouldn't be able to submit a message. A math problem, while not perfect, only needs to catch most bots, and since it's an accessible solution, it was our best option.
+
+```{=latex}
+\small
+\begin{verbatim}
+@app.route("/submit_message/<username>", methods=["GET", "POST"])
+def submit_message(username: str) -> Response | str:
+    form = MessageForm()
+    user = User.query.filter_by(primary_username=username).first()
+
+    if request.method == "GET":
+        # Generate a simple math problem
+        num1 = secrets.randbelow(10) + 1
+        num2 = secrets.randbelow(10) + 1
+        math_problem = f"{num1} + {num2} ="
+        session["math_answer"] = str(num1 + num2)  # Store the answer
+
+    if form.validate_on_submit():
+        captcha_answer = request.form.get("captcha_answer", "")
+        if not validate_captcha(captcha_answer):
+            return redirect(url_for("submit_message", username=username))
+
+        # Save the message or handle encryption (omitted for brevity)
+
+    return render_template(
+        "submit_message.html",
+        form=form,
+        user=user,
+        math_problem=math_problem,
+    )
+
+def validate_captcha(captcha_answer: str) -> bool:
+    if not captcha_answer.isdigit():
+        flash("Incorrect CAPTCHA. Please enter a valid number.", "error")
+        return False
+
+    if captcha_answer != session.get("math_answer"):
+        flash("Incorrect CAPTCHA. Please try again.", "error")
+        return False
+
+    return True
+\end{verbatim}
+\normalsize
+```
+
+### 4.9 Making PGP Slightly Easier
+
 **Pretty Good Privacy (PGP)**
 
 PGP works using public/private key encryption. Think of your public key as envelopes made just for you, and the private key as a special letter opener that is the only thing in the world that can open those envelopes.
@@ -465,29 +530,105 @@ Everything is plug-and-play, and the owner needs no specialized training to set 
 
 Hush Line is proudly supported by the Data Empowerment Fund, but Science & Design, Inc. is a 501(c)(3), and as a non-profit receives most financing through grant cycles that are both inconsistent and insufficient. Understanding the cost associated with web services, Science & Design understands the need to seek product sustainability through financial sustainability. We are seeking a path toward ethical monetization through paid tiers of features targeted at business users. We will always provide our core services for free, and will continue researching how to make Hush Line more valuable for paying customers while maintaining our non-profit principles.
 
-| Feature                      | Free | Pro | Business    |
-|------------------------------|------|-----|-------------|
-| **Daily Messages**           | 20   | 100 | Unlimited   |
-| **BYOK**                     | Y    | Y   | Y           |
-| **2FA**                      | Y    | Y   | Y           |
-| **No Logging**               | Y    | Y   | Y           |
-| **Auto-Deleting Msgs**       | Y    | Y   | Y           |
-| **Simple SMTP**              |      | Y   | Y           |
-| **Aliases**                  |      | Y   | Y           |
-| **Custom Subjects**          |      | Y   | Y           |
-| **Files**                    |      |     | Y           |
-| **Custom Fields**            |      |     | Y           |
-| **Custom Domain**            |      |     | Y           |
-| **Branding**                 |      |     | Y           |
-| **File Size**                | -    | 10 GB | Unlimited |
-| **Aliases**                  | 0    | 5   | 15          |
-| **Custom Subjects**          | 0    | 5   | 15          |
-| **Monthly Price/User**       | $0.00| $9.99| $19.99     |
-| **Annual Price/User**        | $0.00| $119.88 | $239.88 |
+| Feature                      | Free  | Pro     | Business  |
+|------------------------------|-------|---------|-----------|
+| **Daily Messages**           | 20    | 100     | Unlimited |
+| **BYOK**                     | Y     | Y       | Y         |
+| **2FA**                      | Y     | Y       | Y         |
+| **No Logging**               | Y     | Y       | Y         |
+| **Auto-Deleting Msgs**       | Y     | Y       | Y         |
+| **Simple SMTP**              |       | Y       | Y         |
+| **Aliases**                  |       | Y       | Y         |
+| **Custom Subjects**          |       | Y       | Y         |
+| **Files**                    |       |         | Y         |
+| **Custom Fields**            |       |         | Y         |
+| **Custom Domain**            |       |         | Y         |
+| **Branding**                 |       |         | Y         |
+| **File Size**                | -     | 10 GB   | Unlimited |
+| **Aliases**                  | 0     | 5       | 15        |
+| **Custom Subjects**          | 0     | 5       | 15        |
+| **Monthly Price/User**       | $0.00 | $9.99   | $19.99    |
+| **Annual Price/User**        | $0.00 | $119.88 | $239.88   |
 
 **Table 7.** Hush Line's Speculative Pricing Model
 
-## 9. Related Academic Research
+## 9. The Path to Launch
+
+### 9.1 Pre-Release Beta
+
+Before asking funders for support, having a minimum-viable product was an important milestone. And to understand how we could make the service better we ran a 6-month beta program. During that time we conducted interviews with participants who included former whistleblowers, journalists, researchers, and more. 
+
+#### 9.1.1 Feedback & Findings
+
+**PGP Key Length**
+
+Depending on the encryption algorithm and other factors, PGP keys can differ in length significantly. Quickly after kicking off the beta, a participant tried using a key greater than 10,000 characters long an was unable to.
+
+**User Directory**
+
+After a suggestions from one of our subject matter experts, Dr. Martin Shelton, we included an opt-in user directory. The allows whistleblowers to find who they need in a centralized place without hunting around the internet.
+
+**Bios**
+
+One prominent whistleblower suggested adding additional social proofs, including a bio for the whistleblower: "making sure the whistleblower can confirm at each step that they're talking to the right person is incredibly important for the person's safety."
+
+**Better Message Forwarding**
+
+We leaned on manual SMTP configuration during the beta, asking users to add their SMTP username, password, port, and server. A query at the end of the beta period showed only 1.35% of participants configured message forwarding. 
+
+**End-to-End Encryption**
+
+Initially we encrypted messages on the server before sending, but a researcher working on a different whistleblowing product recommended strongly recommended implementing end-to-end encryption.
+
+#### 9.1.2 By The Numbers
+
+Enrollment numbers for features like two-factor authentication appear low, but are actually consistent with what we see with major platforms like Twitter, where the 2FA enrollment was 2.5%, slightly lower than Hush Line's beta.
+
+| Measurement   | Amount | Percentage |
+|---------------|--------|------------|
+| Total Testers | 815    |            |
+| 2FA Enrolled  | 25     | 3.07%      |
+| PGP Enabled   | 23     | 2.82%      |
+| SMTP Enabled  | 11     | 1.35%      |
+
+### 9.2 Our First Grant
+
+Hush Line was awarded a $100,000 grant from the Data Empowerment Fund to bring the app from prototype to production. We hired our first engineers, who included Micah Lee, the creator of OnionShare and core Tor Project and SecureDrop developer.
+
+#### 9.2.1 Tentative Grant Budget
+
+| Category | Allocation | Amount |
+|-|-|-|
+| Engineering | 60% | $60,000 |
+| Infrastructure | 10% | $10,000 |
+| Product Management | 10% | $10,000 |
+| Org Admin | 10% | $10,000 |
+| Sales | 9% | $9,000 |
+| Swag | 1% | $1,000 |
+
+**Table 3:** Grant Budget
+
+- **Engineering:** Infrastructure dev, front and back-end engineering, accessibility, and cryptography.
+- **Infrastructure:** Costs for hosting on various platforms.
+- **Product Management:** Roadmap, UX, UXR, Project Management.
+- **Org Admin:** 10%  organization administative fee.
+- **Sales:** Delivery of an open-source sales palybook.
+- **Swag:** Stuff to show thanks to our community.
+
+#### 9.2.2 Delivered Features
+
+1. Production infrastructure - XL (~40 hours)
+2. Development infrastructure - L (~20 hours)
+3. App Accessibility - L (~20 hours)
+4. Personal Server Readiness - XL (~60 hours)
+5. Better Message Forwarding Infrastructure - L (~20 hours)
+6. OCR Vision Assistant - S (~4 hours)
+7. Stripe Integration - S (TBD)
+8. Paid Features - XL (TBD)
+9. Guided Disclosure - L - (TBD)
+10. More TBD
+
+## 10. Related Academic Research
 
 - Roth, V., Güldenring, B., Rieffel, E., Dietrich, S., & Ries, L. (2013). [A secure submission system for online whistleblowing platforms](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20A%20Secure%20Submission%20System%20for%20Online%20Whistleblowing%20Platforms.pdf). Freie Universität Berlin, FX Palo Alto Laboratory, Stevens Institute of Technology.
 - Agrikola, T., Couteau, G., & Maier, S. (n.d.). [Anonymous whistleblowing over authenticated channels](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20Anonymous%20Whistleblowing%20over%20Authenticated%20Channels.pdf). CNRS, IRIF, Université de Paris; Karlsruhe Institute of Technology.
@@ -495,7 +636,7 @@ Hush Line is proudly supported by the Data Empowerment Fund, but Science & Desig
 - Jayakrishnan, H., & Murali, R. [A simple and robust end-to-end encryption architecture for anonymous and secure whistleblowing](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20A%20Simple%20and%20Robust%20End-to-End%20Encryption%20Architecture%20for%20Anonymous%20and%20Secure%20Whistleblowing.pdf). Department of Computer Science and Engineering, Amrita School of Engineering, Coimbatore, Amrita Vishwa Vidyapeetham, India.
 - Ahmed-Rengers, M., Vasile, D. A., Hugenroth, D., Beresford, A. R., & Anderson, R. [CoverDrop: Blowing the whistle through a news app](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20CoverDrop%20-%20Blowing%20the%20Whistle%20Through%20A%20News%20App.pdf). Department of Computer Science and Technology, University of Cambridge.
 
-## 10. Conclusion
+## 11. Conclusion
 
 This paper highlights critical areas where Hush Line is differentiated from its peers. We believe that a trustworthy, easy-to-use, cross-industry tool can help journalists get better leads, educators increase school safety, and business avoid compliance penalties.
 
@@ -514,6 +655,7 @@ This paper highlights critical areas where Hush Line is differentiated from its 
 - Glenn Sorrentino, Design, Engineering, Architecture
 - Grant Birkinbine, Engineering
 - Jeremy Moore, Engineering, Infrastructure
+- Kenny Krosky, Accessibility, Software Engineering
 - Dr. Martin Shelton, Subject Matter Expert, Journalism
 - Micah Lee, Engineering, Infrastructure, Architecture
 - Ricchi Machado, Engineering, Cryptography
@@ -559,3 +701,4 @@ This paper highlights critical areas where Hush Line is differentiated from its 
 28. https://www.qubes-os.org
 29. https://www.darkreading.com/endpoint-security/90-malicious-apps-55-million-downloads-google-play
 30. https://thehackernews.com/2018/05/efail-pgp-email-encryption.html
+31. https://github.com/scidsg/hushline/pull/461
