@@ -1,31 +1,11 @@
 # Color Palette
 
-## Color 1
-- **HEX:** `#2D0A58`
-- **PMS:** 2745C
-- **RGB:** 45 10 88
-- ![Color Swatch](https://via.placeholder.com/100x100/2D0A58/FFFFFF?text=+)
+# Color Palette
 
-## Color 2
-- **HEX:** `#87439C`
-- **PMS:** 2745C
-- **RGB:** 135 67 156
-- ![Color Swatch](https://via.placeholder.com/100x100/87439C/FFFFFF?text=+)
-
-## Color 3
-- **HEX:** `#BE7DC7`
-- **PMS:** 2745C
-- **RGB:** 90 125 199
-- ![Color Swatch](https://via.placeholder.com/100x100/BE7DC7/FFFFFF?text=+)
-
-## Color 4
-- **HEX:** `#E1D0EE`
-- **PMS:** 2745C
-- **RGB:** 225 208 238
-- ![Color Swatch](https://via.placeholder.com/100x100/E1D0EE/FFFFFF?text=+)
-
-## Color 5
-- **HEX:** `#6CC6DB`
-- **PMS:** 297C
-- **RGB:** 108 198 219
-- ![Color Swatch](https://via.placeholder.com/100x100/6CC6DB/FFFFFF?text=+)
+| Label | Color | Codes |
+|-------|-------|-------|
+| Shade | ![#2D0A58](https://via.placeholder.com/100x100/2D0A58/FFFFFF?text=+) | **HEX:** `#2D0A58`<br>**PMS:** `2745 C`<br>**RGB:** `45 10 88` |
+| Primary | ![#87439C](https://via.placeholder.com/100x100/87439C/FFFFFF?text=+) | **HEX:** `#87439C`<br>**PMS:** `258 C`<br>**RGB:** `135 67 156` |
+| Secondary | ![#BE7DC7](https://via.placeholder.com/100x100/BE7DC7/FFFFFF?text=+) | **HEX:** `#BE7DC7`<br>**PMS:** `2573 C`<br>**RGB:** `90 125 199` |
+| Tint | ![#E1D0EE](https://via.placeholder.com/100x100/E1D0EE/FFFFFF?text=+) | **HEX:** `#E1D0EE`<br>**PMS:** `531 C`<br>**RGB:** `225 208 238` |
+| Accent | ![#6CC6DB](https://via.placeholder.com/100x100/6CC6DB/FFFFFF?text=+) | **HEX:** `#6CC6DB`<br>**PMS:** `297 C`<br>**RGB:** `108 198 219` |
