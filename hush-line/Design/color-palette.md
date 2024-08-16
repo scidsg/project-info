@@ -1,7 +1,5 @@
 # Color Palette
 
-# Color Palette
-
 | Label | Color | Codes |
 |-------|-------|-------|
 | Shade | ![#2D0A58](https://via.placeholder.com/100x100/2D0A58/FFFFFF?text=+) | **HEX:** `#2D0A58`<br>**PMS:** `2745 C`<br>**RGB:** `45 10 88` |
