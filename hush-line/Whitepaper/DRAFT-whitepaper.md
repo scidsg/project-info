@@ -143,16 +143,17 @@ _**Legend:** M: Managed Service, S: Self-Hosted, H: Hardware, P: On-Prem Only_
 
 | Product | Type | Open-Source | E2EE | Onion Service | Verification System | Free | Non-Profit | User Directory |
 |-|-|-|-|-|-|-|-|-|
-| **Afri-LEAKS** [17] | S (Globa-Leaks Instance) | Y | Y | Y | N | Y | N | Y |
-| **CaseIQ** [18] | M | N | N | N | N | N | N | N |
-| **Castillo** [19] | M| N | Y | N | N | N | N | N |
-| **Confide** [20] | M| N | Y | N | N | N | N | N |
-| **FaceUp** [21] | M| N | Y | Y | N | N | Y |
-| **Globa-Leaks** [22] | S | Y | Y | Y | N | Y | N | N |
-| **Hush Line** [23] | M, S, H, P | Y | Y | Y| Y | Y | Y | Y |
-| **Say Something** [24] | M | N | N | N | N | ? | N | N |
-| **Secure-Drop** [25] | P | Y | N | Y | N | Y | Y | Y |
-| **Signal** [26] | M | Y | Y | N | N | Y | Y | N |
+| **[Afri-LEAKS (Onion)](http://f3mryj3e2uw2zrv3zv6up6maqosgzn27frz7xodvpl7pkestoyigtkad.onion/#/)** [17] | S (Globa-Leaks Instance) | Y | Y | Y | N | Y | N | Y |
+| **[CaseIQ](https://www.caseiq.com/)** [18] | M | N | N | N | N | N | N | N |
+| **[Castillo](https://www.projectcallisto.org/)** [19] | M| N | Y | N | N | N | N | N |
+| **[Confide](https://getconfide.com)** [20] | M| N | N | N | N | N | N | N |
+| **[FaceUp](https://www.faceup.com/en)** [21] | M| N | Y | Y | N | N | Y |
+| **[Globa-Leaks](https://www.globaleaks.org)** [22] | S | Y | Y | Y | N | Y | N | N |
+| **[Hush Line](https://hushline.app)** [23] | M, S, H, P | Y | Y | Y| Y | Y | Y | Y |
+| **[Say Something](https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/)** [24] | M | N | N | N | N | ? | N | N |
+| **[Secure-Drop](https://securedrop.org)** [25] | P | Y | N | Y | N | Y | Y | Y |
+| **[Signal](https://signal.org)** [26] | M | Y | Y | N | N | Y | Y | N |
+| **[Whispli](https://www.whispli.com)** [32] | M | N | N | N | N | N | N | N |
 
 **Table 1.** A view of different whistleblowing platforms on the market today.
 
@@ -812,7 +813,7 @@ This paper highlights critical areas where Hush Line is differentiated from its 
 20. https://getconfide.com
 21. https://www.faceup.com/en
 22. https://www.globaleaks.org
-23. http://hushline.app
+23. https://hushline.app
 24. https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/
 25. https://securedrop.org/
 26. https://signal.org/
@@ -821,3 +822,4 @@ This paper highlights critical areas where Hush Line is differentiated from its 
 29. https://www.darkreading.com/endpoint-security/90-malicious-apps-55-million-downloads-google-play
 30. https://thehackernews.com/2018/05/efail-pgp-email-encryption.html
 31. https://github.com/scidsg/hushline/pull/461
+32. https://www.whispli.com
