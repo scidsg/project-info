@@ -79,7 +79,7 @@ _**Note 4 to entry:** Action to deal with a whistleblower’s wrongdoing, perfor
 
 _**Note 5 to entry:** Other relevant interested parties can include prospective or perceived whistleblowers, relatives, associates of a whistleblower, persons who have provided support to a whistleblower, and any person involved in a whistleblowing process, including a legal entity._
 
-**Documented Information**
+## Documented Information
 information required to be controlled and maintained by an organization  and the medium on which it is contained
 
 _**Note 1 to entry:** Documented information can be in any format, media, or source._
