@@ -52,7 +52,9 @@ ability to apply knowledge and skills to achieve intended results 
 _**Note 1 to entry:** This constitutes one of the common terms and core definitions of the harmonized structure for ISO management system standards._
 
 ## Conformity
-fulfillment of a requirement  Note 1 to entry: This constitutes one of the common terms and core definitions of the harmonized structure for ISO management system standards.
+fulfillment of a requirement  
+
+_**Note 1 to entry:** This constitutes one of the common terms and core definitions of the harmonized structure for ISO management system standards._
 
 **Detrimental Conduct**
 threatened, proposed or actual, direct or indirect act or omission that can result in harm to a whistleblower  or other relevant interested party, related to whistleblowing 
