@@ -56,7 +56,17 @@ fulfillment of a requirement 
 
 _**Note 1 to entry:** This constitutes one of the common terms and core definitions of the harmonized structure for ISO management system standards._
 
-**Detrimental Conduct**
+## Corrective Action
+action to eliminate the cause of a nonconformity  and to prevent recurrence
+
+_**Note 1 to entry:** This constitutes one of the common terms and core definitions of the harmonized structure for ISO management system standards._
+
+## Continual Improvement
+recurring activity to enhance performance 
+
+_**Note 1 to entry:** This constitutes one of the common terms and core definitions of the harmonized structure for ISO management system standards._
+
+## Detrimental Conduct
 threatened, proposed or actual, direct or indirect act or omission that can result in harm to a whistleblower  or other relevant interested party, related to whistleblowing 
 
 _**Note 1 to entry:** Harm includes any adverse consequence, whether work-related or personal, including, but not limited to, dismissal, suspension, demotion, transfer, change in duties, alteration of working conditions, adverse performance ratings, disciplinary proceedings, reduced opportunity for advancement, denial of services, blacklisting, boycotting, damage to reputation, disclosing the whistleblower’s identity, financial loss, prosecution or legal action, harassment, isolation, imposition of any form of physical or psychological harm._
@@ -68,16 +78,6 @@ _**Note 3 to entry:** Detrimental conduct also includes failing to prevent or mi
 _**Note 4 to entry:** Action to deal with a whistleblower’s wrongdoing, performance, or management, unrelated to their role in whistleblowing, is not detrimental conduct for this document._
 
 _**Note 5 to entry:** Other relevant interested parties can include prospective or perceived whistleblowers, relatives, associates of a whistleblower, persons who have provided support to a whistleblower, and any person involved in a whistleblowing process, including a legal entity._
-
-## Corrective Action
-action to eliminate the cause of a nonconformity  and to prevent recurrence
-
-_**Note 1 to entry:** This constitutes one of the common terms and core definitions of the harmonized structure for ISO management system standards._
-
-## Continual Improvement
-recurring activity to enhance performance 
-
-_**Note 1 to entry:** This constitutes one of the common terms and core definitions of the harmonized structure for ISO management system standards._
 
 **Documented Information**
 information required to be controlled and maintained by an organization  and the medium on which it is contained
