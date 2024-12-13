@@ -93,7 +93,6 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 
 | Product | Type | Open-Source | E2EE | Onion Service | HTTPS | Verification System | Free | Non-Profit | Security Audit | User Directory |
 |-|-|-|-|-|-|-|-|-|-|-|
-| [AfriLEAKS](http://f3mryj3e2uw2zrv3zv6up6maqosgzn27frz7xodvpl7pkestoyigtkad.onion/#/) | GlobaLeaks Instance | ✅ | ⛔️ | ✅ | Tor-Only | ⛔️ | ✅ | ⛔️ | ⛔️ | ✅ |
 | [CaseIQ](https://www.caseiq.com/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [Castillo](https://www.projectcallisto.org/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [Confide](https://getconfide.com/) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
