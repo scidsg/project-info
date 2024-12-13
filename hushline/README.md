@@ -98,8 +98,8 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 | [Castillo](https://www.projectcallisto.org/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [Confide](https://getconfide.com/) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [FaceUp](https://www.faceup.com/en) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ✅ |
-| [GlobaLeaks](https://www.globaleaks.org/) | Self-Hosted, Saas, On-Prem | ✅ | ✅ | ✅ | ✅ | ⛔️ | ✅ | ✅ | ✅ | ⛔️ |
-| [Hush Line](http://hushline.app) | Managed, Self-Hosted, Hardware | ✅ | Optional | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [GlobaLeaks](https://www.globaleaks.org/) | SaaS, PaaS, Self-Hosted, On-Prem | ✅ | ✅ | ✅ | ✅ | ⛔️ | ✅ | ✅ | ✅ | ⛔️ |
+| [Hush Line](http://hushline.app) | SaaS, PaaS Self-Hosted, Hardware, On-Prem | ✅ | Optional | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [Say Something](https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ? | ⛔️ | ✅ | ⛔️ |
 | [SecureDrop](https://securedrop.org/) | Self-Hosted | ✅ | ⛔️ | ✅ | Tor-Only | ⛔️ | ✅ | ✅ | ✅ | ✅ |
 
