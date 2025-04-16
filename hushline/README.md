@@ -93,13 +93,12 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 
 | Product | Type | Open-Source | E2EE | Onion Service | HTTPS | Verification System | Free | Non-Profit | Security Audit | User Directory |
 |-|-|-|-|-|-|-|-|-|-|-|
-| [AfriLEAKS](http://f3mryj3e2uw2zrv3zv6up6maqosgzn27frz7xodvpl7pkestoyigtkad.onion/#/) | Self-Hosted (Globaleaks Instance) | ✅ | ⛔️ | ✅ | Tor-Only | ⛔️ | ✅ | ⛔️ | ⛔️ | ✅ |
 | [CaseIQ](https://www.caseiq.com/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [Castillo](https://www.projectcallisto.org/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [Confide](https://getconfide.com/) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [FaceUp](https://www.faceup.com/en) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ✅ |
-| [GlobaLeaks](https://www.globaleaks.org/) | Self-Hosted | ✅ | ✅ | ✅ | Optional | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ |
-| [Hush Line](http://hushline.app) | Managed, Self-Hosted, Hardware | ✅ | Optional | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [GlobaLeaks](https://www.globaleaks.org/) | SaaS, PaaS, Self-Hosted, On-Prem | ✅ | ✅ | ✅ | ✅ | ⛔️ | ✅ | ✅ | ✅ | ⛔️ |
+| [Hush Line](http://hushline.app) | SaaS, PaaS Self-Hosted, Hardware, On-Prem | ✅ | Optional | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [Say Something](https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ? | ⛔️ | ✅ | ⛔️ |
 | [SecureDrop](https://securedrop.org/) | Self-Hosted | ✅ | ⛔️ | ✅ | Tor-Only | ⛔️ | ✅ | ✅ | ✅ | ✅ |
 
