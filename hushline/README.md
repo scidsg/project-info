@@ -21,33 +21,11 @@ Hush Line is a free and open-source, self-hosted anonymous tip line that makes i
 
 | Item | Link |
 |-|-|
-| Beta App | https://beta.hushline.app/ |
-| Documentation | https://scidsg.github.io/hushline-docs/book/intro.html |
+| App | https://tips.hushline.app/ |
+| Documentation | https://hushline.app/library/docs/getting-started/start-here/ |
 | Donations | https://opencollective.com/scidsg/contribute/hush-line-support-55786 |
-| Figma | https://www.figma.com/file/0IlWj8IwEgRg8vP1XEdjO2/Hush-Line?type=design&node-id=502%3A673&mode=design&t=Ni2HtEiQcrECy8CC-1 |
-| Git Repo | https://github.com/scidsg/hush-line |
-| Overview Deck | https://docs.google.com/presentation/d/1XLdqN527118WWlS2Idof2wI3ZuxqDg7Vd2CDmxSFKk4/edit?usp=sharing |
+| Git Repo | https://github.com/scidsg/hushline |
 | Website | https://hushline.app/ |
-
-
-## Team
-
-Are we missing any roles? Edit this document!
-
-| Person   | Role           | Keybase Contact    |
-|----------|----------------|--------------------|
-| Abbey    | Research Lead  | @bodicea           |
-| Brassy   | Lead Engineer  | @brassy-endomorph  |
-| Glenn    | Product/Design | @glennsorrentino   |
-| _Glenn_  | Social         | _@glennsorrentino_ |
-| Ritik    | Engineering    | @maxseckb          |
-| Sam      | Engineering    | @schlink           |
-| Sam      | Documentation  | @schlink           |
-| Scott    | Design         | @scottjenson       |
-| Sooraj   | Engineering    | @ianonymous3000    |
-|          | Localization   |                    |
-
-_Italics indicate a temporarily filled role._
 
 ## Why Hush Line?
 
@@ -70,12 +48,14 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 ## Users
 
 - Journalists and newsrooms can use Hush Line to give the public a safe way to leave a confidential tip.
+- Lawyers and law practices can use Hush Line to collect public testimony and to serve high risk clients.
 - Employers and board rooms can use Hush Line to build trust by allowing colleagues to leave suggestions or report concerns anonymously.
 - Educators and school staff can use Hush Line to host a safe way for students to share information with someone they trust.
 
 ## Use Cases
 
 - As a journalist, I need to provide sources with a trustworthy way to send information, so they have confidence that the methods will protect their privacy.
+- As a lawyer, I need a secure and anonymous way to receive information from clients or the public, so I can get better information to build a stronger case, and to protect the privacy of my sources.
 - As an educator, I need to provide students with a safe way to share information with school staff they trust, so critical information can be received while protecting the student's identity.
 - As an employee that has witnessed workplace abuse, I need a secure and private way to share information with company executives, so that my identity is kept secret to avoid provoking a hostile retaliatory response.
 - As a student, I want a way to report sensitive information without sharing who I am, so I can help to make change without impacting my educational experience.
@@ -99,7 +79,7 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 | [Castillo](https://www.projectcallisto.org/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [Confide](https://getconfide.com/) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [FaceUp](https://www.faceup.com/en) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ✅ |
-| [GlobaLeaks](https://www.globaleaks.org/) | SaaS, PaaS, Self-Hosted, On-Prem | ✅ | ✅ | ✅ | ✅ | ⛔️ | ✅ | ✅ | ✅ | ⛔️ |
+| [GlobaLeaks](https://www.globaleaks.org/) | Freemium SaaS, Self-Hosted, On-Prem | ✅ | ✅ | ✅ | ✅ | ⛔️ | ✅ | ✅ | ✅ | ⛔️ |
 | [Hush Line](http://hushline.app) | SaaS, PaaS Self-Hosted, Hardware, On-Prem | ✅ | Optional | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [Say Something](https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ? | ⛔️ | ✅ | ⛔️ |
 | [SecureDrop](https://securedrop.org/) | Self-Hosted | ✅ | ⛔️ | ✅ | Tor-Only | ⛔️ | ✅ | ✅ | ✅ | ✅ |
@@ -112,21 +92,7 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 - Jayakrishnan, H., & Murali, R. [A simple and robust end-to-end encryption architecture for anonymous and secure whistleblowing](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20A%20Simple%20and%20Robust%20End-to-End%20Encryption%20Architecture%20for%20Anonymous%20and%20Secure%20Whistleblowing.pdf). Department of Computer Science and Engineering, Amrita School of Engineering, Coimbatore, Amrita Vishwa Vidyapeetham, India.
 - Ahmed-Rengers, M., Vasile, D. A., Hugenroth, D., Beresford, A. R., & Anderson, R. [CoverDrop: Blowing the whistle through a news app](https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/%5BPAPER%5D%20CoverDrop%20-%20Blowing%20the%20Whistle%20Through%20A%20News%20App.pdf). Department of Computer Science and Technology, University of Cambridge.
 
-### Whistleblower News
-
-#### 2024
-- [ Whistleblower Josh Dean of Boeing supplier Spirit AeroSystems has died ](https://www.seattletimes.com/business/whistleblower-josh-dean-of-boeing-supplier-spirit-aerosystems-has-died/)
-- [ Boeing Whistleblower Who Raised Quality Concerns Is Found Dead](https://www.nytimes.com/2024/03/12/business/john-barnett-boeing-whistleblower-dead.html)
-
-#### 2019
-
-- [From protégée to whistleblower: A former Theranos scientist says Elizabeth Holmes should ‘come forward and apologize’](https://www.statnews.com/2019/05/01/from-protegee-to-whistleblower-a-former-theranos-scientist-says-elizabeth-holmes-should-come-forward-and-apologize/)
-
-#### 2013
-
-- [Defiant Russia Grants Snowden Year’s Asylum](https://www.nytimes.com/2013/08/02/world/europe/edward-snowden-russia.html)
-
-#### Adjacent Research
+### Adjacent Research
 
 - [CryptDB](https://people.csail.mit.edu/nickolai/papers/raluca-cryptdb.pdf)
 - [DEFY](https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_5_1.pdf)
