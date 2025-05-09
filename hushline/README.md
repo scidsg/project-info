@@ -80,7 +80,7 @@ How much better, safer, and more informed could our schools, workplaces, and soc
 | [Confide](https://getconfide.com/) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ⛔️ | ⛔️ |
 | [FaceUp](https://www.faceup.com/en) | Managed | ⛔️ | ✅ | ⛔️ | ✅ | ⛔️ | ⛔️ | ⛔️ | ✅ |
 | [GlobaLeaks](https://www.globaleaks.org/) | Freemium SaaS, Self-Hosted, On-Prem | ✅ | ✅ | ✅ | ✅ | ⛔️ | ✅ | ✅ | ✅ | ⛔️ |
-| [Hush Line](http://hushline.app) | SaaS, PaaS Self-Hosted, Hardware, On-Prem | ✅ | Optional | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [Hush Line](http://hushline.app) | SaaS, PaaS Self-Hosted, Hardware, On-Prem | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [Say Something](https://www.sandyhookpromise.org/our-programs/say-something-anonymous-reporting-system/) | Managed | ⛔️ | ⛔️ | ⛔️ | ✅ | ⛔️ | ? | ⛔️ | ✅ | ⛔️ |
 | [SecureDrop](https://securedrop.org/) | Self-Hosted | ✅ | ⛔️ | ✅ | Tor-Only | ⛔️ | ✅ | ✅ | ✅ | ✅ |
 
