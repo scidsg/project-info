@@ -8,6 +8,9 @@ Hush Line is a free and open-source, self-hosted anonymous tip line that makes i
 
 | Title | Site | Address | Date |
 |-|-|-|-|
+| Protecting Free Speech Is About More Than Letting Content Run Wild | Newsweek | https://www.newsweek.com/protecting-free-speech-about-more-letting-content-run-wild-opinion-2012746 | Jan 10, 2025 |
+| A New Group Aims to Protect Whistleblowers In the Trump Era | Jan 21, 2025 |
+ | TIME | https://time.com/7208911/psst-whistleblower-collective/ |
 | Hush Line | AlternativeTo | https://alternativeto.net/software/hush-line/about/ | Current |
 | Whistleblowing Section | The Hidden Wiki | http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php/Main_Page | Current |
 | From Leaks to Justice: Challenges and Opportunities for the Judiciary in the Age of Disclosure | Corporate Crime Observatory | https://www.corporatecrime.co.uk/from-leaks-to-justice | May 22, 2024 |
